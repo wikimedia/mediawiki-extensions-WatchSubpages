@@ -30,7 +30,7 @@ $specialPageAliases['bs'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'WatchSubpages' => array( 'Unterseiten beobachten' ),
+	'WatchSubpages' => array( 'Unterseiten_beobachten' ),
 );
 
 /** Lower Sorbian (Dolnoserbski) */
@@ -50,7 +50,7 @@ $specialPageAliases['fa'] = array(
 
 /** Finnish (Suomi) */
 $specialPageAliases['fi'] = array(
-	'WatchSubpages' => array( 'Tarkkaile alasivuja' ),
+	'WatchSubpages' => array( 'Tarkkaile_alasivuja' ),
 );
 
 /** French (Français) */
@@ -95,7 +95,7 @@ $specialPageAliases['hu'] = array(
 
 /** Interlingua (Interlingua) */
 $specialPageAliases['ia'] = array(
-	'WatchSubpages' => array( 'Observar subpaginas' ),
+	'WatchSubpages' => array( 'Observar_subpaginas' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
