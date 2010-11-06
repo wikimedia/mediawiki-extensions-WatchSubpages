@@ -191,7 +191,7 @@ class WatchSubpages extends SpecialPage {
 		# Input boxes at the top
 		$form = Xml::openElement( 'div', array( 'class' => 'namespaceoptions' ) );
 		$form .= Xml::openElement( 'form', array( 'method' => 'get', 'action' => $wgScript ) );
-		$form .= Xml::hidden( 'title', $self->getPrefixedText() );
+		$form .= Html::hidden( 'title', $self->getPrefixedText() );
 		$form .= Xml::openElement( 'table', array( 'id' => 'nsselect', 'class' => 'allpages' ) );
 		$form .= '<tr>
 				<td>' .
@@ -217,7 +217,7 @@ class WatchSubpages extends SpecialPage {
 		if( $guide !== '' ) {
 			$form .= Xml::openElement( 'form', array( 'method' => 'post',
 				'action' => $self->getLocalUrl( 'guide=' . $guide ) ) );
-			$form .= Xml::hidden( 'token', $user->editToken( 'watchsubpages' ) );
+			$form .= Html::hidden( 'token', $user->editToken( 'watchsubpages' ) );
 			$form .= '<fieldset><legend>' . wfMsg( 'watchsubpages-addtitles' ) . '</legend>';
 			$form .= wfMsg( 'watchsubpages-form' );
 			foreach( $this->getPrefixlistInfo( $namespace, $guide . '/' ) as $namespace => $pages ) {
