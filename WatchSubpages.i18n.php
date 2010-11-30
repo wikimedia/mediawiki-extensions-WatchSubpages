@@ -392,6 +392,7 @@ Wänn Du vyyl Syte witt iberneh, no heb d Shift-Taschte un druck uf s Chäschtli
 /** Hebrew (עברית)
  * @author Agbad
  * @author Rotemliss
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'watchsubpages' => 'מעקב אחרי דפי המשנה',
@@ -399,10 +400,10 @@ $messages['he'] = array(
 	'watchsubpages-addtitles' => 'הוספת דפים',
 	'watchsubpages-addtitlestowatchlist' => 'הוספת הדפים לרשימת המעקב',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|הוספה מהירה של כל דפי המשנה]] של דף מסוים לרשימת המעקב',
-	'watchsubpages-form' => 'בחרו להלן את הדפים להוספה לרשימת המעקב שלכם.
-על מנת להוסיף דף, סמנו את התיבה שלידו, ולחצו על "הוספת דפים".
+	'watchsubpages-form' => 'נא לבחור להלן את הדפים להוספה לרשימת המעקב שלך.
+על מנת להוסיף דף, יש לסמן את התיבה שלידו וללחוץ על "{{int:watchsubpages-addtitles}}".
 
-בעת סימון או ביטול סימון של דפים מרובים, החזקת מקש ה־Shift מאפשרת לכם לבחור מספר תיבות סימון עוקבות באמצעות לחיצה על כל התיבות האחרונות של הטווחים לסימון.',
+בעת סימון או ביטול סימון של דפים מרובים, החזקת מקש ה־Shift מאפשרת לך לבחור מספר תיבות סימון עוקבות באמצעות לחיצה על כל התיבות האחרונות של הטווחים לסימון.',
 );
 
 /** Croatian (Hrvatski)
