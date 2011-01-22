@@ -98,7 +98,7 @@ P'añader una páxina, activa'l caxellu d'al llau y calca n'\"Añader páxines\"
 Cuando quieras activar o desactivar múltiples páxines, caltener pulsada la tecla de mayúscules permítete seleicionar elementos consecutivos clicando nel postreru que quieras clicar.",
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -225,7 +225,7 @@ Um eine Seite hinzuzufügen, markiere die Kästchen neben den Einträgen und kli
 Beim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen.',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
  * @author The Evil IP address
  */
@@ -830,7 +830,7 @@ Stránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať s
 Pri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne.',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
@@ -840,7 +840,7 @@ $messages['sr-ec'] = array(
 	'watchsubpages-desc' => 'Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
