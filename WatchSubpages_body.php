@@ -254,7 +254,7 @@ class WatchSubpages extends SpecialPage {
 			array( 'page_namespace', 'page_title', 'page_id', 'page_is_redirect' ),
 			array(
 				'page_namespace' => $prefixNS,
-				'page_title LIKE \'' . $dbr->escapeLike( $prefixKey ) .'%\'',
+				'page_title ' . $dbr->buildLike( $prefixKey, $dbr->anyString() ),
 			),
 			__METHOD__,
 			array(
