@@ -560,6 +560,13 @@ Wann de fädesch bes, klickß De op „{{int:watchsubpages-addtitles}}“
 Wann De en Aanzahl Sigge aam Stöck häß, woh de e Höksche draan maache udder et Höksche fotnämme wells, doh kanns De dat eijfach han. Klick eets op der Aanfang, un dann halld de Taß för op Jrußschreff ömzeschalde faß, un klick norr_enß op et Engk, ih dat De de Taß widder loß löhß. Dat schallt de Höksche en däm janze Bereisch öm.',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'watchsubpages-addtitles' => 'Rûpelan zêdebike',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
