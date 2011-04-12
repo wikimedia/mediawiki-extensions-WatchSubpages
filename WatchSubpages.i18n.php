@@ -568,6 +568,7 @@ $messages['ku-latn'] = array(
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
@@ -576,10 +577,10 @@ $messages['lb'] = array(
 	'watchsubpages-addtitles' => 'Säiten derbäisetzen',
 	'watchsubpages-addtitlestowatchlist' => "Säiten op d'Iwwerwaachungslëscht derbäisetzen",
 	'watchsubpages-desc' => "Séier [[Special:WatchSubpages|all Ënner-Säiten]] vun enger Säit op d'Iwwerwwachungslëscht derbäisetzen",
-	'watchsubpages-form' => 'Wielt hei ënnedrënner déi Säiten eraus déi Dir op Är Iwwerwaachungslëscht derbäisetze wëllt.
+	'watchsubpages-form' => 'Wielt hei ënnendrënner déi Säiten eraus déi Dir op Är Iwwerwaachungslëscht derbäisetze wëllt.
 Fir eng Säit derbäizesetzen, klickt d\'Këscht niewendrun un, a klickt"{{int:watchsubpages-addtitles}}".
 
-Fir méi Säite mateneen unzwielen oder ze desaktivéieren, kënnt Dir d\'Shift-Tast drécken fir méi Këschten hannereneen unzewielen an dann einfach déi éischt an déi lescht Këscht uklicken fir och all déi dertëschent matunzewielen.',
+Fir méi Säite mateneen unzewielen oder ze desaktivéieren, kënnt Dir d\'Shift-Tast drécken fir méi Këschten hannereneen ze markéieren oder einfach déi éischt an déi lescht Këscht uklicken fir och all déi dertëschent matunzewielen.',
 );
 
 /** Macedonian (Македонски)
