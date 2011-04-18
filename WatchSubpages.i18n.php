@@ -839,12 +839,13 @@ Pri označovaní alebo odznačovaní viacerých stránok môžete držaním klá
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'watchsubpages' => 'Надгледај подстранице',
-	'watchsubpages-addtitles' => 'Додај стране',
+	'watchsubpages-addtitles' => 'Додај странице',
 	'watchsubpages-desc' => 'Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања',
 );
 
