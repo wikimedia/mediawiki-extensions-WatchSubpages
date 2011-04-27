@@ -838,6 +838,21 @@ Stránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať s
 Pri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne.',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'watchsubpages' => 'Opazuj podstrani',
+	'watchsubpages-addedtowatchlist' => 'Naslednje je bilo dodano na vaš spisek nadzorov.',
+	'watchsubpages-addtitles' => 'Dodaj strani',
+	'watchsubpages-addtitlestowatchlist' => 'Dodaj strani na spisek nadzorov',
+	'watchsubpages-desc' => 'Hitro [[Special:WatchSubpages|doda vse podstrani]] izbrane strani na spisek nadzorov',
+	'watchsubpages-form' => 'Spodaj izberite strani, ki jih želite dodati na vaš spisek nadzorov.
+Za dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-addtitles}}«.
+
+Ko označujete ali odznačujete več strani, vam držanje tipke shift omogoča izbrati zaporedje polj tako, da kliknete na vsak konec območja, ki ga želite označiti.',
+);
+
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
