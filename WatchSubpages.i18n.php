@@ -85,6 +85,7 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'watchsubpages' => 'Vixilar subpáxines',
@@ -93,9 +94,9 @@ $messages['ast'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Añader páxines a la llista de vixilancia',
 	'watchsubpages-desc' => "Añade rápidamente [[Special:WatchSubpages|toles subpáxines]] d'una páxina a la llista de vixilancia",
 	'watchsubpages-form' => "Escueyi embaxo les páxines p'añader a la to llista de vixilancia.
-P'añader una páxina, activa'l caxellu d'al llau y calca n'\"Añader páxines\".
+P'añader una páxina, activa'l caxellu d'al llau, y calca n'\"{{int:watchsubpages-addtitles}}\".
 
-Cuando quieras activar o desactivar múltiples páxines, caltener pulsada la tecla de mayúscules permítete seleicionar elementos consecutivos clicando nel postreru que quieras clicar.",
+Pa marcar o desmarcar múltiples páxines, si caltienes calcada la tecla de mayúscules podrás esbillar elementos consecutivos calcando nel postreru del rangu a marcar.",
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
