@@ -55,7 +55,7 @@ $specialPageAliases['fi'] = array(
 
 /** French (Français) */
 $specialPageAliases['fr'] = array(
-	'WatchSubpages' => array( 'Voir les sous-pages', 'VoirSousPages' ),
+	'WatchSubpages' => array( 'Voir_les_sous-pages', 'VoirSousPages' ),
 );
 
 /** Franco-Provençal (Arpetan) */
@@ -65,7 +65,7 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'WatchSubpages' => array( 'Vixiar as subpáxinas' ),
+	'WatchSubpages' => array( 'Vixiar_as_subpáxinas' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -88,9 +88,14 @@ $specialPageAliases['hsb'] = array(
 	'WatchSubpages' => array( 'Podstrony wobkedźbować' ),
 );
 
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'WatchSubpages' => array( 'GadeSouPaj' ),
+);
+
 /** Hungarian (Magyar) */
 $specialPageAliases['hu'] = array(
-	'WatchSubpages' => array( 'Aloldalak figyelése' ),
+	'WatchSubpages' => array( 'Aloldalak_figyelése' ),
 );
 
 /** Interlingua (Interlingua) */
@@ -150,7 +155,7 @@ $specialPageAliases['nl'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $specialPageAliases['no'] = array(
-	'WatchSubpages' => array( 'Overvåk undersider' ),
+	'WatchSubpages' => array( 'Overvåk_undersider' ),
 );
 
 /** Occitan (Occitan) */
@@ -196,6 +201,11 @@ $specialPageAliases['tl'] = array(
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'WatchSubpages' => array( 'Altsayfalarıİzle' ),
+);
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'WatchSubpages' => array( 'Theo_dõi_trang_phụ' ),
 );
 
 /**
