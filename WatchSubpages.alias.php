@@ -60,7 +60,7 @@ $specialPageAliases['fr'] = array(
 
 /** Franco-Provençal (Arpetan) */
 $specialPageAliases['frp'] = array(
-	'WatchSubpages' => array( 'Siuvre les sot-pâges', 'SiuvreLesSotPâges' ),
+	'WatchSubpages' => array( 'Siuvre_les_sot-pâges', 'SiuvreLesSotPâges' ),
 );
 
 /** Galician (Galego) */
