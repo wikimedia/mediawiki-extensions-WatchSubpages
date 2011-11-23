@@ -561,7 +561,7 @@ Wann de fädesch bes, klickß De op „{{int:watchsubpages-addtitles}}“
 Wann De en Aanzahl Sigge aam Stöck häß, woh de e Höksche draan maache udder et Höksche fotnämme wells, doh kanns De dat eijfach han. Klick eets op der Aanfang, un dann halld de Taß för op Jrußschreff ömzeschalde faß, un klick norr_enß op et Engk, ih dat De de Taß widder loß löhß. Dat schallt de Höksche en däm janze Bereisch öm.',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -854,7 +854,7 @@ Za dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-
 Ko označujete ali odznačujete več strani, vam držanje tipke shift omogoča izbrati zaporedje polj tako, da kliknete na vsak konec območja, ki ga želite označiti.',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -865,7 +865,7 @@ $messages['sr-ec'] = array(
 	'watchsubpages-desc' => 'Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
