@@ -619,6 +619,17 @@ $messages['mr'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'पृष्ठे पहार्‍याच्या सूचीत टाका',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'watchsubpages' => 'Pantau sublaman',
+	'watchsubpages-addedtowatchlist' => 'Yang berikut telah ditambahkan kepada senarai pantau anda.',
+	'watchsubpages-addtitles' => 'Tambah laman',
+	'watchsubpages-addtitlestowatchlist' => 'Tambahkan laman kepada senarai pantau',
+	'watchsubpages-desc' => '[[Special:WatchSubpages|Menambahkan semua sublaman]] sesuatu laman ke dalam senarai pantau dengan cepat',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
