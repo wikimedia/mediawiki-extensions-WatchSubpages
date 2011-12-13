@@ -23,7 +23,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'author' => '[http://www.strategywiki.org/wiki/User:Prod User:Prod]',
 	'name' => 'Watch Guide Subpages',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:WatchSubpages',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:WatchSubpages',
 	'descriptionmsg' => 'watchsubpages-desc',
 );
 
