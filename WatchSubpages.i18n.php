@@ -628,6 +628,10 @@ $messages['ms'] = array(
 	'watchsubpages-addtitles' => 'Tambah laman',
 	'watchsubpages-addtitlestowatchlist' => 'Tambahkan laman kepada senarai pantau',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Menambahkan semua sublaman]] sesuatu laman ke dalam senarai pantau dengan cepat',
+	'watchsubpages-form' => 'Pilih halaman yang ingin anda tambahkan kepada senarai pantau anda.
+Untuk menambahkan laman, tandai petak di sebelahnya, kemudian klik "{{int:watchsubpages-addtitles}}".
+
+Semasa menandai berbilang laman sekaligus, dengan menekan kekunci "Shift" anda dapat menandai beberapa laman yang berurutan sekaligus.',
 );
 
 /** Nahuatl (Nāhuatl)
