@@ -683,7 +683,7 @@ Når du merkar eller fjernar merking av fleire sider, kan du halde nede «Shift�
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'watchsubpages' => 'Overvåk undersider',
 	'watchsubpages-addedtowatchlist' => 'Følgende har blitt lagt til i overvåkningslisten din.',
 	'watchsubpages-addtitles' => 'Legg til sider',
