@@ -642,6 +642,22 @@ $messages['nah'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Tiquincēntilīz zāzanilli motlachiyalizhuīc',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'watchsubpages' => 'Overvåk undersider',
+	'watchsubpages-addedtowatchlist' => 'Følgende har blitt lagt til i overvåkningslisten din.',
+	'watchsubpages-addtitles' => 'Legg til sider',
+	'watchsubpages-addtitlestowatchlist' => 'Legg til sider til overvåkningslisten',
+	'watchsubpages-desc' => '[[Special:WatchSubpages|Legg til alle undersider]] av en side til overvåkningslisten',
+	'watchsubpages-form' => 'Velg sidene du ønsker å legge til i overvåkningslisten din nedenfor.
+For å legge til en side, merk av i boksen ved siden av den og klikk «{{int:watchsubpages-addtitles}}».
+
+Når du merker eller fjerner merking av flere sider kan du holde nede «shift»-tasten for å velge bokser som kommer etter hverandre ved å merke den første og siste av sidene i intervallet du vil merke.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -677,22 +693,6 @@ $messages['nn'] = array(
 For å legge til ei side, merk av i boksen ved sidan av ho og klikk på «Legg til sider».
 
 Når du merkar eller fjernar merking av fleire sider, kan du halde nede «Shift»-knappen for å velge boksar som kjem etter kvarandre ved å trykke på den siste av sidene du vil merke.',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'watchsubpages' => 'Overvåk undersider',
-	'watchsubpages-addedtowatchlist' => 'Følgende har blitt lagt til i overvåkningslisten din.',
-	'watchsubpages-addtitles' => 'Legg til sider',
-	'watchsubpages-addtitlestowatchlist' => 'Legg til sider til overvåkningslisten',
-	'watchsubpages-desc' => '[[Special:WatchSubpages|Legg til alle undersider]] av en side til overvåkningslisten',
-	'watchsubpages-form' => 'Velg sidene du ønsker å legge til i overvåkningslisten din nedenfor.
-For å legge til en side, merk av i boksen ved siden av den og klikk «{{int:watchsubpages-addtitles}}».
-
-Når du merker eller fjerner merking av flere sider kan du holde nede «shift»-tasten for å velge bokser som kommer etter hverandre ved å merke den første og siste av sidene i intervallet du vil merke.',
 );
 
 /** Occitan (Occitan)
@@ -882,10 +882,11 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  */
 $messages['sr-el'] = array(
 	'watchsubpages' => 'Nadgledaj podstranice',
-	'watchsubpages-addtitles' => 'Dodaj strane',
+	'watchsubpages-addtitles' => 'Dodaj stranice',
 	'watchsubpages-desc' => 'Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na spisak nadgledanja',
 );
 
