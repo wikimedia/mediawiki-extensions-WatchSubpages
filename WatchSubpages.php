@@ -30,6 +30,6 @@ $wgExtensionCredits['specialpage'][] = array(
 // Set up the new special page
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['WatchSubpages'] = $dir . 'WatchSubpages.i18n.php';
-$wgExtensionAliasesFiles['WatchSubpages'] = $dir . 'WatchSubpages.alias.php';
+$wgExtensionMessagesFiles['WatchSubpagesAlias'] = $dir . 'WatchSubpages.alias.php';
 $wgAutoloadClasses['WatchSubpages'] = $dir . 'WatchSubpages_body.php';
 $wgSpecialPages['WatchSubpages'] = 'WatchSubpages';
