@@ -143,6 +143,11 @@ $specialPageAliases['mr'] = array(
 	'WatchSubpages' => array( 'उपपृष्ठेबघा' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'WatchSubpages' => array( 'Overvåk_undersider' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'WatchSubpages' => array( 'Subpagina\'s_op_volglieste' ),
@@ -153,11 +158,6 @@ $specialPageAliases['nl'] = array(
 	'WatchSubpages' => array( 'SubpaginasOpVolglijst', 'Subpagina\'sOpVolglijst' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'WatchSubpages' => array( 'Overvåk_undersider' ),
-);
-
 /** Occitan (Occitan) */
 $specialPageAliases['oc'] = array(
 	'WatchSubpages' => array( 'VeireSosPaginas' ),
@@ -165,10 +165,10 @@ $specialPageAliases['oc'] = array(
 
 /** Portuguese (Português) */
 $specialPageAliases['pt'] = array(
-	'WatchSubpages' => array( 'Vigiar subpáginas' ),
+	'WatchSubpages' => array( 'Vigiar_subpáginas' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'WatchSubpages' => array( 'उपपृष्ठनिरीक्षा' ),
 );
@@ -207,8 +207,3 @@ $specialPageAliases['tr'] = array(
 $specialPageAliases['vi'] = array(
 	'WatchSubpages' => array( 'Theo_dõi_trang_phụ' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
