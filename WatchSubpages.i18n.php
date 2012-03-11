@@ -527,6 +527,15 @@ Kanggo nambahaké kaca, tandhani kothak ing sisihé, lan klik \"Tambah kaca\".
 Nalika nandhani utawa mbatalaké tandha luwih saka siji kaca, nahan tombol ''shift'' marakaké panjenengan bisa nandhani kothak-kothak tandha (''checkboxes'') kanthi ngeklik ing pinggir-pinggir cakupan (''range'')",
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'watchsubpages' => 'ქვეგვერდების თვალყურისდევნება',
+	'watchsubpages-addtitles' => 'გვერდების დამატება',
+	'watchsubpages-addtitlestowatchlist' => 'გვერდების დამატება კონტროლის სიაში',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author គីមស៊្រុន
  */
