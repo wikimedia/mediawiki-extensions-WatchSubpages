@@ -70,7 +70,7 @@ $specialPageAliases['gl'] = array(
 
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
-	'WatchSubpages' => array( 'Untersyte beobachte' ),
+	'WatchSubpages' => array( 'Untersyte_beobachte' ),
 );
 
 /** Gujarati (ગુજરાતી) */
