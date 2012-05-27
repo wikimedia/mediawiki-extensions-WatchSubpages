@@ -238,6 +238,13 @@ Um eine Seite hinzuzufügen, markieren Sie die Kästchen neben den Einträgen un
 Beim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'watchsubpages-addtitles' => 'Pela deke',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
