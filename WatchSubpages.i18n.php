@@ -45,6 +45,7 @@ $messages['aln'] = array(
 );
 
 /** Arabic (العربية)
+ * @author DRIHEM
  * @author Meno25
  * @author OsamaK
  */
@@ -55,7 +56,7 @@ $messages['ar'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'إضافة صفحات إلى قائمة المراقبة',
 	'watchsubpages-desc' => 'بسرعة [[Special:WatchSubpages|أضف كل الصفحات الفرعية]] لصفحة إلى قائمة المراقبة',
 	'watchsubpages-form' => 'اختر الصفحات للإضافة لقائمة مراقبتك بالأسفل.
-لإضافة صفحة، علم على الصندوق بجوارها، واضغط "إضافة الصفحات".
+لإضافة صفحة، علم على الصندوق بجوارها، واضغط "{{int:watchsubpages-addtitles}}".
 
 عند تعليم أو إزالة تعليم صفحات متعددة، الإمساك بمفتاح شيفت يسمح لك باختيار صناديق متتالية بواسطة الضغط على كل نهاية للنطاق المراد تعليمه.',
 );
