@@ -508,13 +508,14 @@ Quando si selezionano o deselezionano più pagine, tenere premuto il tasto shift
  * @author Aotake
  * @author Fryed-peach
  * @author Hosiryuhosi
+ * @author Shirayuki
  */
 $messages['ja'] = array(
-	'watchsubpages' => 'サブページのウォッチ',
+	'watchsubpages' => '下位ページをウォッチ',
 	'watchsubpages-addedtowatchlist' => '以下をあなたのウォッチリストに追加しました。',
 	'watchsubpages-addtitles' => 'ページの追加',
 	'watchsubpages-addtitlestowatchlist' => 'ページ群をウォッチリストに追加',
-	'watchsubpages-desc' => 'ウォッチリストに素早く、あるページの[[Special:WatchSubpages|すべてのサブページを追加する]]',
+	'watchsubpages-desc' => 'ウォッチリストに素早く、あるページの[[Special:WatchSubpages|すべての下位ページを追加する]]',
 	'watchsubpages-form' => 'ウォッチリストに加えたいページを以下で選んでください。ページを追加するには、隣のボックスにチェックをいれて、「{{int:watchsubpages-addtitles}}」をクリックしてください。
 
 複数のページをチェックあるいはチェック解除する場合は、シフトキーを押しながら、選択する範囲の始点と終点のチェックボックスをクリックすることで、その範囲の連続するすべてのボックスを選択できます。',
