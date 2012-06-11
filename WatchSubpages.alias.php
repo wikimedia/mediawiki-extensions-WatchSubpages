@@ -23,7 +23,7 @@ $specialPageAliases['arz'] = array(
 	'WatchSubpages' => array( 'مراقبة_الصفح_الفرعيه' ),
 );
 
-/** Bosnian (Bosanski) */
+/** Bosnian (bosanski) */
 $specialPageAliases['bs'] = array(
 	'WatchSubpages' => array( 'PratiPodstranice' ),
 );
@@ -33,12 +33,17 @@ $specialPageAliases['de'] = array(
 	'WatchSubpages' => array( 'Unterseiten_beobachten' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'WatchSubpages' => array( 'BınpelaSeyrke' ),
+);
+
 /** Lower Sorbian (Dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'WatchSubpages' => array( 'Pódboki wobglědowaś' ),
 );
 
-/** Spanish (Español) */
+/** Spanish (español) */
 $specialPageAliases['es'] = array(
 	'WatchSubpages' => array( 'Vigilar_subpáginas' ),
 );
@@ -48,17 +53,17 @@ $specialPageAliases['fa'] = array(
 	'WatchSubpages' => array( 'پی‌گیری_زیرصفحه‌ها' ),
 );
 
-/** Finnish (Suomi) */
+/** Finnish (suomi) */
 $specialPageAliases['fi'] = array(
 	'WatchSubpages' => array( 'Tarkkaile_alasivuja' ),
 );
 
-/** French (Français) */
+/** French (français) */
 $specialPageAliases['fr'] = array(
 	'WatchSubpages' => array( 'Voir_les_sous-pages', 'VoirSousPages' ),
 );
 
-/** Franco-Provençal (Arpetan) */
+/** Franco-Provençal (arpetan) */
 $specialPageAliases['frp'] = array(
 	'WatchSubpages' => array( 'Siuvre_les_sot-pâges', 'SiuvreLesSotPâges' ),
 );
@@ -78,7 +83,7 @@ $specialPageAliases['gu'] = array(
 	'WatchSubpages' => array( 'ઉપપાનાઓ જુઓ' ),
 );
 
-/** Croatian (Hrvatski) */
+/** Croatian (hrvatski) */
 $specialPageAliases['hr'] = array(
 	'WatchSubpages' => array( 'Prati_podstranice' ),
 );
@@ -93,12 +98,12 @@ $specialPageAliases['ht'] = array(
 	'WatchSubpages' => array( 'GadeSouPaj' ),
 );
 
-/** Hungarian (Magyar) */
+/** Hungarian (magyar) */
 $specialPageAliases['hu'] = array(
 	'WatchSubpages' => array( 'Aloldalak_figyelése' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'WatchSubpages' => array( 'Observar_subpaginas' ),
 );
@@ -128,7 +133,7 @@ $specialPageAliases['lb'] = array(
 	'WatchSubpages' => array( 'Ënnersäiten_iwwerwaachen' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'WatchSubpages' => array( 'НабљудувајПотстраници' ),
 );
@@ -143,7 +148,7 @@ $specialPageAliases['mr'] = array(
 	'WatchSubpages' => array( 'उपपृष्ठेबघा' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'WatchSubpages' => array( 'Overvåk_undersider' ),
 );
@@ -158,12 +163,12 @@ $specialPageAliases['nl'] = array(
 	'WatchSubpages' => array( 'SubpaginasOpVolglijst', 'Subpagina\'sOpVolglijst' ),
 );
 
-/** Occitan (Occitan) */
+/** Occitan (occitan) */
 $specialPageAliases['oc'] = array(
 	'WatchSubpages' => array( 'VeireSosPaginas' ),
 );
 
-/** Portuguese (Português) */
+/** Portuguese (português) */
 $specialPageAliases['pt'] = array(
 	'WatchSubpages' => array( 'Vigiar_subpáginas' ),
 );
@@ -173,7 +178,7 @@ $specialPageAliases['sa'] = array(
 	'WatchSubpages' => array( 'उपपृष्ठनिरीक्षा' ),
 );
 
-/** Slovak (Slovenčina) */
+/** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'WatchSubpages' => array( 'SledovaniePodstránok' ),
 );
