@@ -84,7 +84,7 @@ $messages['arz'] = array(
 عند تعليم أو إزالة تعليم صفحات متعددة، الإمساك بمفتاح شيفت يسمح لك باختيار صناديق متتالية بواسطة الضغط على كل نهاية للنطاق المراد تعليمه.',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -116,7 +116,7 @@ $messages['be-tarask'] = array(
 Калі Вы жадаеце дадаць болей адной старонкі, карыстайцеся клявішай Shift, утрымліваючы якую пазначце першую і апошнюю старонкі з дыяпазону, які жадаеце дадаць ў сьпіс назіраньня.',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -134,7 +134,7 @@ $messages['bn'] = array(
 	'watchsubpages-addtitles' => 'পাতা যোগ',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -149,7 +149,7 @@ Evit ouzhpennañ ur bajenn, klikit ouzh ar voest zo e-kichenik, ha klikit war "{
 Evit askañ pe diaskañ meur a bajenn war un dro e c\'hallit derc\'hel da bouezañ war ar stokell "pennlizherenn" en ur glikañ en daou benn d\'ar strollad logoù zo da vezañ asket.',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -164,7 +164,7 @@ Da dodate stranicu, označite kutijicu pored naziva i kliknite \"{{int:watchsubp
 Kada označujete ili uklanjate više stranica, možete držati tipku ''shift'' da bi označili kutijice jedne ispod druge tako da možete kliknuti od početka do kraja spiska klikajući prvu i zadnju kutijicu držeći shift.",
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author SMP
  * @author Solde
  */
@@ -180,7 +180,7 @@ Per a afegir una pàgina, marqueu la casella de selecció del costat i feu clic 
 Quan marqueu o desmarqueu múltiples pàgines, si manteniu polsada la tecla de majúscules podreu seleccionar caselles consecutives clicant l'última del rang a ser marcat.",
 );
 
-/** Sorani (کوردی)
+/** Sorani Kurdish (کوردی)
  * @author Marmzok
  */
 $messages['ckb'] = array(
@@ -193,7 +193,7 @@ $messages['ckb'] = array(
 کاتێ ده‌ته‌وێ چه‌ن لاپه‌ڕه‌ی به‌شوێن یه‌کدا هه‌ڵبژێریت یان له‌ هه‌ڵبژێراوی ده‌ریان بێنیت، به ڕاگرتنی دوگمه‌ی گوڕین (Shift) و کرته‌ کردن له‌ سه‌ر دوایین لاپه‌ڕه‌ ده‌توانی مارکی هه‌ڵبژاردنی چه‌ک باکس بۆ چه‌ن لاپه‌ڕه‌ پێکه‌وه‌ زیاد بکه‌ی یان بیسڕیته‌وه‌.',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Matěj Grabovský
  * @author Mormegil
  * @author Reaperman
@@ -283,7 +283,7 @@ $messages['eo'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Aldoni paĝojn al atentaro',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Fluence
  * @author Locos epraix
@@ -301,7 +301,7 @@ Para agregar una página, marque la caja junto a esta, y haga clic en "{{int:wat
 Cuando marque o desmarque múltiples páginas, mantener presionada la tecla Mayús le permite seleccionar cajas consecutivas haciendo clic al final de cada rango a ser marcado.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  */
 $messages['et'] = array(
@@ -309,7 +309,7 @@ $messages['et'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Lisa lehekülgi jälgimisloendisse',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  */
@@ -320,7 +320,7 @@ $messages['eu'] = array(
 	'watchsubpages-desc' => 'Modu azkarrean [[Special:WatchSubpages|azpiorrialde guztiak erantsi]] jarraipen zerrendan',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Silvonen
@@ -337,7 +337,7 @@ Lisätäksesi sivun, valitse sen vieressä oleva laatikko ja napsauta ”{{int:w
 Kun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun valita peräkkäisiä laatikoita napsauttamalla vain ensimmäisen ja viimeisen laatikon.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Grondin
  * @author Louperivois
@@ -358,7 +358,7 @@ Pour ajouter une page, cocher la case correspondante, et cliquez sur « {{int:wa
 Pour cocher ou décocher plusieurs pages, maintenir enfoncée la touche « Majuscule » vous permet de sélectionner des cases à cocher adjacentes en cliquant à chaque extrémité du groupe à cocher.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -415,7 +415,7 @@ $messages['he'] = array(
 בעת סימון או ביטול סימון של דפים מרובים, החזקת מקש ה־Shift מאפשרת לך לבחור מספר תיבות סימון עוקבות באמצעות לחיצה על כל התיבות האחרונות של הטווחים לסימון.',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Ex13
  */
 $messages['hr'] = array(
@@ -441,7 +441,7 @@ Zo by stronu přidał, wubjer kašćik pódla njeje a klikń na "{{int:watchsubp
 Hdyž wjacore strony wubjerješ abo wotwoleš, móžeš z stłóčenej přešaltowanskej tastej ("Umsch", "Shift") na so slědowace kontrolowe kašćiki přez kliknjenje na kóždy kónc toho wobwoda wubrać, kotryž ma so markěrować.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  */
@@ -457,7 +457,7 @@ Lap hozzáadásához pipáld ki a mellette lévő dobozt, majd kattints a „{{i
 Több lap kijelölésekor a shift gomb lenyomásával egyszerre kijelölheted az egymást követő dobozokat, csupán a kijelölés végére kell kattintanod.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -488,7 +488,7 @@ Untuk menambahkan halaman, tandai kotak di sebelahnya lalu tekan "{{int:watchsub
 Ketika menandai beberapa halaman sekaligus, dengan menekan tombol "Shift" Anda dapat menandai beberapa halaman yang berurutan sekaligus.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Darth Kule
  * @author HalphaZ
  */
@@ -602,7 +602,7 @@ Fir eng Säit derbäizesetzen, klickt d\'Këscht niewendrun un, a klickt"{{int:w
 Fir méi Säite mateneen unzewielen oder ze desaktivéieren, kënnt Dir d\'Shift-Tast drécken fir méi Këschten hannereneen ze markéieren oder einfach déi éischt an déi lescht Këscht uklicken fir och all déi dertëschent matunzewielen.',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -698,7 +698,7 @@ Selecteer de vakjes naast de paginanaam en klik op "{{int:watchsubpages-addtitle
 Om meerdere pagina\'s tegelijk te selecteren of te deselecteren, kunt u na het selecteren van de eerste pagina uit de lijst de laatste pagina selecteren terwijl u de shifttoets ingedrukt houdt.',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -713,7 +713,7 @@ For å legge til ei side, merk av i boksen ved sidan av ho og klikk på «Legg t
 Når du merkar eller fjernar merking av fleire sider, kan du halde nede «Shift»-knappen for å velge boksar som kjem etter kvarandre ved å trykke på den siste av sidene du vil merke.',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -735,7 +735,7 @@ $messages['pdc'] = array(
 	'watchsubpages-addtitles' => 'Blatt dezu duh',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  * @author Wpedzich
  */
@@ -778,7 +778,7 @@ $messages['ps'] = array(
 	'watchsubpages-desc' => 'په چټکۍ سره دې د يو مخ [[Special:WatchSubpages|ټول وړوکي مخونه]] کتنلړليک ته ورګډ شي',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -794,7 +794,7 @@ Para adicionar uma página, marque a caixa junto a esta, e clique "{{int:watchsu
 Quando marca ou desmarca várias páginas, se premir a tecla "Shift" pode seleccionar caixas de marcação consecutivas, clicando em cada extremo do intervalo a seleccionar.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  */
@@ -810,7 +810,7 @@ Para adicionar uma página, marque a caixa junto a esta, e clique "{{int:watchsu
 Quando marca ou desmarca várias páginas, se premir a tecla "Shift" pode selecionar caixas de marcação consecutivas, clicando em cada extremo do intervalo a selecionar.',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
@@ -819,7 +819,7 @@ $messages['ro'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Adaugă paginile la lista de urmărire',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Александр Сигачёв
  */
@@ -857,7 +857,7 @@ $messages['si'] = array(
 බහුගුණිත පිටු සලකුණු කිරීමේ දී හෝ නිසලකුණු කිරීමේදී,shift යතුර ඔබා ගෙන සිටීමෙන් සලකුණු කළ යුතු පරාසයේ අග ක්ලික් කර අනුගාමී සලකුණු කොටු තෝරා ගැනීමට ඉඩ ලබා දෙයි.',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -872,7 +872,7 @@ Stránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať s
 Pri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne.',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -887,7 +887,7 @@ Za dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-
 Ko označujete ali odznačujete več strani, vam držanje tipke shift omogoča izbrati zaporedje polj tako, da kliknete na vsak konec območja, ki ga želite označiti.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -898,7 +898,7 @@ $messages['sr-ec'] = array(
 	'watchsubpages-desc' => 'Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  */
@@ -934,7 +934,7 @@ $messages['su'] = array(
 Pikeun milih sakaligus sababaraha kaca anu noron, klik dina kaca panungtung anu noron bari nahan tombol shift.',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author M.M.S.
  * @author Sertion
@@ -1027,7 +1027,7 @@ Bir sayfa eklemek için, yanında kutuyu işaretleyin ve "Sayfa ekle" seçeneği
 Birden fazla sayfayı işaretlerken ya da işaretlerini kaldırırken, shift tuşuna basmak seçilecek aralığın iki ucuna tıklamak suretiyle size kutuları hızlıca seçme imkanı vermektedir.',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -1090,7 +1090,7 @@ $messages['zh-cn'] = array(
 	'watchsubpages-addtitlestowatchlist' => '增加页面到监视列表',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Gaoxuewei
  */
 $messages['zh-hans'] = array(
@@ -1101,7 +1101,7 @@ $messages['zh-hans'] = array(
 	'watchsubpages-desc' => '快速[[Special:WatchSubpages|添加所有的子页]]到监视列表',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Liangent
  * @author Wrightbus
  */
