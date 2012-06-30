@@ -23,6 +23,11 @@ $specialPageAliases['arz'] = array(
 	'WatchSubpages' => array( 'مراقبة_الصفح_الفرعيه' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'WatchSubpages' => array( 'উপপৃষ্ঠাসমূহ_চাওক' ),
+);
+
 /** Bosnian (bosanski) */
 $specialPageAliases['bs'] = array(
 	'WatchSubpages' => array( 'PratiPodstranice' ),
@@ -38,7 +43,7 @@ $specialPageAliases['diq'] = array(
 	'WatchSubpages' => array( 'BınpelaSeyrke' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'WatchSubpages' => array( 'Pódboki wobglědowaś' ),
 );
@@ -68,7 +73,7 @@ $specialPageAliases['frp'] = array(
 	'WatchSubpages' => array( 'Siuvre_les_sot-pâges', 'SiuvreLesSotPâges' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'WatchSubpages' => array( 'Vixiar_as_subpáxinas' ),
 );
@@ -88,7 +93,7 @@ $specialPageAliases['hr'] = array(
 	'WatchSubpages' => array( 'Prati_podstranice' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'WatchSubpages' => array( 'Podstrony wobkedźbować' ),
 );
