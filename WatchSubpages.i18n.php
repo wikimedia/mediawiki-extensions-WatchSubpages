@@ -100,7 +100,7 @@ P'añader una páxina, activa'l caxellu d'al llau, y calca n'\"{{int:watchsubpag
 Pa marcar o desmarcar múltiples páxines, si caltienes calcada la tecla de mayúscules podrás esbillar elementos consecutivos calcando nel postreru del rangu a marcar.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -246,7 +246,7 @@ $messages['diq'] = array(
 	'watchsubpages-addtitles' => 'Pela deke',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -368,7 +368,7 @@ $messages['frp'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Apondre des pâges a la lista de survelyence',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -426,7 +426,7 @@ $messages['hr'] = array(
 	'watchsubpages-desc' => 'Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na popis praćenja',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -835,7 +835,7 @@ $messages['ru'] = array(
 Чтобы отметить сразу несколько страниц, удерживая клавишу Shift, отметьте начальную и конечную страницы требуемой последовательности.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -951,7 +951,7 @@ För att lägga till en sida, markera rutan intill den och klicka på "{{int:wat
 När du markerar eller avmarkerar flera sidor, så kan du markera intilliggande rutor genom att hålla ner shift-tangenten och klicka på den första och sista rutan du vill markera.',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Lajsikonik
  */
 $messages['szl'] = array(
