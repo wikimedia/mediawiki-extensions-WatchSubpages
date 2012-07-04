@@ -85,7 +85,7 @@ $specialPageAliases['gsw'] = array(
 
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
-	'WatchSubpages' => array( 'ઉપપાનાઓ જુઓ' ),
+	'WatchSubpages' => array( 'ઉપપાનાઓ_જુઓ' ),
 );
 
 /** Croatian (hrvatski) */
