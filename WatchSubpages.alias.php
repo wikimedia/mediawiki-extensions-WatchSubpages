@@ -205,7 +205,7 @@ $specialPageAliases['th'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'WatchSubpages' => array( 'Bantayan ang kabahaging mga pahina' ),
+	'WatchSubpages' => array( 'Bantayan_ang_kabahaging_mga_pahina' ),
 );
 
 /** Turkish (Türkçe) */
