@@ -660,8 +660,7 @@ $messages['nah'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Tiquincēntilīz zāzanilli motlachiyalizhuīc',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -1042,7 +1041,7 @@ Par zontar na pàxena, spunta la casèla in parte de éla, e struca "Zonta pàxe
 Co te spunti o te cavi la spunta a tante pàxene, tegnendo macà el majuscolo te podi selessionar dele casèle consecutive spuntando la prima e l\'ùltima de lore.',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
