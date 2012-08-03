@@ -727,6 +727,15 @@ Per apondre una pagina, marcatz la casa aprèp ela, e clicatz « Apondre de pagi
 Per marcar o desmarcar mai d'una pagina, lo fach de téner quichada la tòca « Majuscula » permet de seleccionar tota una seria de casa en clicant de part e d’autra de la rengada de seleccionar.",
 );
 
+/** Pampanga (Kapampangan)
+ * @author Val2397
+ */
+$messages['pam'] = array(
+	'watchsubpages-addedtowatchlist' => 'Deng makatuki miragdag la kareng kekang babanten',
+	'watchsubpages-addtitles' => 'Idagdag la reng bulung',
+	'watchsubpages-addtitlestowatchlist' => 'Idagdag la reng bulung kareng babaten',
+);
+
 /** Deitsch (Deitsch)
  * @author Xqt
  */
