@@ -182,8 +182,10 @@ Quan marqueu o desmarqueu múltiples pàgines, si manteniu polsada la tecla de m
 
 /** Sorani Kurdish (کوردی)
  * @author Marmzok
+ * @author Muhammed taha
  */
 $messages['ckb'] = array(
+	'watchsubpages' => 'چاودێری ژێرپەڕەکان بکە',
 	'watchsubpages-addedtowatchlist' => 'ئه‌مانه‌ی خواره‌وه‌ زیاد کرا سه‌ر‌ لیستی چاودێریه‌که‌ت.',
 	'watchsubpages-addtitles' => 'زیاد کردنی لاپه‌ڕه‌کان',
 	'watchsubpages-addtitlestowatchlist' => 'زیاد کردنی لاپه‌ڕه‌کان بۆ لیستی چاودێری',
