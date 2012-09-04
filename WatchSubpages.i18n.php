@@ -559,9 +559,18 @@ $messages['km'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'watchsubpages' => '하위 문서를 주시',
+	'watchsubpages-addedtowatchlist' => '다음을 주시문서 목록에 추가했습니다.',
+	'watchsubpages-addtitles' => '문서 추가',
+	'watchsubpages-addtitlestowatchlist' => '주시문서 목록에 문서 추가',
+	'watchsubpages-desc' => '빠르게 주시 문서 목록에 문서의 [[Special:WatchSubpages|모든 하위 문서 추가]]',
+	'watchsubpages-form' => '아래에 내 주시문서 목록에 추가할 문서를 선택하세요.
+문서를 추가하려면 옆에있는 상자를 선택하고 "{{int:watchsubpages-addtitles}}"를 클릭하세요.
+
+여러 문서를 선택하거나 선택 취소하려면 shift 키를 누른 채 선택할 범위의 양쪽 끝을 클릭하여 연속으로 확인란을 선택할 수 있습니다.',
 );
 
 /** Colognian (Ripoarisch)
