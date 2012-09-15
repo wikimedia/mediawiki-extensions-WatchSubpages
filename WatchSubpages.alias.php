@@ -120,7 +120,7 @@ $specialPageAliases['id'] = array(
 
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
-	'WatchSubpages' => array( 'サブページのウォッチ' ),
+	'WatchSubpages' => array( '下位ページのウォッチ', 'サブページのウォッチ' ),
 );
 
 /** Korean (한국어) */
