@@ -100,7 +100,7 @@ P'añader una páxina, activa'l caxellu d'al llau, y calca n'\"{{int:watchsubpag
 Pa marcar o desmarcar múltiples páxines, si caltienes calcada la tecla de mayúscules podrás esbillar elementos consecutivos calcando nel postreru del rangu a marcar.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -229,7 +229,7 @@ Um eine Seite hinzuzufügen, markiere die Kästchen neben den Einträgen und kli
 Beim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author The Evil IP address
  */
@@ -590,7 +590,7 @@ Wann de fädesch bes, klickß De op „{{int:watchsubpages-addtitles}}“
 Wann De en Aanzahl Sigge aam Stöck häß, woh de e Höksche draan maache udder et Höksche fotnämme wells, doh kanns De dat eijfach han. Klick eets op der Aanfang, un dann halld de Taß för op Jrußschreff ömzeschalde faß, un klick norr_enß op et Engk, ih dat De de Taß widder loß löhß. Dat schallt de Höksche en däm janze Bereisch öm.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -671,7 +671,7 @@ $messages['nah'] = array(
 	'watchsubpages-addtitlestowatchlist' => 'Tiquincēntilīz zāzanilli motlachiyalizhuīc',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -708,7 +708,7 @@ Selecteer de vakjes naast de paginanaam en klik op "{{int:watchsubpages-addtitle
 Om meerdere pagina\'s tegelijk te selecteren of te deselecteren, kunt u na het selecteren van de eerste pagina uit de lijst de laatste pagina selecteren terwijl u de shifttoets ingedrukt houdt.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -906,7 +906,7 @@ Za dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-
 Ko označujete ali odznačujete več strani, vam držanje tipke shift omogoča izbrati zaporedje polj tako, da kliknete na vsak konec območja, ki ga želite označiti.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -917,7 +917,7 @@ $messages['sr-ec'] = array(
 	'watchsubpages-desc' => 'Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  */
@@ -1109,7 +1109,7 @@ $messages['zh-cn'] = array(
 	'watchsubpages-addtitlestowatchlist' => '增加页面到监视列表',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Gaoxuewei
  */
 $messages['zh-hans'] = array(
@@ -1120,7 +1120,7 @@ $messages['zh-hans'] = array(
 	'watchsubpages-desc' => '快速[[Special:WatchSubpages|添加所有的子页]]到监视列表',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  * @author Wrightbus
  */
