@@ -25,6 +25,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Watch Guide Subpages',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WatchSubpages',
 	'descriptionmsg' => 'watchsubpages-desc',
+	'version' => '1.0',
 );
 
 // Set up the new special page

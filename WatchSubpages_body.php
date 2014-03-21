@@ -27,7 +27,7 @@ class WatchSubpages extends SpecialPage {
 			return;
 		}
 
-		
+
 
 		$namespace = $wgRequest->getInt( 'namespace' );
 		$guide = $wgRequest->getVal( 'guide' );
@@ -346,5 +346,9 @@ class WatchSubpages extends SpecialPage {
 		return '<li>'
 			. Xml::check( 'titles[]', true, array( 'value' => $title->getPrefixedText() ) )
 			. $link . ' (' . $wgLang->pipeList( $tools ) . ')' . '</li>';
+	}
+
+	protected function getGroupName() {
+		return 'pages';
 	}
 }
