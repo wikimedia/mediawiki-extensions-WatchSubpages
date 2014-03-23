@@ -22,9 +22,10 @@ EOT;
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'author' => '[http://www.strategywiki.org/wiki/User:Prod User:Prod]',
-	'name' => 'Watch Guide Subpages',
+	'name' => 'Watch Subpages',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WatchSubpages',
 	'descriptionmsg' => 'watchsubpages-desc',
+	'version' => '2.0',
 );
 
 // Set up the new special page
@@ -33,3 +34,4 @@ $wgExtensionMessagesFiles['WatchSubpages'] = $dir . 'WatchSubpages.i18n.php';
 $wgExtensionMessagesFiles['WatchSubpagesAlias'] = $dir . 'WatchSubpages.alias.php';
 $wgAutoloadClasses['WatchSubpages'] = $dir . 'WatchSubpages_body.php';
 $wgSpecialPages['WatchSubpages'] = 'WatchSubpages';
+$wgGroupPermissions['user']['watchsubpages'] = true;
