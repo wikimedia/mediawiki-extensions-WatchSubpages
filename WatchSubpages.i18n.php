@@ -28,11 +28,30 @@ When checking or unchecking multiple pages, holding the shift key allows you to 
 
 /** Message documentation (Message documentation)
  * @author Fryed-peach
+ * @author Prod
  * @author Purodha
  * @author Siebrand
  */
 $messages['qqq'] = array(
-	'watchsubpages-desc' => '{{desc}}',
+	'watchsubpages' => '{{doc-special|WatchSubpages}}',
+	'watchsubpagesprefix' => 'Used for the label of the input box of [[Special:WatchSubpages]]. All pages that begin with this string will be displayed.',
+	'watchsubpages-nochanges' => "If no changes are made, the user is informed that nothing was added to the user's watchlist.",
+	'watchsubpages-submit' => 'Text of submit button on [[Special:WatchSubpages]].  This button performs the change to the users watchlist.
+
+See also:
+* {{msg-mw|Watchsubpages-submit}}
+* {{msg-mw|Accesskey-watchsubpages-submit}}
+* {{msg-mw|Tooltip-watchsubpages-submit}}',
+	'tooltip-watchsubpages-submit' => '{{doc-accesskey|watchsubpages-submit}}
+See also:
+* {{msg-mw|Watchsubpages-submit}}
+* {{msg-mw|Accesskey-watchsubpages-submit}}
+* {{msg-mw|Tooltip-watchsubpages-submit}}',
+	'watchsubpages-legend' => 'Heading of dialogue box on [[Special:WatchSubpages]] that contains listing of subpages.',
+	'watchsubpages-desc' => '{{desc|name=WatchSubpages|url=https://www.mediawiki.org/wiki/Extension:WatchSubpages}}',
+	'watchsubpages-explain' => 'An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].
+
+Refers to {{msg-mw|Watchsubpages-submit}}.',
 );
 
 /** Gheg Albanian (Gegë)
@@ -188,7 +207,7 @@ $messages['ckb'] = array(
 کاتێ ده‌ته‌وێ چه‌ن لاپه‌ڕه‌ی به‌شوێن یه‌کدا هه‌ڵبژێریت یان له‌ هه‌ڵبژێراوی ده‌ریان بێنیت، به ڕاگرتنی دوگمه‌ی گوڕین (Shift) و کرته‌ کردن له‌ سه‌ر دوایین لاپه‌ڕه‌ ده‌توانی مارکی هه‌ڵبژاردنی چه‌ک باکس بۆ چه‌ن لاپه‌ڕه‌ پێکه‌وه‌ زیاد بکه‌ی یان بیسڕیته‌وه‌.',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Matěj Grabovský
  * @author Mormegil
  * @author Reaperman
@@ -205,13 +224,17 @@ Při označování nebo odznačování více stránek můžete držením kláves
 );
 
 /** German (Deutsch)
+ * @author Metalhead64
  * @author Raimond Spekking
  * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['de'] = array(
 	'watchsubpages' => 'Beobachte Unterseiten',
+	'watchsubpagesprefix' => 'Unterseiten anzeigen von:',
+	'watchsubpages-nochanges' => 'An deiner Beobachtungsliste wurden keine Änderungen durchgeführt.',
 	'watchsubpages-submit' => 'Seite hinzufügen',
+	'tooltip-watchsubpages-submit' => 'Seiten hinzufügen',
 	'watchsubpages-legend' => 'Seiten zur Beobachtungsliste hinzufügen',
 	'watchsubpages-desc' => 'Schnelles [[Special:WatchSubpages|Hinzufügen aller Unterseiten]] einer Seite zur Beobachtungsliste',
 	'watchsubpages-explain' => 'Wähle die Seiten aus, die deiner Beobachtungsliste hinzugefügt werden sollen.
@@ -269,11 +292,11 @@ $messages['el'] = array(
 $messages['eo'] = array(
 	'watchsubpages' => 'Atenti subpaĝojn',
 	'watchsubpages-submit' => 'Aldoni paĝojn',
-	'watchsubpages-submittowatchlist' => 'Aldoni paĝojn al atentaro',
 );
 
 /** Spanish (español)
  * @author Crazymadlover
+ * @author Edomato
  * @author Fluence
  * @author Locos epraix
  * @author Translationista
@@ -281,6 +304,7 @@ $messages['eo'] = array(
 $messages['es'] = array(
 	'watchsubpages' => 'Vigilar subpáginas',
 	'watchsubpages-submit' => 'Agregar páginas',
+	'tooltip-watchsubpages-submit' => 'Agregar páginas',
 	'watchsubpages-legend' => 'Agregar páginas a la lista de seguimiento',
 	'watchsubpages-desc' => 'Rápidamente [[Special:WatchSubpages|agregue todas las subpáginas]] de una página en la lista de vigilancia',
 	'watchsubpages-explain' => 'Seleccionar las páginas a añadir a su lista de seguimiento.
@@ -304,7 +328,6 @@ $messages['et'] = array(
 $messages['eu'] = array(
 	'watchsubpages' => 'Ikusi azpiorriak',
 	'watchsubpages-submit' => 'Gehitu orriak',
-	'watchsubpages-submittowatchlist' => 'Gehitu orriak jarraipen zerrendara',
 	'watchsubpages-desc' => 'Modu azkarrean [[Special:WatchSubpages|azpiorrialde guztiak erantsi]] jarraipen zerrendan',
 );
 
@@ -326,6 +349,7 @@ Kun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun
 
 /** French (français)
  * @author Crochet.david
+ * @author Gomoko
  * @author Grondin
  * @author Louperivois
  * @author Peter17
@@ -335,7 +359,10 @@ Kun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun
  */
 $messages['fr'] = array(
 	'watchsubpages' => 'Suivre les sous-pages',
+	'watchsubpagesprefix' => 'Afficher les sous-pages de :',
+	'watchsubpages-nochanges' => 'Aucune modification n’a été effectuée à votre liste de suivi.',
 	'watchsubpages-submit' => 'Ajouter des pages',
+	'tooltip-watchsubpages-submit' => 'Ajouter des pages',
 	'watchsubpages-legend' => 'Ajouter des pages à la liste de suivi',
 	'watchsubpages-desc' => 'Ajoute rapidement [[Special:WatchSubpages|toutes les sous-pages]] d’une page à la liste de suivi',
 	'watchsubpages-explain' => 'Sélectionnez les pages à ajouter à votre liste de suivi ci-dessous.
@@ -389,7 +416,6 @@ Wänn Du vyyl Syte witt iberneh, no heb d Shift-Taschte un druck uf s Chäschtli
 $messages['he'] = array(
 	'watchsubpages' => 'מעקב אחרי דפי המשנה',
 	'watchsubpages-submit' => 'הוספת דפים',
-	'watchsubpages-submittowatchlist' => 'הוספת הדפים לרשימת המעקב',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|הוספה מהירה של כל דפי המשנה]] של דף מסוים לרשימת המעקב',
 	'watchsubpages-explain' => 'נא לבחור להלן את הדפים להוספה לרשימת המעקב שלך.
 על מנת להוסיף דף, יש לסמן את התיבה שלידו וללחוץ על "{{int:watchsubpages-submit}}".
@@ -442,7 +468,6 @@ Több lap kijelölésekor a shift gomb lenyomásával egyszerre kijelölheted az
 $messages['ia'] = array(
 	'watchsubpages' => 'Observar subpaginas',
 	'watchsubpages-submit' => 'Adder paginas',
-	'watchsubpages-submittowatchlist' => 'Adder paginas al observatorio',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Adder rapidemente tote le subpaginas]] de un pagina al observatorio',
 	'watchsubpages-explain' => 'Selige le paginas a adder a tu observatorio hic infra.
 Pro adder un pagina, marca le quadrato juxta illo, e clicca super "{{int:watchsubpages-submit}}".
@@ -466,13 +491,14 @@ Ketika menandai beberapa halaman sekaligus, dengan menekan tombol "Shift" Anda d
 );
 
 /** Italian (italiano)
+ * @author Beta16
  * @author Darth Kule
  * @author HalphaZ
  */
 $messages['it'] = array(
 	'watchsubpages' => 'Segui sottopagine',
 	'watchsubpages-submit' => 'Aggiungi pagine',
-	'watchsubpages-legend' => 'Aggiungi pagine agli Osservati Speciali',
+	'watchsubpages-legend' => 'Aggiungi pagine agli osservati speciali',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Aggiunge rapidamente tutte le sottopagine]] di una pagina agli Osservati Speciali',
 	'watchsubpages-explain' => 'Selezionare le pagine di seguito da aggiungere ai propri osservati speciali.
 Per aggiungere una pagina, selezionare la casella accanto a essa e fare clic su "{{int:watchsubpages-submit}}".
@@ -573,6 +599,7 @@ $messages['ku-latn'] = array(
 $messages['lb'] = array(
 	'watchsubpages' => 'Ënner-Säiten iwwerwaachen',
 	'watchsubpages-submit' => 'Säiten derbäisetzen',
+	'tooltip-watchsubpages-submit' => 'Säiten derbäisetzen',
 	'watchsubpages-legend' => "Säiten op d'Iwwerwaachungslëscht derbäisetzen",
 	'watchsubpages-desc' => "Séier [[Special:WatchSubpages|all Ënner-Säiten]] vun enger Säit op d'Iwwerwwachungslëscht derbäisetzen",
 	'watchsubpages-explain' => 'Wielt hei ënnendrënner déi Säiten eraus déi Dir op Är Iwwerwaachungslëscht derbäisetze wëllt.
@@ -586,7 +613,10 @@ Fir méi Säite mateneen unzewielen oder ze desaktivéieren, kënnt Dir d\'Shift
  */
 $messages['mk'] = array(
 	'watchsubpages' => 'Набљудувај потстраници',
+	'watchsubpagesprefix' => 'Прикажи потстраници на:',
+	'watchsubpages-nochanges' => 'Не се направени промени во набљудуваните.',
 	'watchsubpages-submit' => 'Додај страници',
+	'tooltip-watchsubpages-submit' => 'Додај страници',
 	'watchsubpages-legend' => 'Додај страници кон списокот на набљудувања',
 	'watchsubpages-desc' => 'Брзо [[Special:WatchSubpages|додавање на сите потстраници]] на една страница кон списокот на набљудувања',
 	'watchsubpages-explain' => 'Изберете ги страниците за додавање кон вашиот список на набљудувања.
@@ -628,7 +658,7 @@ Untuk menambahkan laman, tandai petak di sebelahnya, kemudian klik "{{int:watchs
 Semasa menandai berbilang laman sekaligus, dengan menekan kekunci "Shift" anda dapat menandai beberapa laman yang berurutan sekaligus.',
 );
 
-/** Nahuatl (Nāhuatl)
+/** Nāhuatl (Nāhuatl)
  * @author Fluence
  */
 $messages['nah'] = array(
@@ -636,7 +666,7 @@ $messages['nah'] = array(
 	'watchsubpages-legend' => 'Tiquincēntilīz zāzanilli motlachiyalizhuīc',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -671,7 +701,7 @@ Selecteer de vakjes naast de paginanaam en klik op "{{int:watchsubpages-submit}}
 Om meerdere pagina\'s tegelijk te selecteren of te deselecteren, kunt u na het selecteren van de eerste pagina uit de lijst de laatste pagina selecteren terwijl u de shifttoets ingedrukt houdt.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -757,10 +787,14 @@ $messages['ps'] = array(
 /** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
+ * @author Ntunzine
  */
 $messages['pt'] = array(
 	'watchsubpages' => 'Vigiar subpáginas',
+	'watchsubpagesprefix' => 'Apresentar subpáginas de:',
+	'watchsubpages-nochanges' => 'Não foram feitas alterações a sua lista de páginas vigiadas.',
 	'watchsubpages-submit' => 'Adicionar páginas',
+	'tooltip-watchsubpages-submit' => 'Adicionar páginas',
 	'watchsubpages-legend' => 'Adicionar páginas à lista de páginas vigiadas',
 	'watchsubpages-desc' => 'Rapidamente [[Special:WatchSubpages|adicione todas as subpáginas]] de uma página à sua lista de páginas vigiadas',
 	'watchsubpages-explain' => 'Seleccione as páginas para adicionar à sua lista de páginas vigiadas abaixo.
@@ -776,7 +810,6 @@ Quando marca ou desmarca várias páginas, se premir a tecla "Shift" pode selecc
 $messages['pt-br'] = array(
 	'watchsubpages' => 'Vigiar subpáginas',
 	'watchsubpages-submit' => 'Adicionar páginas',
-	'watchsubpages-submittowatchlist' => 'Adicionar páginas à lista de páginas vigiadas',
 	'watchsubpages-desc' => 'Rapidamente [[Special:WatchSubpages|adicione todas as subpáginas]] de uma página à sua lista de páginas vigiadas',
 	'watchsubpages-explain' => 'Selecione as páginas para adicionar à sua lista de páginas vigiadas abaixo.
 Para adicionar uma página, marque a caixa junto a esta, e clique "{{int:watchsubpages-submit}}".
@@ -795,11 +828,15 @@ $messages['ro'] = array(
 
 /** Russian (русский)
  * @author Ferrer
+ * @author Okras
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'watchsubpages' => 'Следить за подстраницами',
+	'watchsubpagesprefix' => 'Отобразить подстраницы, относящиеся к:',
+	'watchsubpages-nochanges' => 'Изменений в список наблюдения внесено не было.',
 	'watchsubpages-submit' => 'Добавить страницы',
+	'tooltip-watchsubpages-submit' => 'Добавить страницы',
 	'watchsubpages-legend' => 'Добавить страницы в список наблюдения',
 	'watchsubpages-desc' => 'Позволяет быстро [[Special:WatchSubpages|добавить все подстраницы]] некоторой страницы в список наблюдения',
 	'watchsubpages-explain' => 'Выберите страницы, которые вы желаете добавить в свой список наблюдения.
@@ -849,7 +886,6 @@ Pri označovaní alebo odznačovaní viacerých stránok môžete držaním klá
 $messages['sl'] = array(
 	'watchsubpages' => 'Opazuj podstrani',
 	'watchsubpages-submit' => 'Dodaj strani',
-	'watchsubpages-submittowatchlist' => 'Dodaj strani na spisek nadzorov',
 	'watchsubpages-desc' => 'Hitro [[Special:WatchSubpages|doda vse podstrani]] izbrane strani na spisek nadzorov',
 	'watchsubpages-explain' => 'Spodaj izberite strani, ki jih želite dodati na vaš spisek nadzorov.
 Za dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-submit}}«.
@@ -906,11 +942,15 @@ Pikeun milih sakaligus sababaraha kaca anu noron, klik dina kaca panungtung anu 
  * @author Boivie
  * @author M.M.S.
  * @author Sertion
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'watchsubpages' => 'Bevaka undersidor',
+	'watchsubpagesprefix' => 'Visa undersidor för:',
+	'watchsubpages-nochanges' => 'Inga ändringar har gjorts i din bevakningslista.',
 	'watchsubpages-submit' => 'Lägg till sidor',
-	'watchsubpages-submittowatchlist' => 'Lägg till sidor till bevakningslista',
+	'tooltip-watchsubpages-submit' => 'Lägg till sidor',
+	'watchsubpages-legend' => 'Lägg till sidor i bevakningslistan',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Lägg till alla undersidor]] för en sida till bevakningslistan',
 	'watchsubpages-explain' => 'Välj sidorna du önskar lägga till i din bevakningslista.
 För att lägga till en sida, markera rutan intill den och klicka på "{{int:watchsubpages-submit}}".
@@ -988,6 +1028,23 @@ $messages['tr'] = array(
 Bir sayfa eklemek için, yanında kutuyu işaretleyin ve "Sayfa ekle" seçeneğine tıklayın.
 
 Birden fazla sayfayı işaretlerken ya da işaretlerini kaldırırken, shift tuşuna basmak seçilecek aralığın iki ucuna tıklamak suretiyle size kutuları hızlıca seçme imkanı vermektedir.',
+);
+
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'watchsubpages' => 'Дивитися підсторінки',
+	'watchsubpagesprefix' => 'Відображення вкладених сторінок з:',
+	'watchsubpages-nochanges' => 'Зміни не внесено до списку спостереження.',
+	'watchsubpages-submit' => 'Додати сторінки',
+	'tooltip-watchsubpages-submit' => 'Додати сторінки',
+	'watchsubpages-legend' => 'Додати сторінки у список спостереження',
+	'watchsubpages-desc' => 'Дозволяє швидко [[Special:WatchSubpages|додати всі підсторінки]] деякої сторінки в список спостереження',
+	'watchsubpages-explain' => 'Виберіть сторінки, які ви бажаєте додати в свій список спостереження.
+Щоб додати сторінку, поставте позначку біля неї і натисніть «{{int:watchsubpages-submit}}».
+
+Щоб відзначити відразу кілька сторінок, утримуючи клавішу Shift, позначте початкову і кінцеву сторінки необхідної послідовності.',
 );
 
 /** vèneto (vèneto)
@@ -1070,4 +1127,3 @@ $messages['zh-hant'] = array(
 	'watchsubpages-legend' => '增加頁面至監視清單',
 	'watchsubpages-desc' => '快速[[Special:WatchSubpages|添加所有的子頁]]到監視列表',
 );
-

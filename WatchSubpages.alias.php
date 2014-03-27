@@ -5,6 +5,7 @@
  * @file
  * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
@@ -23,7 +24,7 @@ $specialPageAliases['arz'] = array(
 	'WatchSubpages' => array( 'مراقبة_الصفح_الفرعيه' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'WatchSubpages' => array( 'উপপৃষ্ঠাসমূহ_চাওক' ),
 );
@@ -153,12 +154,12 @@ $specialPageAliases['mr'] = array(
 	'WatchSubpages' => array( 'उपपृष्ठेबघा' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'WatchSubpages' => array( 'Overvåk_undersider' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'WatchSubpages' => array( 'Subpagina\'s_op_volglieste' ),
 );
