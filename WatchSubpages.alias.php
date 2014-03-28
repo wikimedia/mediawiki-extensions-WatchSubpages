@@ -218,3 +218,8 @@ $specialPageAliases['tr'] = array(
 $specialPageAliases['vi'] = array(
 	'WatchSubpages' => array( 'Theo_dõi_trang_phụ' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'WatchSubpages' => array( '监视子页面' ),
+);

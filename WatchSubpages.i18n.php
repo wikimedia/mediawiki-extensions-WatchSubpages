@@ -341,10 +341,10 @@ $messages['fi'] = array(
 	'watchsubpages-submit' => 'Lisää sivut',
 	'watchsubpages-legend' => 'Lisää sivut tarkkailulistalle',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Lisää kaikki sivun alasivut]] tarkkailulistalle.',
-	'watchsubpages-explain' => 'Valitse tarkkailulistallesi lisättävä sivut alta.
-Lisätäksesi sivun, valitse sen vieressä oleva laatikko ja napsauta ”{{int:watchsubpages-submit}}”.
+	'watchsubpages-explain' => 'Valitse tarkkailulistallesi lisättävä sivut alta napsauttamalla niiden vieressä olevaa valintaruutua.
+Napsauta lopuksi ”{{int:watchsubpages-submit}}”.
 
-Kun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun valita peräkkäisiä laatikoita napsauttamalla vain ensimmäisen ja viimeisen laatikon.',
+Kun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun valita peräkkäisiä valintaruutuja napsauttamalla vain ensimmäisen ja viimeisen valintaruudun.',
 );
 
 /** French (français)
@@ -851,6 +851,21 @@ $messages['ru'] = array(
 $messages['rue'] = array(
 	'watchsubpages-submit' => 'Придати сторінкы',
 	'watchsubpages-legend' => 'Придати сторінкы до списку слїдованых сторінок',
+);
+
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'watchsubpagesprefix' => 'Displey subpages o:',
+	'watchsubpages-nochanges' => 'Nae chynges hae been dun til yer watchleet.',
+	'watchsubpages-submit' => 'Eik pages',
+	'tooltip-watchsubpages-submit' => 'Eik pages',
+	'watchsubpages-legend' => 'Eik pages til watchleet',
+	'watchsubpages-explain' => 'Select the pages tae eik til yer watchleet ablo.
+Tae eik ae page, check the kist nex til it, n clap "{{int:watchsubpages-submit}}".
+
+Whan checkin or oncheckin monie pages, haudin the shift key permits ye tae select consecuteeve checkkists bi clapin ilka end o the range tae be checkt.',
 );
 
 /** Sinhala (සිංහල)
