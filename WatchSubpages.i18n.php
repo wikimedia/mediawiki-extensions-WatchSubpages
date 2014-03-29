@@ -384,14 +384,16 @@ $messages['frp'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'watchsubpages' => 'Vixiar as subpáxinas',
+	'watchsubpages' => 'Vixiar subpáxinas',
+	'watchsubpagesprefix' => 'Mostrar as subpáxinas de:',
+	'watchsubpages-nochanges' => 'Non se fixeron cambios nas páxinas que vixía.',
 	'watchsubpages-submit' => 'Engadir as páxinas',
-	'watchsubpages-legend' => 'Engadir as páxinas á lista de vixilancia',
+	'watchsubpages-legend' => 'Engadir páxinas á lista de vixilancia',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Engadir rapidamente todas as subpáxinas]] dunha páxina á lista de vixilancia',
 	'watchsubpages-explain' => 'Seleccione a continuación as páxinas que queira engadir á súa lista de vixilancia.
 Para engadir unha páxina, marque a caixa que está ao seu carón e prema en "{{int:watchsubpages-submit}}".
 
-Para marcar ou deixar de marcar un feixe de páxinas, só ten que premer na tecla "Maiúsculas", e isto permitiralle seleccionar caixas consecutivas con só facer clic ao final do grupo.',
+Para marcar ou desmarcar un feixe de páxinas, prema a tecla Maiús. para seleccionar caixas consecutivas con só facer clic ao final do grupo.',
 );
 
 /** Swiss German (Alemannisch)
@@ -766,9 +768,9 @@ Jeśli chcesz wybrać więcej niż jedną stronę, możesz posłużyć się klaw
 $messages['pms'] = array(
 	'watchsubpages' => "Ten d'euj le sotpàgine",
 	'watchsubpages-submit' => 'Gionta le pàgine',
-	'watchsubpages-legend' => "Gionta le pàgine a lòn ch'it ten-e sot euj",
+	'watchsubpages-legend' => "Gionté dle pàgine a lòn ch'a ten sot-euj",
 	'watchsubpages-desc' => "[[Special:WatchSubpages|Gionta an pressa tute le sotpàgine]] ëd na pàgina a lòn ch'it ten-e sot euj.",
-	'watchsubpages-explain' => 'Ch\'a selession-a le pàgine da gionté a lòn ch\'a ten sot euj.
+	'watchsubpages-explain' => 'Ch\'a selession-a le pàgine da gionté a lòn ch\'a ten sot-euj.
 Për gionté na pàgina, marché la casela da banda ëd chila, e sgnaché "{{int:watchsubpages-submit}}".
 
 Quand ch\'a selession-a o a desselession-a vàire pàgine, sgnaché la ciav "Majùscole" a-j përmët ëd selessioné ëd casele consecutive, sgnacand inissi e fin dl\'antërval da marché.',
@@ -819,11 +821,12 @@ Quando marca ou desmarca várias páginas, se premir a tecla "Shift" pode seleci
 
 /** Romanian (română)
  * @author KlaudiuMihaila
+ * @author Minisarm
  */
 $messages['ro'] = array(
 	'watchsubpages' => 'Urmărește subpaginile',
 	'watchsubpages-submit' => 'Adaugă pagini',
-	'watchsubpages-legend' => 'Adaugă paginile la lista de urmărire',
+	'watchsubpages-legend' => 'Adăugare pagini la lista de pagini urmărite',
 );
 
 /** Russian (русский)
