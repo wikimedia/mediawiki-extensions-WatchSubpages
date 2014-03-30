@@ -109,7 +109,10 @@ $messages['arz'] = array(
  */
 $messages['ast'] = array(
 	'watchsubpages' => 'Vixilar subpáxines',
+	'watchsubpagesprefix' => 'Amosar les subpáxines de:',
+	'watchsubpages-nochanges' => 'Nun se ficieron cambios na so llista de vixilancia.',
 	'watchsubpages-submit' => 'Añader páxines',
+	'tooltip-watchsubpages-submit' => 'Amestar páxines',
 	'watchsubpages-legend' => 'Añader páxines a la llista de vixilancia',
 	'watchsubpages-desc' => "Añade rápidamente [[Special:WatchSubpages|toles subpáxines]] d'una páxina a la llista de vixilancia",
 	'watchsubpages-explain' => "Escueyi embaxo les páxines p'añader a la to llista de vixilancia.
@@ -191,6 +194,15 @@ $messages['ca'] = array(
 Per a afegir una pàgina, marqueu la casella de selecció del costat i feu clic a «{{int:watchsubpages-addtitles}}».
 
 Quan marqueu o desmarqueu múltiples pàgines, si manteniu polsada la tecla de majúscules podreu seleccionar caselles consecutives clicant l'última del rang a ser marcat.",
+);
+
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'watchsubpages-submit' => 'ТӀетоха агӀонаш',
+	'tooltip-watchsubpages-submit' => 'ТӀетоха агӀонаш',
+	'watchsubpages-legend' => 'Тергаме могӀанан тӀетоха агӀонаш',
 );
 
 /** Sorani Kurdish (کوردی)
@@ -388,6 +400,7 @@ $messages['gl'] = array(
 	'watchsubpagesprefix' => 'Mostrar as subpáxinas de:',
 	'watchsubpages-nochanges' => 'Non se fixeron cambios nas páxinas que vixía.',
 	'watchsubpages-submit' => 'Engadir as páxinas',
+	'tooltip-watchsubpages-submit' => 'Engadir as páxinas',
 	'watchsubpages-legend' => 'Engadir páxinas á lista de vixilancia',
 	'watchsubpages-desc' => '[[Special:WatchSubpages|Engadir rapidamente todas as subpáxinas]] dunha páxina á lista de vixilancia',
 	'watchsubpages-explain' => 'Seleccione a continuación as páxinas que queira engadir á súa lista de vixilancia.
@@ -723,6 +736,7 @@ Når du merkar eller fjernar merking av fleire sider, kan du halde nede «Shift�
 $messages['oc'] = array(
 	'watchsubpages' => 'Observar las sospaginas',
 	'watchsubpages-submit' => 'Apondre de paginas',
+	'tooltip-watchsubpages-submit' => 'Apondre de paginas',
 	'watchsubpages-legend' => 'Apondre de paginas a la lista de seguiment',
 	'watchsubpages-desc' => 'Apondre rapidament [[Special:WatchSubpages|totas las sospaginas]] a la tièra de seguit.',
 	'watchsubpages-explain' => "Seleccionar las paginas d'apondre a vòstra lista de seguiment çaijós.
