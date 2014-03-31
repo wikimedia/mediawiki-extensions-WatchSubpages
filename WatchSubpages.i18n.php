@@ -1141,9 +1141,11 @@ $messages['zh-cn'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Gaoxuewei
+ * @author Liuxinyu970226
  */
 $messages['zh-hans'] = array(
 	'watchsubpages' => '监视子页',
+	'watchsubpagesprefix' => '显示子页面：',
 	'watchsubpages-submit' => '增加页面',
 	'watchsubpages-legend' => '增加页面到监视列表',
 	'watchsubpages-desc' => '快速[[Special:WatchSubpages|添加所有的子页]]到监视列表',
