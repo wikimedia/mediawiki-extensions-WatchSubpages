@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "McDutchie"
+        ]
+    },
+    "watchsubpages": "Observar subpaginas",
+    "watchsubpages-submit": "Adder paginas",
+    "watchsubpages-desc": "[[Special:WatchSubpages|Adder rapidemente tote le subpaginas]] de un pagina al observatorio",
+    "watchsubpages-explain": "Selige le paginas a adder a tu observatorio hic infra.\nPro adder un pagina, marca le quadrato juxta illo, e clicca super \"{{int:watchsubpages-submit}}\".\n\nSi tu vole marcar o dismarcar plure paginas, tu pote tener premite le clave Shift pro seliger quadratos consecutive, cliccante super cata extremitate del intervallo a marcar."
+}

@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Eduardo.mps",
+            "Giro720"
+        ]
+    },
+    "watchsubpages": "Vigiar subpáginas",
+    "watchsubpages-submit": "Adicionar páginas",
+    "watchsubpages-desc": "Rapidamente [[Special:WatchSubpages|adicione todas as subpáginas]] de uma página à sua lista de páginas vigiadas",
+    "watchsubpages-explain": "Selecione as páginas para adicionar à sua lista de páginas vigiadas abaixo.\nPara adicionar uma página, marque a caixa junto a esta, e clique \"{{int:watchsubpages-submit}}\".\n\nQuando marca ou desmarca várias páginas, se premir a tecla \"Shift\" pode selecionar caixas de marcação consecutivas, clicando em cada extremo do intervalo a selecionar."
+}

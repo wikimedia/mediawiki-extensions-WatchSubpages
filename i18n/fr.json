@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Crochet.david",
+            "Gomoko",
+            "Grondin",
+            "Louperivois",
+            "Peter17",
+            "PieRRoMaN",
+            "Urhixidur",
+            "Verdy p"
+        ]
+    },
+    "watchsubpages": "Suivre les sous-pages",
+    "watchsubpagesprefix": "Afficher les sous-pages de :",
+    "watchsubpages-nochanges": "Aucune modification n’a été effectuée à votre liste de suivi.",
+    "watchsubpages-submit": "Ajouter des pages",
+    "tooltip-watchsubpages-submit": "Ajouter des pages",
+    "watchsubpages-legend": "Ajouter des pages à la liste de suivi",
+    "watchsubpages-desc": "Ajoute rapidement [[Special:WatchSubpages|toutes les sous-pages]] d’une page à la liste de suivi",
+    "watchsubpages-explain": "Sélectionnez les pages à ajouter à votre liste de suivi ci-dessous.\nPour ajouter une page, cocher la case correspondante, et cliquez sur « {{int:watchsubpages-submit}} ».\n\nPour cocher ou décocher plusieurs pages, maintenir enfoncée la touche « Majuscule » vous permet de sélectionner des cases à cocher adjacentes en cliquant à chaque extrémité du groupe à cocher."
+}

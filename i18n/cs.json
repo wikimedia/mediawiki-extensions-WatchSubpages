@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matěj Grabovský",
+            "Mormegil",
+            "Reaperman"
+        ]
+    },
+    "watchsubpages": "Sledovat podstránky",
+    "watchsubpages-submit": "Přidat stránky",
+    "watchsubpages-legend": "Přidat stránky do seznamu sledovaných",
+    "watchsubpages-desc": "Rychle [[Special:WatchSubpages|přidat všechny podstránky]] stránky do seznamu sledovaných",
+    "watchsubpages-explain": "Vyberte stránky, které chcete přidat do svého seznamu sledovaných stránek.\nStránku přidáte tak, že zaškrtnete její políčko a kliknete na „{{int:watchsubpages-submit}}“.\n\nPři označování nebo odznačování více stránek můžete držením klávesy Shift a kliknutím na začátek a konec rozsahu vybrat více po sobě jdoucích polí současně."
+}

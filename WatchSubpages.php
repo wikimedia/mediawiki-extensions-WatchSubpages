@@ -25,11 +25,12 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Watch Subpages',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WatchSubpages',
 	'descriptionmsg' => 'watchsubpages-desc',
-	'version' => '2.0',
+	'version' => '2.1.0',
 );
 
 // Set up the new special page
 $dir = dirname( __FILE__ ) . '/';
+$wgMessagesDirs['WatchSubpages'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['WatchSubpages'] = $dir . 'WatchSubpages.i18n.php';
 $wgExtensionMessagesFiles['WatchSubpagesAlias'] = $dir . 'WatchSubpages.alias.php';
 $wgAutoloadClasses['WatchSubpages'] = $dir . 'WatchSubpages_body.php';

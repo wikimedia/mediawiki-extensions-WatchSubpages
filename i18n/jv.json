@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Pras"
+        ]
+    },
+    "watchsubpages": "Awasi anak kaca (''sub pages'')",
+    "watchsubpages-submit": "Tambah kaca",
+    "watchsubpages-legend": "Tambah kaca ing dhaftar pangawasan",
+    "watchsubpages-desc": "Kanthi cepet [[Special:WatchSubpages|nambahaké kabèh anak kaca]] menyang dhaftar pangawasan",
+    "watchsubpages-explain": "Pilih kaca sing bakal ditambahaké menyang kaca pangawasan panjenengan ing ngisor.\nKanggo nambahaké kaca, tandhani kothak ing sisihé, lan klik \"Tambah kaca\".\n\nNalika nandhani utawa mbatalaké tandha luwih saka siji kaca, nahan tombol ''shift'' marakaké panjenengan bisa nandhani kothak-kothak tandha (''checkboxes'') kanthi ngeklik ing pinggir-pinggir cakupan (''range'')"
+}

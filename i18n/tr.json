@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Vito Genovese"
+        ]
+    },
+    "watchsubpages": "Altsayfaları izle",
+    "watchsubpages-submit": "Sayfa ekle",
+    "watchsubpages-legend": "Sayfaları izleme listesine ekle",
+    "watchsubpages-desc": "Bir sayfanın tüm altsayfalarını hızlı bir şekilde izleme listesine [[Special:WatchSubpages|ekler]]",
+    "watchsubpages-explain": "Aşağıdan izleme listenize eklenecek sayfaları seçin.\nBir sayfa eklemek için, yanında kutuyu işaretleyin ve \"Sayfa ekle\" seçeneğine tıklayın.\n\nBirden fazla sayfayı işaretlerken ya da işaretlerini kaldırırken, shift tuşuna basmak seçilecek aralığın iki ucuna tıklamak suretiyle size kutuları hızlıca seçme imkanı vermektedir."
+}

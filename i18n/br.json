@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Fulup"
+        ]
+    },
+    "watchsubpages": "Evezhiañ an ispajennoù",
+    "watchsubpages-submit": "Ouzhpennañ pajennoù",
+    "watchsubpages-legend": "Ouzhpennañ pajennoù d'ar roll evezhiañ",
+    "watchsubpages-desc": "Ouzhpennañ a ra fonnus [[Special:WatchSubpages|holl ispajennoù]] ur bajenn d'ar roll evezhiañ",
+    "watchsubpages-explain": "Dibabit a-is ar pajennoù da vezañ ouzhpennet d'ho roll evezhiañ.\nEvit ouzhpennañ ur bajenn, klikit ouzh ar voest zo e-kichenik, ha klikit war \"{{int:watchsubpages-addtitles}}\".\n\nEvit askañ pe diaskañ meur a bajenn war un dro e c'hallit derc'hel da bouezañ war ar stokell \"pennlizherenn\" en ur glikañ en daou benn d'ar strollad logoù zo da vezañ asket."
+}

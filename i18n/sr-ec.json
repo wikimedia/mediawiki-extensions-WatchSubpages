@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rancher",
+            "Sasa Stefanovic",
+            "Михајло Анђелковић"
+        ]
+    },
+    "watchsubpages": "Надгледај подстранице",
+    "watchsubpages-submit": "Додај странице",
+    "watchsubpages-desc": "Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања"
+}

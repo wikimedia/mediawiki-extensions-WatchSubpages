@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Metalhead64",
+            "Raimond Spekking",
+            "The Evil IP address",
+            "Umherirrender"
+        ]
+    },
+    "watchsubpages": "Beobachte Unterseiten",
+    "watchsubpagesprefix": "Unterseiten anzeigen von:",
+    "watchsubpages-nochanges": "An deiner Beobachtungsliste wurden keine Änderungen durchgeführt.",
+    "watchsubpages-submit": "Seite hinzufügen",
+    "tooltip-watchsubpages-submit": "Seiten hinzufügen",
+    "watchsubpages-legend": "Seiten zur Beobachtungsliste hinzufügen",
+    "watchsubpages-desc": "Schnelles [[Special:WatchSubpages|Hinzufügen aller Unterseiten]] einer Seite zur Beobachtungsliste",
+    "watchsubpages-explain": "Wähle die Seiten aus, die deiner Beobachtungsliste hinzugefügt werden sollen.\nUm eine Seite hinzuzufügen, markiere die Kästchen neben den Einträgen und klicke auf „{{int:watchsubpages-submit}}“.\n\nBeim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen."
+}
