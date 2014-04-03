@@ -8,7 +8,8 @@
         ]
     },
     "watchsubpages": "下位ページをウォッチ",
-    "watchsubpages-submit": "ページの追加",
+    "watchsubpages-submit": "ページを追加",
+    "tooltip-watchsubpages-submit": "ページを追加",
     "watchsubpages-legend": "ページ群をウォッチリストに追加",
     "watchsubpages-desc": "ウォッチリストに素早く、あるページの[[Special:WatchSubpages|すべての下位ページを追加する]]",
     "watchsubpages-explain": "ウォッチリストに加えたいページを以下で選んでください。ページを追加するには、隣のボックスにチェックをいれて、「{{int:watchsubpages-submit}}」をクリックしてください。\n\n複数のページをチェックあるいはチェック解除する場合は、シフトキーを押しながら、選択する範囲の始点と終点のチェックボックスをクリックすることで、その範囲の連続するすべてのボックスを選択できます。"
