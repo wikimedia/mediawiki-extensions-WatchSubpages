@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Boivie",
-            "M.M.S.",
-            "Sertion",
-            "WikiPhoenix"
-        ]
-    },
-    "watchsubpages": "Bevaka undersidor",
-    "watchsubpagesprefix": "Visa undersidor för:",
-    "watchsubpages-nochanges": "Inga ändringar har gjorts i din bevakningslista.",
-    "watchsubpages-submit": "Lägg till sidor",
-    "tooltip-watchsubpages-submit": "Lägg till sidor",
-    "watchsubpages-legend": "Lägg till sidor i bevakningslistan",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Lägg till alla undersidor]] för en sida till bevakningslistan",
-    "watchsubpages-explain": "Välj sidorna du önskar lägga till i din bevakningslista.\nFör att lägga till en sida, markera rutan intill den och klicka på \"{{int:watchsubpages-submit}}\".\n\nNär du markerar eller avmarkerar flera sidor, så kan du markera intilliggande rutor genom att hålla ner shift-tangenten och klicka på den första och sista rutan du vill markera."
+	"@metadata": {
+		"authors": [
+			"Boivie",
+			"M.M.S.",
+			"Sertion",
+			"WikiPhoenix"
+		]
+	},
+	"watchsubpages": "Bevaka undersidor",
+	"watchsubpagesprefix": "Visa undersidor för:",
+	"watchsubpages-nochanges": "Inga ändringar har gjorts i din bevakningslista.",
+	"watchsubpages-submit": "Lägg till sidor",
+	"tooltip-watchsubpages-submit": "Lägg till sidor",
+	"watchsubpages-legend": "Lägg till sidor i bevakningslistan",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Lägg till alla undersidor]] för en sida till bevakningslistan",
+	"watchsubpages-explain": "Välj sidorna du önskar lägga till i din bevakningslista.\nFör att lägga till en sida, markera rutan intill den och klicka på \"{{int:watchsubpages-submit}}\".\n\nNär du markerar eller avmarkerar flera sidor, så kan du markera intilliggande rutor genom att hålla ner shift-tangenten och klicka på den första och sista rutan du vill markera."
 }

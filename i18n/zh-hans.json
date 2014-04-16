@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gaoxuewei",
-            "Liuxinyu970226"
-        ]
-    },
-    "watchsubpages": "监视子页",
-    "watchsubpagesprefix": "显示子页面：",
-    "watchsubpages-submit": "增加页面",
-    "tooltip-watchsubpages-submit": "加入页面",
-    "watchsubpages-legend": "增加页面到监视列表",
-    "watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子页]]到监视列表"
+	"@metadata": {
+		"authors": [
+			"Gaoxuewei",
+			"Liuxinyu970226"
+		]
+	},
+	"watchsubpages": "监视子页",
+	"watchsubpagesprefix": "显示子页面：",
+	"watchsubpages-submit": "增加页面",
+	"tooltip-watchsubpages-submit": "加入页面",
+	"watchsubpages-legend": "增加页面到监视列表",
+	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子页]]到监视列表"
 }

@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Andriykopanytsia"
-        ]
-    },
-    "watchsubpages": "Дивитися підсторінки",
-    "watchsubpagesprefix": "Відображення вкладених сторінок з:",
-    "watchsubpages-nochanges": "Зміни не внесено до списку спостереження.",
-    "watchsubpages-submit": "Додати сторінки",
-    "tooltip-watchsubpages-submit": "Додати сторінки",
-    "watchsubpages-legend": "Додати сторінки у список спостереження",
-    "watchsubpages-desc": "Дозволяє швидко [[Special:WatchSubpages|додати всі підсторінки]] деякої сторінки в список спостереження",
-    "watchsubpages-explain": "Виберіть сторінки, які ви бажаєте додати в свій список спостереження.\nЩоб додати сторінку, поставте позначку біля неї і натисніть «{{int:watchsubpages-submit}}».\n\nЩоб відзначити відразу кілька сторінок, утримуючи клавішу Shift, позначте початкову і кінцеву сторінки необхідної послідовності."
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia"
+		]
+	},
+	"watchsubpages": "Дивитися підсторінки",
+	"watchsubpagesprefix": "Відображення вкладених сторінок з:",
+	"watchsubpages-nochanges": "Зміни не внесено до списку спостереження.",
+	"watchsubpages-submit": "Додати сторінки",
+	"tooltip-watchsubpages-submit": "Додати сторінки",
+	"watchsubpages-legend": "Додати сторінки у список спостереження",
+	"watchsubpages-desc": "Дозволяє швидко [[Special:WatchSubpages|додати всі підсторінки]] деякої сторінки в список спостереження",
+	"watchsubpages-explain": "Виберіть сторінки, які ви бажаєте додати в свій список спостереження.\nЩоб додати сторінку, поставте позначку біля неї і натисніть «{{int:watchsubpages-submit}}».\n\nЩоб відзначити відразу кілька сторінок, утримуючи клавішу Shift, позначте початкову і кінцеву сторінки необхідної послідовності."
 }

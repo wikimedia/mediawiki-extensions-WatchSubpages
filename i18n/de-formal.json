@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Imre",
-            "The Evil IP address"
-        ]
-    },
-    "watchsubpages-explain": "Wählen Sie die Seiten aus, die Ihrer Beobachtungsliste hinzugefügt werden sollen.\nUm eine Seite hinzuzufügen, markieren Sie die Kästchen neben den Einträgen und klicken Sie auf „{{int:watchsubpages-submit}}“.\n\nBeim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen."
+	"@metadata": {
+		"authors": [
+			"Imre",
+			"The Evil IP address"
+		]
+	},
+	"watchsubpages-explain": "Wählen Sie die Seiten aus, die Ihrer Beobachtungsliste hinzugefügt werden sollen.\nUm eine Seite hinzuzufügen, markieren Sie die Kästchen neben den Einträgen und klicken Sie auf „{{int:watchsubpages-submit}}“.\n\nBeim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen."
 }

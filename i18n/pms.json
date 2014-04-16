@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Borichèt",
-            "Dragonòt"
-        ]
-    },
-    "watchsubpages": "Ten d'euj le sotpàgine",
-    "watchsubpages-submit": "Gionta le pàgine",
-    "watchsubpages-legend": "Gionté dle pàgine a lòn ch'a ten sot-euj",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Gionta an pressa tute le sotpàgine]] ëd na pàgina a lòn ch'it ten-e sot euj.",
-    "watchsubpages-explain": "Ch'a selession-a le pàgine da gionté a lòn ch'a ten sot-euj.\nPër gionté na pàgina, marché la casela da banda ëd chila, e sgnaché \"{{int:watchsubpages-submit}}\".\n\nQuand ch'a selession-a o a desselession-a vàire pàgine, sgnaché la ciav \"Majùscole\" a-j përmët ëd selessioné ëd casele consecutive, sgnacand inissi e fin dl'antërval da marché."
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Dragonòt"
+		]
+	},
+	"watchsubpages": "Ten d'euj le sotpàgine",
+	"watchsubpages-submit": "Gionta le pàgine",
+	"watchsubpages-legend": "Gionté dle pàgine a lòn ch'a ten sot-euj",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Gionta an pressa tute le sotpàgine]] ëd na pàgina a lòn ch'it ten-e sot euj.",
+	"watchsubpages-explain": "Ch'a selession-a le pàgine da gionté a lòn ch'a ten sot-euj.\nPër gionté na pàgina, marché la casela da banda ëd chila, e sgnaché \"{{int:watchsubpages-submit}}\".\n\nQuand ch'a selession-a o a desselession-a vàire pàgine, sgnaché la ciav \"Majùscole\" a-j përmët ëd selessioné ëd casele consecutive, sgnacand inissi e fin dl'antërval da marché."
 }

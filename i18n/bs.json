@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "watchsubpages": "Praćenje podstranica",
-    "watchsubpages-submit": "Dodaj stranice",
-    "watchsubpages-legend": "Dodaj stranice na spisak praćenja",
-    "watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodavanje svih podstranica]] neke stranice na spisak praćenja",
-    "watchsubpages-explain": "Odaberite stranice za dodavanje na Vaš spisak praćenja ispod.\nDa dodate stranicu, označite kutijicu pored naziva i kliknite \"{{int:watchsubpages-submit}}\".\n\nKada označujete ili uklanjate više stranica, možete držati tipku ''shift'' da bi označili kutijice jedne ispod druge tako da možete kliknuti od početka do kraja spiska klikajući prvu i zadnju kutijicu držeći shift."
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"watchsubpages": "Praćenje podstranica",
+	"watchsubpages-submit": "Dodaj stranice",
+	"watchsubpages-legend": "Dodaj stranice na spisak praćenja",
+	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodavanje svih podstranica]] neke stranice na spisak praćenja",
+	"watchsubpages-explain": "Odaberite stranice za dodavanje na Vaš spisak praćenja ispod.\nDa dodate stranicu, označite kutijicu pored naziva i kliknite \"{{int:watchsubpages-submit}}\".\n\nKada označujete ili uklanjate više stranica, možete držati tipku ''shift'' da bi označili kutijice jedne ispod druge tako da možete kliknuti od početka do kraja spiska klikajući prvu i zadnju kutijicu držeći shift."
 }

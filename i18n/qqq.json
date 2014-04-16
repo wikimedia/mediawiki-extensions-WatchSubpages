@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fryed-peach",
-            "Prod",
-            "Purodha",
-            "Siebrand",
-            "Shirayuki"
-        ]
-    },
-    "watchsubpages": "{{doc-special|WatchSubpages}}",
-    "watchsubpagesprefix": "Used for the label of the input box of [[Special:WatchSubpages]]. All pages that begin with this string will be displayed.",
-    "watchsubpages-nochanges": "If no changes are made, the user is informed that nothing was added to the user's watchlist.",
-    "watchsubpages-submit": "Text of submit button on [[Special:WatchSubpages]].  This button performs the change to the users watchlist.\n\nSee also:\n* {{msg-mw|Watchsubpages-submit}}\n* {{msg-mw|Accesskey-watchsubpages-submit}}\n* {{msg-mw|Tooltip-watchsubpages-submit}}\n{{Identical|Add page}}",
-    "tooltip-watchsubpages-submit": "Used as tooltip.\n\nSee also:\n* {{msg-mw|Watchsubpages-submit}}\n* {{msg-mw|Accesskey-watchsubpages-submit}}\n* {{msg-mw|Tooltip-watchsubpages-submit}}\n{{Identical|Add page}}",
-    "watchsubpages-legend": "Heading of dialogue box on [[Special:WatchSubpages]] that contains listing of subpages.",
-    "watchsubpages-desc": "{{desc|name=WatchSubpages|url=https://www.mediawiki.org/wiki/Extension:WatchSubpages}}",
-    "watchsubpages-explain": "An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].\n\nRefers to {{msg-mw|Watchsubpages-submit}}."
+	"@metadata": {
+		"authors": [
+			"Fryed-peach",
+			"Prod",
+			"Purodha",
+			"Siebrand",
+			"Shirayuki"
+		]
+	},
+	"watchsubpages": "{{doc-special|WatchSubpages}}",
+	"watchsubpagesprefix": "Used for the label of the input box of [[Special:WatchSubpages]]. All pages that begin with this string will be displayed.",
+	"watchsubpages-nochanges": "If no changes are made, the user is informed that nothing was added to the user's watchlist.",
+	"watchsubpages-submit": "Text of submit button on [[Special:WatchSubpages]].  This button performs the change to the users watchlist.\n\nSee also:\n* {{msg-mw|Watchsubpages-submit}}\n* {{msg-mw|Accesskey-watchsubpages-submit}}\n* {{msg-mw|Tooltip-watchsubpages-submit}}\n{{Identical|Add page}}",
+	"tooltip-watchsubpages-submit": "Used as tooltip.\n\nSee also:\n* {{msg-mw|Watchsubpages-submit}}\n* {{msg-mw|Accesskey-watchsubpages-submit}}\n* {{msg-mw|Tooltip-watchsubpages-submit}}\n{{Identical|Add page}}",
+	"watchsubpages-legend": "Heading of dialogue box on [[Special:WatchSubpages]] that contains listing of subpages.",
+	"watchsubpages-desc": "{{desc|name=WatchSubpages|url=https://www.mediawiki.org/wiki/Extension:WatchSubpages}}",
+	"watchsubpages-explain": "An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].\n\nRefers to {{msg-mw|Watchsubpages-submit}}."
 }

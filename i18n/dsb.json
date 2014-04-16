@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "watchsubpages": "Pódboki wobglědowaś",
-    "watchsubpages-submit": "Boki pśidaś",
-    "watchsubpages-legend": "Boki wobglědowańkam pśidaś",
-    "watchsubpages-desc": "Spěšne [[Special:WatchSubpages|pśidaśe wšych pódbokow]] boka wobglědowańkam",
-    "watchsubpages-explain": "Wubjeŕ boki, kótarež coš swójim wobglědowańkam pśidaś.\nAby bok pśidał, markěruj kašćik pódla njogo a klikni na \"{{int:watchsubpages-submit}}\".\n\nGaž coš někotare boki wubraś abo wótwóliś, móžoš wubraś jaden za drugi slědujuce kontrolowe kašćiki z dołoj ześišćaneju pśešaltowańskeju tastu a pśez rownocasne kliknjenje na kuždy kóńc wobcerka, kótaryž ma so wubraś."
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"watchsubpages": "Pódboki wobglědowaś",
+	"watchsubpages-submit": "Boki pśidaś",
+	"watchsubpages-legend": "Boki wobglědowańkam pśidaś",
+	"watchsubpages-desc": "Spěšne [[Special:WatchSubpages|pśidaśe wšych pódbokow]] boka wobglědowańkam",
+	"watchsubpages-explain": "Wubjeŕ boki, kótarež coš swójim wobglědowańkam pśidaś.\nAby bok pśidał, markěruj kašćik pódla njogo a klikni na \"{{int:watchsubpages-submit}}\".\n\nGaž coš někotare boki wubraś abo wótwóliś, móžoš wubraś jaden za drugi slědujuce kontrolowe kašćiki z dołoj ześišćaneju pśešaltowańskeju tastu a pśez rownocasne kliknjenje na kuždy kóńc wobcerka, kótaryž ma so wubraś."
 }

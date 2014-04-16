@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michaello",
-            "Rancher"
-        ]
-    },
-    "watchsubpages": "Nadgledaj podstranice",
-    "watchsubpages-submit": "Dodaj stranice",
-    "watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na spisak nadgledanja"
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Rancher"
+		]
+	},
+	"watchsubpages": "Nadgledaj podstranice",
+	"watchsubpages-submit": "Dodaj stranice",
+	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na spisak nadgledanja"
 }

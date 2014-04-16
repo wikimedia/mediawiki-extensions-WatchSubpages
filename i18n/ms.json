@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia"
-        ]
-    },
-    "watchsubpages": "Pantau sublaman",
-    "watchsubpages-submit": "Tambah laman",
-    "watchsubpages-legend": "Tambahkan laman kepada senarai pantau",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Menambahkan semua sublaman]] sesuatu laman ke dalam senarai pantau dengan cepat",
-    "watchsubpages-explain": "Pilih halaman yang ingin anda tambahkan kepada senarai pantau anda.\nUntuk menambahkan laman, tandai petak di sebelahnya, kemudian klik \"{{int:watchsubpages-submit}}\".\n\nSemasa menandai berbilang laman sekaligus, dengan menekan kekunci \"Shift\" anda dapat menandai beberapa laman yang berurutan sekaligus."
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"watchsubpages": "Pantau sublaman",
+	"watchsubpages-submit": "Tambah laman",
+	"watchsubpages-legend": "Tambahkan laman kepada senarai pantau",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Menambahkan semua sublaman]] sesuatu laman ke dalam senarai pantau dengan cepat",
+	"watchsubpages-explain": "Pilih halaman yang ingin anda tambahkan kepada senarai pantau anda.\nUntuk menambahkan laman, tandai petak di sebelahnya, kemudian klik \"{{int:watchsubpages-submit}}\".\n\nSemasa menandai berbilang laman sekaligus, dengan menekan kekunci \"Shift\" anda dapat menandai beberapa laman yang berurutan sekaligus."
 }

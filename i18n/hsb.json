@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "watchsubpages": "Podstrony wobkedźbować",
-    "watchsubpages-submit": "Strony přidać",
-    "watchsubpages-legend": "Strony wobkedźbowankam přidać",
-    "watchsubpages-desc": "Spěšne [[Special:WatchSubpages|přidaće wšěch podstronow]] strony wobkedźbowankam",
-    "watchsubpages-explain": "Wubjer strony, kotrež maja so wobkedźbowankam přidać.\nZo by stronu přidał, wubjer kašćik pódla njeje a klikń na \"{{int:watchsubpages-submit}}\".\n\nHdyž wjacore strony wubjerješ abo wotwoleš, móžeš z stłóčenej přešaltowanskej tastej (\"Umsch\", \"Shift\") na so slědowace kontrolowe kašćiki přez kliknjenje na kóždy kónc toho wobwoda wubrać, kotryž ma so markěrować."
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"watchsubpages": "Podstrony wobkedźbować",
+	"watchsubpages-submit": "Strony přidać",
+	"watchsubpages-legend": "Strony wobkedźbowankam přidać",
+	"watchsubpages-desc": "Spěšne [[Special:WatchSubpages|přidaće wšěch podstronow]] strony wobkedźbowankam",
+	"watchsubpages-explain": "Wubjer strony, kotrež maja so wobkedźbowankam přidać.\nZo by stronu přidał, wubjer kašćik pódla njeje a klikń na \"{{int:watchsubpages-submit}}\".\n\nHdyž wjacore strony wubjerješ abo wotwoleš, móžeš z stłóčenej přešaltowanskej tastej (\"Umsch\", \"Shift\") na so slědowace kontrolowe kašćiki přez kliknjenje na kóždy kónc toho wobwoda wubrać, kotryž ma so markěrować."
 }

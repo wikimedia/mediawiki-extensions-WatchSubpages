@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Agbad",
-            "Rotemliss",
-            "YaronSh"
-        ]
-    },
-    "watchsubpages": "מעקב אחרי דפי המשנה",
-    "watchsubpages-submit": "הוספת דפים",
-    "watchsubpages-desc": "[[Special:WatchSubpages|הוספה מהירה של כל דפי המשנה]] של דף מסוים לרשימת המעקב",
-    "watchsubpages-explain": "נא לבחור להלן את הדפים להוספה לרשימת המעקב שלך.\nעל מנת להוסיף דף, יש לסמן את התיבה שלידו וללחוץ על \"{{int:watchsubpages-submit}}\".\n\nבעת סימון או ביטול סימון של דפים מרובים, החזקת מקש ה־Shift מאפשרת לך לבחור מספר תיבות סימון עוקבות באמצעות לחיצה על כל התיבות האחרונות של הטווחים לסימון."
+	"@metadata": {
+		"authors": [
+			"Agbad",
+			"Rotemliss",
+			"YaronSh"
+		]
+	},
+	"watchsubpages": "מעקב אחרי דפי המשנה",
+	"watchsubpages-submit": "הוספת דפים",
+	"watchsubpages-desc": "[[Special:WatchSubpages|הוספה מהירה של כל דפי המשנה]] של דף מסוים לרשימת המעקב",
+	"watchsubpages-explain": "נא לבחור להלן את הדפים להוספה לרשימת המעקב שלך.\nעל מנת להוסיף דף, יש לסמן את התיבה שלידו וללחוץ על \"{{int:watchsubpages-submit}}\".\n\nבעת סימון או ביטול סימון של דפים מרובים, החזקת מקש ה־Shift מאפשרת לך לבחור מספר תיבות סימון עוקבות באמצעות לחיצה על כל התיבות האחרונות של הטווחים לסימון."
 }

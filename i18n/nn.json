@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Frokor"
-        ]
-    },
-    "watchsubpages": "Overvak undersider",
-    "watchsubpages-submit": "Legg til sider",
-    "watchsubpages-legend": "Legg til sider til overvakningslista",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Legg til alle undersider]] av ei side til overvakingslista",
-    "watchsubpages-explain": "Velg sidene du ønsker å legge til i overvakingslista di.\nFor å legge til ei side, merk av i boksen ved sidan av ho og klikk på «Legg til sider».\n\nNår du merkar eller fjernar merking av fleire sider, kan du halde nede «Shift»-knappen for å velge boksar som kjem etter kvarandre ved å trykke på den siste av sidene du vil merke."
+	"@metadata": {
+		"authors": [
+			"Frokor"
+		]
+	},
+	"watchsubpages": "Overvak undersider",
+	"watchsubpages-submit": "Legg til sider",
+	"watchsubpages-legend": "Legg til sider til overvakningslista",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Legg til alle undersider]] av ei side til overvakingslista",
+	"watchsubpages-explain": "Velg sidene du ønsker å legge til i overvakingslista di.\nFor å legge til ei side, merk av i boksen ved sidan av ho og klikk på «Legg til sider».\n\nNår du merkar eller fjernar merking av fleire sider, kan du halde nede «Shift»-knappen for å velge boksar som kjem etter kvarandre ved å trykke på den siste av sidene du vil merke."
 }

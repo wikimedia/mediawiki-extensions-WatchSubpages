@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "John Reid"
-        ]
-    },
-    "watchsubpagesprefix": "Displey subpages o:",
-    "watchsubpages-nochanges": "Nae chynges hae been dun til yer watchleet.",
-    "watchsubpages-submit": "Eik pages",
-    "tooltip-watchsubpages-submit": "Eik pages",
-    "watchsubpages-legend": "Eik pages til watchleet",
-    "watchsubpages-explain": "Select the pages tae eik til yer watchleet ablo.\nTae eik ae page, check the kist nex til it, n clap \"{{int:watchsubpages-submit}}\".\n\nWhan checkin or oncheckin monie pages, haudin the shift key permits ye tae select consecuteeve checkkists bi clapin ilka end o the range tae be checkt."
+	"@metadata": {
+		"authors": [
+			"John Reid"
+		]
+	},
+	"watchsubpagesprefix": "Displey subpages o:",
+	"watchsubpages-nochanges": "Nae chynges hae been dun til yer watchleet.",
+	"watchsubpages-submit": "Eik pages",
+	"tooltip-watchsubpages-submit": "Eik pages",
+	"watchsubpages-legend": "Eik pages til watchleet",
+	"watchsubpages-explain": "Select the pages tae eik til yer watchleet ablo.\nTae eik ae page, check the kist nex til it, n clap \"{{int:watchsubpages-submit}}\".\n\nWhan checkin or oncheckin monie pages, haudin the shift key permits ye tae select consecuteeve checkkists bi clapin ilka end o the range tae be checkt."
 }

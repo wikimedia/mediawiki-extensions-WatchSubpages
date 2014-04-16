@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ahmed-Najib-Biabani-Ibrahimkhel"
-        ]
-    },
-    "watchsubpages": "وړوکي مخونه کتل",
-    "watchsubpages-submit": "مخونه ورگډول",
-    "watchsubpages-legend": "کتنلړ کې مخونه ورگډول",
-    "watchsubpages-desc": "په چټکۍ سره دې د يو مخ [[Special:WatchSubpages|ټول څېرمه مخونه]] کتنلړ کې ورگډ شي"
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"watchsubpages": "وړوکي مخونه کتل",
+	"watchsubpages-submit": "مخونه ورگډول",
+	"watchsubpages-legend": "کتنلړ کې مخونه ورگډول",
+	"watchsubpages-desc": "په چټکۍ سره دې د يو مخ [[Special:WatchSubpages|ټول څېرمه مخونه]] کتنلړ کې ورگډ شي"
 }

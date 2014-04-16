@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Als-Holder"
-        ]
-    },
-    "watchsubpages": "Beobacht Untersyte",
-    "watchsubpages-submit": "Syte zuefiege",
-    "watchsubpages-legend": "Syte zue dr Beobachtigslischt zuefiege",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Alli Untersyte]] vun ere Syte schnäll zuefiege zue dr Beobachtigslischt",
-    "watchsubpages-explain": "Wähl d Syten uus, wu zue Dyynere Beobachtiglischt zuegfiegt solle wäre.\nGo ne Syte zuefiege, gang uf s Chäschtli dernäbe un druck uf „{{int:watchsubpages-submit}}“.\n\nWänn Du vyyl Syte witt iberneh, no heb d Shift-Taschte un druck uf s Chäschtli vu dr letschte Syte go alli markiere."
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
+	"watchsubpages": "Beobacht Untersyte",
+	"watchsubpages-submit": "Syte zuefiege",
+	"watchsubpages-legend": "Syte zue dr Beobachtigslischt zuefiege",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Alli Untersyte]] vun ere Syte schnäll zuefiege zue dr Beobachtigslischt",
+	"watchsubpages-explain": "Wähl d Syten uus, wu zue Dyynere Beobachtiglischt zuegfiegt solle wäre.\nGo ne Syte zuefiege, gang uf s Chäschtli dernäbe un druck uf „{{int:watchsubpages-submit}}“.\n\nWänn Du vyyl Syte witt iberneh, no heb d Shift-Taschte un druck uf s Chäschtli vu dr letschte Syte go alli markiere."
 }

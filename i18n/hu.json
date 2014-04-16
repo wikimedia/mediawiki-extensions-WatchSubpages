@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dani",
-            "Glanthor Reviol"
-        ]
-    },
-    "watchsubpages": "Allapok figyelése",
-    "watchsubpages-submit": "Lapok hozzáadása",
-    "watchsubpages-legend": "Lapok hozzáadása a figyelőlistádhoz",
-    "watchsubpages-desc": "Egy lap [[Special:WatchSubpages|összes allapjának hozzáadása]] egyszerűen a figyelőlistádhoz",
-    "watchsubpages-explain": "Válaszd ki a lapokat, amiket hozzá akarsz adni a figyelőlistádhoz.\nLap hozzáadásához pipáld ki a mellette lévő dobozt, majd kattints a „{{int:watchsubpages-submit}}” gombra.\n\nTöbb lap kijelölésekor a shift gomb lenyomásával egyszerre kijelölheted az egymást követő dobozokat, csupán a kijelölés végére kell kattintanod."
+	"@metadata": {
+		"authors": [
+			"Dani",
+			"Glanthor Reviol"
+		]
+	},
+	"watchsubpages": "Allapok figyelése",
+	"watchsubpages-submit": "Lapok hozzáadása",
+	"watchsubpages-legend": "Lapok hozzáadása a figyelőlistádhoz",
+	"watchsubpages-desc": "Egy lap [[Special:WatchSubpages|összes allapjának hozzáadása]] egyszerűen a figyelőlistádhoz",
+	"watchsubpages-explain": "Válaszd ki a lapokat, amiket hozzá akarsz adni a figyelőlistádhoz.\nLap hozzáadásához pipáld ki a mellette lévő dobozt, majd kattints a „{{int:watchsubpages-submit}}” gombra.\n\nTöbb lap kijelölésekor a shift gomb lenyomásával egyszerre kijelölheted az egymást követő dobozokat, csupán a kijelölés végére kell kattintanod."
 }

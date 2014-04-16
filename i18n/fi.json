@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Crt",
-            "Nike",
-            "Silvonen"
-        ]
-    },
-    "watchsubpages": "Tarkkaile alasivuja",
-    "watchsubpages-submit": "Lisää sivut",
-    "watchsubpages-legend": "Lisää sivut tarkkailulistalle",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Lisää kaikki sivun alasivut]] tarkkailulistalle.",
-    "watchsubpages-explain": "Valitse tarkkailulistallesi lisättävä sivut alta napsauttamalla niiden vieressä olevaa valintaruutua.\nNapsauta lopuksi ”{{int:watchsubpages-submit}}”.\n\nKun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun valita peräkkäisiä valintaruutuja napsauttamalla vain ensimmäisen ja viimeisen valintaruudun."
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Nike",
+			"Silvonen"
+		]
+	},
+	"watchsubpages": "Tarkkaile alasivuja",
+	"watchsubpages-submit": "Lisää sivut",
+	"watchsubpages-legend": "Lisää sivut tarkkailulistalle",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Lisää kaikki sivun alasivut]] tarkkailulistalle.",
+	"watchsubpages-explain": "Valitse tarkkailulistallesi lisättävä sivut alta napsauttamalla niiden vieressä olevaa valintaruutua.\nNapsauta lopuksi ”{{int:watchsubpages-submit}}”.\n\nKun lisäät tai poistat useita sivuja, vaihtonäppäimen painaminen antaa sinun valita peräkkäisiä valintaruutuja napsauttamalla vain ensimmäisen ja viimeisen valintaruudun."
 }

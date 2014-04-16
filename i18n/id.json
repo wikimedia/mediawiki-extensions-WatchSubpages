@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bennylin",
-            "Irwangatot"
-        ]
-    },
-    "watchsubpages": "Pantau upa halaman",
-    "watchsubpages-submit": "Tambahkan halaman",
-    "watchsubpages-legend": "Tambahkan halaman ke daftar pantauan",
-    "watchsubpages-desc": "Dengan cepat [[Special:WatchSubpages|tambahkan semua sub halaman]] ke daftar pantauan",
-    "watchsubpages-explain": "Pilih halaman yang ingin Anda tambahkan ke daftar pantauan Anda.\nUntuk menambahkan halaman, tandai kotak di sebelahnya lalu tekan \"{{int:watchsubpages-submit}}\".\n\nKetika menandai beberapa halaman sekaligus, dengan menekan tombol \"Shift\" Anda dapat menandai beberapa halaman yang berurutan sekaligus."
+	"@metadata": {
+		"authors": [
+			"Bennylin",
+			"Irwangatot"
+		]
+	},
+	"watchsubpages": "Pantau upa halaman",
+	"watchsubpages-submit": "Tambahkan halaman",
+	"watchsubpages-legend": "Tambahkan halaman ke daftar pantauan",
+	"watchsubpages-desc": "Dengan cepat [[Special:WatchSubpages|tambahkan semua sub halaman]] ke daftar pantauan",
+	"watchsubpages-explain": "Pilih halaman yang ingin Anda tambahkan ke daftar pantauan Anda.\nUntuk menambahkan halaman, tandai kotak di sebelahnya lalu tekan \"{{int:watchsubpages-submit}}\".\n\nKetika menandai beberapa halaman sekaligus, dengan menekan tombol \"Shift\" Anda dapat menandai beberapa halaman yang berurutan sekaligus."
 }

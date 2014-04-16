@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "watchsubpages": "Vixiar subpáxinas",
-    "watchsubpagesprefix": "Mostrar as subpáxinas de:",
-    "watchsubpages-nochanges": "Non se fixeron cambios nas páxinas que vixía.",
-    "watchsubpages-submit": "Engadir as páxinas",
-    "tooltip-watchsubpages-submit": "Engadir as páxinas",
-    "watchsubpages-legend": "Engadir páxinas á lista de vixilancia",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Engadir rapidamente todas as subpáxinas]] dunha páxina á lista de vixilancia",
-    "watchsubpages-explain": "Seleccione a continuación as páxinas que queira engadir á súa lista de vixilancia.\nPara engadir unha páxina, marque a caixa que está ao seu carón e prema en \"{{int:watchsubpages-submit}}\".\n\nPara marcar ou desmarcar un feixe de páxinas, prema a tecla Maiús. para seleccionar caixas consecutivas con só facer clic ao final do grupo."
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"watchsubpages": "Vixiar subpáxinas",
+	"watchsubpagesprefix": "Mostrar as subpáxinas de:",
+	"watchsubpages-nochanges": "Non se fixeron cambios nas páxinas que vixía.",
+	"watchsubpages-submit": "Engadir as páxinas",
+	"tooltip-watchsubpages-submit": "Engadir as páxinas",
+	"watchsubpages-legend": "Engadir páxinas á lista de vixilancia",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Engadir rapidamente todas as subpáxinas]] dunha páxina á lista de vixilancia",
+	"watchsubpages-explain": "Seleccione a continuación as páxinas que queira engadir á súa lista de vixilancia.\nPara engadir unha páxina, marque a caixa que está ao seu carón e prema en \"{{int:watchsubpages-submit}}\".\n\nPara marcar ou desmarcar un feixe de páxinas, prema a tecla Maiús. para seleccionar caixas consecutivas con só facer clic ao final do grupo."
 }

@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ex13"
-        ]
-    },
-    "watchsubpages": "Prati podstranice",
-    "watchsubpages-submit": "Dodaj stranice",
-    "watchsubpages-legend": "Dodaj stranice na popis praćenja",
-    "watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na popis praćenja"
+	"@metadata": {
+		"authors": [
+			"Ex13"
+		]
+	},
+	"watchsubpages": "Prati podstranice",
+	"watchsubpages-submit": "Dodaj stranice",
+	"watchsubpages-legend": "Dodaj stranice na popis praćenja",
+	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na popis praćenja"
 }

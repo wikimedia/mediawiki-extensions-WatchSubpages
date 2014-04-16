@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shijualex"
-        ]
-    },
-    "watchsubpages": "സബ്‌താളുകൾ ശ്രദ്ധിക്കുക",
-    "watchsubpages-submit": "താളുകൾ ചേർക്കുക",
-    "watchsubpages-legend": "ശ്രദ്ധിക്കുന്ന താളുകളുടെ പട്ടികയിലേക്കു താളുകൾ ചേർക്കുക",
-    "watchsubpages-desc": "ശ്രദ്ധിക്കുന്ന താളുകളുടെ പട്ടികയിലേക്ക് [[Special:WatchSubpages|ഒരു താളിന്റെ എല്ലാ ഉപതാളുകളും]] ശീഘ്രമായി ചേർക്കുക"
+	"@metadata": {
+		"authors": [
+			"Shijualex"
+		]
+	},
+	"watchsubpages": "സബ്‌താളുകൾ ശ്രദ്ധിക്കുക",
+	"watchsubpages-submit": "താളുകൾ ചേർക്കുക",
+	"watchsubpages-legend": "ശ്രദ്ധിക്കുന്ന താളുകളുടെ പട്ടികയിലേക്കു താളുകൾ ചേർക്കുക",
+	"watchsubpages-desc": "ശ്രദ്ധിക്കുന്ന താളുകളുടെ പട്ടികയിലേക്ക് [[Special:WatchSubpages|ഒരു താളിന്റെ എല്ലാ ഉപതാളുകളും]] ശീഘ്രമായി ചേർക്കുക"
 }

@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lajsikonik"
-        ]
-    },
-    "watchsubpages": "Dowej pozůr na podzajty",
-    "watchsubpages-submit": "Doćep zajty",
-    "watchsubpages-legend": "Doćep zajty do pozorlisty",
-    "watchsubpages-desc": "Dozwalo na gibke dodowańy [[Special:WatchSubpages|wszyjstkich podzajtůw]] jakijś zajty, do swojij pozorlisty",
-    "watchsubpages-explain": "Wybjer s listy zajty, kere chcesz doćepać do swojij pozorlisty.\nCoby doćepać zajta, zaznacz pole uobok jeij titla a ńyskorzi klikńij polecyńe \"doćep zajty\".\n\nJeli chcesz wybrać wjyncyj jak jedna zajta, możesz użyć przićiska shift, trzimjůnc go klikńij pjyrszo a uostatńo pozycja we raje zajtůw, kere chćołbyś doćepać do pozorlisty."
+	"@metadata": {
+		"authors": [
+			"Lajsikonik"
+		]
+	},
+	"watchsubpages": "Dowej pozůr na podzajty",
+	"watchsubpages-submit": "Doćep zajty",
+	"watchsubpages-legend": "Doćep zajty do pozorlisty",
+	"watchsubpages-desc": "Dozwalo na gibke dodowańy [[Special:WatchSubpages|wszyjstkich podzajtůw]] jakijś zajty, do swojij pozorlisty",
+	"watchsubpages-explain": "Wybjer s listy zajty, kere chcesz doćepać do swojij pozorlisty.\nCoby doćepać zajta, zaznacz pole uobok jeij titla a ńyskorzi klikńij polecyńe \"doćep zajty\".\n\nJeli chcesz wybrać wjyncyj jak jedna zajta, możesz użyć przićiska shift, trzimjůnc go klikńij pjyrszo a uostatńo pozycja we raje zajtůw, kere chćołbyś doćepać do pozorlisty."
 }

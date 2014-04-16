@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "An13sa",
-            "Kobazulo"
-        ]
-    },
-    "watchsubpages": "Ikusi azpiorriak",
-    "watchsubpages-submit": "Gehitu orriak",
-    "watchsubpages-desc": "Modu azkarrean [[Special:WatchSubpages|azpiorrialde guztiak erantsi]] jarraipen zerrendan"
+	"@metadata": {
+		"authors": [
+			"An13sa",
+			"Kobazulo"
+		]
+	},
+	"watchsubpages": "Ikusi azpiorriak",
+	"watchsubpages-submit": "Gehitu orriak",
+	"watchsubpages-desc": "Modu azkarrean [[Special:WatchSubpages|azpiorrialde guztiak erantsi]] jarraipen zerrendan"
 }

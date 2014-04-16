@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Beta16",
-            "Darth Kule",
-            "HalphaZ"
-        ]
-    },
-    "watchsubpages": "Segui sottopagine",
-    "watchsubpagesprefix": "Visualizza sottopagine di:",
-    "watchsubpages-nochanges": "Non sono state apportate modifiche ai tuoi osservati speciali.",
-    "watchsubpages-submit": "Aggiungi pagine",
-    "tooltip-watchsubpages-submit": "Aggiungi pagine",
-    "watchsubpages-legend": "Aggiungi pagine agli osservati speciali",
-    "watchsubpages-desc": "[[Special:WatchSubpages|Aggiunge rapidamente tutte le sottopagine]] di una pagina agli Osservati Speciali",
-    "watchsubpages-explain": "Selezionare le pagine di seguito da aggiungere ai propri osservati speciali.\nPer aggiungere una pagina, selezionare la casella accanto a essa e fare clic su \"{{int:watchsubpages-submit}}\".\n\nQuando si selezionano o deselezionano più pagine, tenere premuto il tasto shift permette di selezionare caselle consecutive cliccando gli estremi dell'intervallo da selezionare."
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Darth Kule",
+			"HalphaZ"
+		]
+	},
+	"watchsubpages": "Segui sottopagine",
+	"watchsubpagesprefix": "Visualizza sottopagine di:",
+	"watchsubpages-nochanges": "Non sono state apportate modifiche ai tuoi osservati speciali.",
+	"watchsubpages-submit": "Aggiungi pagine",
+	"tooltip-watchsubpages-submit": "Aggiungi pagine",
+	"watchsubpages-legend": "Aggiungi pagine agli osservati speciali",
+	"watchsubpages-desc": "[[Special:WatchSubpages|Aggiunge rapidamente tutte le sottopagine]] di una pagina agli Osservati Speciali",
+	"watchsubpages-explain": "Selezionare le pagine di seguito da aggiungere ai propri osservati speciali.\nPer aggiungere una pagina, selezionare la casella accanto a essa e fare clic su \"{{int:watchsubpages-submit}}\".\n\nQuando si selezionano o deselezionano più pagine, tenere premuto il tasto shift permette di selezionare caselle consecutive cliccando gli estremi dell'intervallo da selezionare."
 }

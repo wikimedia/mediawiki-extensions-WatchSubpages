@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Helix84"
-        ]
-    },
-    "watchsubpages": "Sledovať podstránky",
-    "watchsubpages-submit": "Pridať stránky",
-    "watchsubpages-legend": "Pridať stránky do zoznamu sledovaných",
-    "watchsubpages-desc": "Rýchlo [[Special:WatchSubpages|pridať všetky podstránky]] stránky do zoznamu sledovaných",
-    "watchsubpages-explain": "Vyberte stránky, ktoré chcete pridať do svojho zoznamu sledovaných.\nStránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať stránky”.\n\nPri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne."
+	"@metadata": {
+		"authors": [
+			"Helix84"
+		]
+	},
+	"watchsubpages": "Sledovať podstránky",
+	"watchsubpages-submit": "Pridať stránky",
+	"watchsubpages-legend": "Pridať stránky do zoznamu sledovaných",
+	"watchsubpages-desc": "Rýchlo [[Special:WatchSubpages|pridať všetky podstránky]] stránky do zoznamu sledovaných",
+	"watchsubpages-explain": "Vyberte stránky, ktoré chcete pridať do svojho zoznamu sledovaných.\nStránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať stránky”.\n\nPri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne."
 }

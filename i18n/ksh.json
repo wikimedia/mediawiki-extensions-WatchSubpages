@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Purodha",
-            "The Evil IP address"
-        ]
-    },
-    "watchsubpages": "Op Ungersigge oppasse",
-    "watchsubpages-submit": "Sigge dobei donn",
-    "watchsubpages-legend": "Sigge en de Oppassleß opnemme",
-    "watchsubpages-desc": "Ene flöcke Wääsch, all Ungersigge fun ene Sigg en de Oppassless [[Special:WatchSubpages|met opzenämme]].",
-    "watchsubpages-explain": "Donn di Sigge ußwähle, di De in Ding Oppassleß opjenumme hann wells.\nÖm en Sigg dobei ze donn, maach e Höksche donevve.\nWann de fädesch bes, klickß De op „{{int:watchsubpages-submit}}“\n\nWann De en Aanzahl Sigge aam Stöck häß, woh de e Höksche draan maache udder et Höksche fotnämme wells, doh kanns De dat eijfach han. Klick eets op der Aanfang, un dann halld de Taß för op Jrußschreff ömzeschalde faß, un klick norr_enß op et Engk, ih dat De de Taß widder loß löhß. Dat schallt de Höksche en däm janze Bereisch öm."
+	"@metadata": {
+		"authors": [
+			"Purodha",
+			"The Evil IP address"
+		]
+	},
+	"watchsubpages": "Op Ungersigge oppasse",
+	"watchsubpages-submit": "Sigge dobei donn",
+	"watchsubpages-legend": "Sigge en de Oppassleß opnemme",
+	"watchsubpages-desc": "Ene flöcke Wääsch, all Ungersigge fun ene Sigg en de Oppassless [[Special:WatchSubpages|met opzenämme]].",
+	"watchsubpages-explain": "Donn di Sigge ußwähle, di De in Ding Oppassleß opjenumme hann wells.\nÖm en Sigg dobei ze donn, maach e Höksche donevve.\nWann de fädesch bes, klickß De op „{{int:watchsubpages-submit}}“\n\nWann De en Aanzahl Sigge aam Stöck häß, woh de e Höksche draan maache udder et Höksche fotnämme wells, doh kanns De dat eijfach han. Klick eets op der Aanfang, un dann halld de Taß för op Jrußschreff ömzeschalde faß, un klick norr_enß op et Engk, ih dat De de Taß widder loß löhß. Dat schallt de Höksche en däm janze Bereisch öm."
 }
