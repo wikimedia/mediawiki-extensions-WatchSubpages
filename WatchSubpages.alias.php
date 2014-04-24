@@ -223,3 +223,8 @@ $specialPageAliases['vi'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'WatchSubpages' => array( '监视子页面' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'WatchSubpages' => array( '監視子頁面' ),
+);
