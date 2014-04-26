@@ -3,10 +3,13 @@
 		"authors": [
 			"Rancher",
 			"Sasa Stefanovic",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Milicevic01"
 		]
 	},
 	"watchsubpages": "Надгледај подстранице",
 	"watchsubpages-submit": "Додај странице",
+	"tooltip-watchsubpages-submit": "Додај странице",
+	"watchsubpages-legend": "Додај странице на списак надгледања",
 	"watchsubpages-desc": "Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања"
 }
