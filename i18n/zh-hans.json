@@ -7,6 +7,7 @@
 	},
 	"watchsubpages": "监视子页",
 	"watchsubpagesprefix": "显示子页面：",
+	"watchsubpages-nochanges": "您的监视列表没有做出任何更改。",
 	"watchsubpages-submit": "增加页面",
 	"tooltip-watchsubpages-submit": "加入页面",
 	"watchsubpages-legend": "增加页面到监视列表",
