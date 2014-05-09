@@ -11,5 +11,6 @@
 	"watchsubpages-submit": "增加页面",
 	"tooltip-watchsubpages-submit": "加入页面",
 	"watchsubpages-legend": "增加页面到监视列表",
-	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子页]]到监视列表"
+	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子页]]到监视列表",
+	"watchsubpages-explain": "在下面选择页面以加入您的监视列表。要加入页面，在旁边打上勾，然后单击“{{int:watchsubpages-submit}}”。\n当对多个页面打钩或去钩时，按住Shift键允许您选择连续的一组复选框进行统一操作。"
 }
