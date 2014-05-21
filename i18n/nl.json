@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"SPQRobin"
 		]
 	},
 	"watchsubpages": "Subpagina's volgen",
 	"watchsubpages-submit": "Pagina's toevoegen",
+	"tooltip-watchsubpages-submit": "Pagina's toevoegen",
 	"watchsubpages-legend": "Pagina's aan volglijst toevoegen",
 	"watchsubpages-desc": "Snel [[Special:WatchSubpages|alle subpagina's]] voor een pagina's aan de volglijst toevoegen",
 	"watchsubpages-explain": "Selecteer hieronder de pagina's die u aan uw volglijst wilt toevoegen.\nSelecteer de vakjes naast de paginanaam en klik op \"{{int:watchsubpages-submit}}\".\n\nOm meerdere pagina's tegelijk te selecteren of te deselecteren, kunt u na het selecteren van de eerste pagina uit de lijst de laatste pagina selecteren terwijl u de shifttoets ingedrukt houdt."
