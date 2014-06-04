@@ -51,21 +51,10 @@ class WatchSubpages extends SpecialPage {
 	public function execute( $par ) {
 		$this->setHeaders();
 
-		$out = $this->getOutput();
-
 		# Anons don't get a watchlist
-		if ( $this->getUser()->isAnon() ) {
-			$out->setPageTitle( $this->msg( 'watchnologin' ) );
-			$llink = Linker::linkKnown(
-				SpecialPage::getTitleFor( 'Userlogin' ),
-				$this->msg( 'loginreqlink' )->escaped(),
-				array(),
-				array( 'returnto' => $this->getTitle()->getPrefixedText() )
-			);
-			$out->addHTML( $this->msg( 'watchlistanontext' )->rawParams( $llink )->parse() );
+		$this->requireLogin( 'watchlistanontext' );
 
-			return;
-		}
+		$out = $this->getOutput();
 
 		$this->checkPermissions();
 		$this->checkReadOnly();
@@ -122,7 +111,7 @@ class WatchSubpages extends SpecialPage {
 
 		$out = Xml::openElement( 'div', array( 'class' => 'namespaceoptions' ) );
 		$out .= Xml::openElement( 'form', array( 'method' => 'get', 'action' => $wgScript ) );
-		$out .= Html::hidden( 'title', $this->getTitle()->getPrefixedText() );
+		$out .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() );
 		$out .= Xml::openElement( 'fieldset' );
 		$out .= Xml::element( 'legend', null, $this->msg( 'watchsubpages' )->text() );
 		$out .= Xml::openElement( 'table', array( 'id' => 'nsselect', 'class' => 'allpages' ) );
@@ -183,7 +172,7 @@ class WatchSubpages extends SpecialPage {
 
 		if ( !$prefixList ) {
 			$this->toc .= $this->msg( 'allpagesbadtitle' )->parseAsBlock();
-		} elseif ( !in_array( $namespace, array_keys( $namespaces ) ) ) {
+		} elseif ( !array_key_exists( $namespace, $namespaces ) ) {
 			// Show errormessage and reset to NS_MAIN
 			$this->toc .= $this->msg( 'allpages-bad-ns', $namespace )->parse();
 			$namespace = NS_MAIN;
@@ -229,13 +218,13 @@ class WatchSubpages extends SpecialPage {
 
 		$fields = array();
 
-		$fields['prefix'] =  array(
+		$fields['prefix'] = array(
 				'type' => 'hidden',
 				'name' => 'prefix',
 				'default' => $prefix
 		);
 
-		$fields['namespace'] =  array(
+		$fields['namespace'] = array(
 				'type' => 'hidden',
 				'name' => 'namespace',
 				'default' => $namespace
@@ -256,7 +245,7 @@ class WatchSubpages extends SpecialPage {
 		}
 
 		$context = new DerivativeContext( $this->getContext() );
-		$context->setTitle( $this->getTitle() ); // Remove subpage
+		$context->setTitle( $this->getPageTitle() ); // Remove subpage
 		$form = new EditWatchlistNormalHTMLForm( $fields, $context );
 		$form->setSubmitTextMsg( 'watchsubpages-submit' );
 		# Used message keys: 'accesskey-watchsubpages-submit', 'tooltip-watchsubpages-submit'
@@ -354,8 +343,8 @@ class WatchSubpages extends SpecialPage {
 		}
 
 		if ( count( $toWatch ) > 0 ) {
-			$this->successMessage .= ' ' . $this->msg( 'watchlistedit-raw-added'
-			)->numParams( count( $toWatch ) )->parse();
+			$this->successMessage .= ' ' . $this->msg( 'watchlistedit-raw-added' )
+				->numParams( count( $toWatch ) )->parse();
 			$this->showTitles( $toWatch, $this->successMessage );
 		}
 
