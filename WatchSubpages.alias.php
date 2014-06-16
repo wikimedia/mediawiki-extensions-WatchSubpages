@@ -96,7 +96,7 @@ $specialPageAliases['hr'] = array(
 
 /** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
-	'WatchSubpages' => array( 'Podstrony wobkedźbować' ),
+	'WatchSubpages' => array( 'Podstrony_wobkedźbować' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
