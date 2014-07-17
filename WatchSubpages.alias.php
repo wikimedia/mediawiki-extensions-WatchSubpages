@@ -189,6 +189,11 @@ $specialPageAliases['sk'] = array(
 	'WatchSubpages' => array( 'SledovaniePodstránok' ),
 );
 
+/** Swedish (svenska) */
+$specialPageAliases['sv'] = array(
+	'WatchSubpages' => array( 'Bevaka_undersidor' ),
+);
+
 /** Swahili (Kiswahili) */
 $specialPageAliases['sw'] = array(
 	'WatchSubpages' => array( 'AngaliaKurasandogo' ),
