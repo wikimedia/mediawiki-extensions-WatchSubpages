@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Liangent",
-			"Wrightbus"
+			"Wrightbus",
+			"LNDDYL"
 		]
 	},
 	"watchsubpages": "監視子頁面",
 	"watchsubpages-submit": "增加頁面",
 	"watchsubpages-legend": "增加頁面至監視清單",
-	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子頁]]到監視列表"
+	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子頁]]到監視清單"
 }
