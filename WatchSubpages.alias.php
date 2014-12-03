@@ -41,7 +41,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'WatchSubpages' => array( 'BınpelaSeyrke' ),
+	'WatchSubpages' => array( 'BınpelanSeyrKe' ),
 );
 
 /** Lower Sorbian (dolnoserbski) */
