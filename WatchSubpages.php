@@ -35,4 +35,5 @@ $wgExtensionMessagesFiles['WatchSubpages'] = $dir . 'WatchSubpages.i18n.php';
 $wgExtensionMessagesFiles['WatchSubpagesAlias'] = $dir . 'WatchSubpages.alias.php';
 $wgAutoloadClasses['WatchSubpages'] = $dir . 'WatchSubpages_body.php';
 $wgSpecialPages['WatchSubpages'] = 'WatchSubpages';
+$wgAvailableRights[] = 'watchsubpages';
 $wgGroupPermissions['user']['watchsubpages'] = true;
