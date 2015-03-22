@@ -89,6 +89,11 @@ $specialPageAliases['gu'] = array(
 	'WatchSubpages' => array( 'ઉપપાનાઓ_જુઓ' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'WatchSubpages' => array( 'מעקב_אחרי_דפי־משנה' ),
+);
+
 /** Croatian (hrvatski) */
 $specialPageAliases['hr'] = array(
 	'WatchSubpages' => array( 'Prati_podstranice' ),
