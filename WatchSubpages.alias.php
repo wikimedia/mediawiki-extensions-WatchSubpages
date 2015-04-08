@@ -29,6 +29,11 @@ $specialPageAliases['as'] = array(
 	'WatchSubpages' => array( 'উপপৃষ্ঠাসমূহ_চাওক' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'WatchSubpages' => array( 'گۆنڈ_دیمانی_دیستین' ),
+);
+
 /** Bosnian (bosanski) */
 $specialPageAliases['bs'] = array(
 	'WatchSubpages' => array( 'PratiPodstranice' ),
