@@ -171,7 +171,7 @@ $specialPageAliases['nb'] = array(
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
-	'WatchSubpages' => array( 'Subpagina\'s_op_volglieste' ),
+	'WatchSubpages' => array( 'Subziejen_op_volglieste' ),
 );
 
 /** Dutch (Nederlands) */
