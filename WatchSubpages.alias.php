@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'WatchSubpages' => array( 'مراقبة_الصفحات_الفرعية' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'WatchSubpages' => array( 'مراقبة_الصفح_الفرعيه' ),
 );
@@ -74,7 +74,7 @@ $specialPageAliases['fr'] = array(
 	'WatchSubpages' => array( 'Voir_les_sous-pages', 'VoirSousPages' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'WatchSubpages' => array( 'Siuvre_les_sot-pâges', 'SiuvreLesSotPâges' ),
 );
