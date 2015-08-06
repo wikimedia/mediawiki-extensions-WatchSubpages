@@ -321,7 +321,7 @@ class WatchSubpages extends SpecialPage {
 			);
 		}
 
-		wfRunHooks( 'WatchlistEditorBuildRemoveLine', array( &$tools, $title, $title->isRedirect(), $this->getSkin() ) );
+		Hooks::run( 'WatchlistEditorBuildRemoveLine', array( &$tools, $title, $title->isRedirect(), $this->getSkin() ) );
 
 		return $link . " (" . $this->getLanguage()->pipeList( $tools ) . ")";
 	}
