@@ -40,6 +40,10 @@ class WatchSubpages extends SpecialPage {
 		parent::__construct( 'Watchsubpages', 'watchsubpages' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * Main execution point
 	 *
