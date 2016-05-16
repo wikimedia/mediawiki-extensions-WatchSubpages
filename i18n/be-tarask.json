@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"EugeneZelenko",
-			"Jim-by"
+			"Jim-by",
+			"Red Winged Duck"
 		]
 	},
 	"watchsubpages": "Назіраць за падстаронкамі",
+	"watchsubpagesprefix": "Паказваць падстаронкі:",
 	"watchsubpages-submit": "Дадаць старонкі",
 	"watchsubpages-legend": "Дадаць старонкі ў сьпіс назіраньня",
 	"watchsubpages-desc": "Хуткае [[Special:WatchSubpages|даданьне ўсіх падстаронак]] любой старонкі ў сьпіс назіраньня",
