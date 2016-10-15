@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Avjoska"
+			"Avjoska",
+			"Pikne"
 		]
 	},
-	"watchsubpages-submit": "Lisa lehekülgi",
+	"watchsubpages-submit": "Lisa leheküljed",
 	"watchsubpages-legend": "Lisa lehekülgi jälgimisloendisse"
 }
