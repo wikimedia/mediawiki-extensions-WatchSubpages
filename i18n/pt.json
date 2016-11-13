@@ -13,5 +13,5 @@
 	"tooltip-watchsubpages-submit": "Adicionar páginas",
 	"watchsubpages-legend": "Adicionar páginas à lista de páginas vigiadas",
 	"watchsubpages-desc": "Rapidamente [[Special:WatchSubpages|adicione todas as subpáginas]] de uma página à sua lista de páginas vigiadas",
-	"watchsubpages-explain": "Seleccione as páginas para adicionar à sua lista de páginas vigiadas abaixo.\nPara adicionar uma página, marque a caixa junto a esta, e clique \"{{int:watchsubpages-submit}}\".\n\nQuando marca ou desmarca várias páginas, se premir a tecla \"Shift\" pode seleccionar caixas de marcação consecutivas, clicando em cada extremo do intervalo a seleccionar."
+	"watchsubpages-explain": "Selecione as páginas para adicionar à sua lista de páginas vigiadas abaixo.\nPara adicionar uma página, marque a caixa junto a esta, e clique \"{{int:watchsubpages-submit}}\".\n\nQuando marca ou desmarca várias páginas, se premir a tecla \"Shift\" pode selecionar caixas de marcação consecutivas, clicando em cada extremo do intervalo a selecionar."
 }
