@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Irwangatot",
-			"Kandar"
+			"Kandar",
+			"Uchup19"
 		]
 	},
 	"watchsubpages": "Awaskeun sub artikel",
 	"watchsubpages-submit": "Asupkeun kaca",
-	"watchsubpages-legend": "Asupkeun kaca ka awaskeuneun",
+	"watchsubpages-legend": "Tambahkeun kaca kana daptar awaseun",
 	"watchsubpages-desc": "Gancang [[Special:WatchSubpages|asupkeun kabeh sub kaca ]] ieu ka awaskeunen",
 	"watchsubpages-explain": "Pilih kaca anu rék diawaskeun ku cara nyontréng kotak gigireunana, tuluy klik \"{{int:watchsubpages-submit}}\".\n\nPikeun milih sakaligus sababaraha kaca anu noron, klik dina kaca panungtung anu noron bari nahan tombol shift."
 }
