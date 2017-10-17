@@ -4,12 +4,16 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
-			"Milicevic01"
+			"Milicevic01",
+			"Obsuser"
 		]
 	},
 	"watchsubpages": "Надгледај подстранице",
+	"watchsubpagesprefix": "Приказ подстраница за:",
+	"watchsubpages-nochanges": "Није направљена никаква измена у Вашем списку надгледања.",
 	"watchsubpages-submit": "Додај странице",
 	"tooltip-watchsubpages-submit": "Додај странице",
 	"watchsubpages-legend": "Додај странице на списак надгледања",
-	"watchsubpages-desc": "Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања"
+	"watchsubpages-desc": "Брзо [[Special:WatchSubpages|додај све подстранице]] странице на списак надгледања",
+	"watchsubpages-explain": "Одаберите странице које желите додати у свој списак надгледања испод.\nДа бисте додали страницу, чекирајте кућицу поред ње, те кликните на „{{int:watchsubpages-submit}}”.\n\nПри означавању или одзначавању више страница, држање типке shift омогућава одабир узастопних кућица кликањем на крај опсега за чекирање."
 }
