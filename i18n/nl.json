@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"SPQRobin"
+			"SPQRobin",
+			"Mainframe98"
 		]
 	},
 	"watchsubpages": "Subpagina's volgen",
+	"watchsubpagesprefix": "Toon deelpagina's van:",
+	"watchsubpages-nochanges": "Er zijn geen wijzigingen aan uw volglijst gemaakt.",
 	"watchsubpages-submit": "Pagina's toevoegen",
 	"tooltip-watchsubpages-submit": "Pagina's toevoegen",
 	"watchsubpages-legend": "Pagina's aan volglijst toevoegen",
