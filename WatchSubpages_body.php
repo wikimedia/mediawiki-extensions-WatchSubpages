@@ -37,7 +37,7 @@ class WatchSubpages extends SpecialPage {
 	protected $hideRedirects = false;
 
 	public function __construct() {
-		parent::__construct( 'Watchsubpages', 'watchsubpages' );
+		parent::__construct( 'WatchSubpages', 'watchsubpages' );
 	}
 
 	public function doesWrites() {
