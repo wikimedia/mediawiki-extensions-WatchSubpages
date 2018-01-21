@@ -83,7 +83,7 @@ class WatchSubpages extends SpecialPage {
 		}
 
 		$nsForm = $this->namespacePrefixForm( $namespace, $showme );
-		$this->toc = Xml::openElement( 'table', array( 'id' => 'mw-prefixindex-nav-table' ) ) .
+		$this->toc = Xml::openElement( 'table', [ 'id' => 'mw-prefixindex-nav-table' ] ) .
 			'<tr>
 				<td>' .
 			$nsForm .
@@ -113,18 +113,18 @@ class WatchSubpages extends SpecialPage {
 	protected function namespacePrefixForm( $namespace = NS_MAIN, $from = '' ) {
 		global $wgScript;
 
-		$out = Xml::openElement( 'div', array( 'class' => 'namespaceoptions' ) );
-		$out .= Xml::openElement( 'form', array( 'method' => 'get', 'action' => $wgScript ) );
+		$out = Xml::openElement( 'div', [ 'class' => 'namespaceoptions' ] );
+		$out .= Xml::openElement( 'form', [ 'method' => 'get', 'action' => $wgScript ] );
 		$out .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() );
 		$out .= Xml::openElement( 'fieldset' );
 		$out .= Xml::element( 'legend', null, $this->msg( 'watchsubpages' )->text() );
-		$out .= Xml::openElement( 'table', array( 'id' => 'nsselect', 'class' => 'allpages' ) );
+		$out .= Xml::openElement( 'table', [ 'id' => 'nsselect', 'class' => 'allpages' ] );
 		$out .= "<tr>
 				<td class='mw-label'>" .
 			Xml::label( $this->msg( 'watchsubpagesprefix' )->text(), 'nsfrom' ) .
 			"</td>
 				<td class='mw-input'>" .
-			Xml::input( 'prefix', 30, str_replace( '_', ' ', $from ), array( 'id' => 'nsfrom' ) ) .
+			Xml::input( 'prefix', 30, str_replace( '_', ' ', $from ), [ 'id' => 'nsfrom' ] ) .
 			"</td>
 			</tr>
 			<tr>
@@ -132,13 +132,13 @@ class WatchSubpages extends SpecialPage {
 			Xml::label( $this->msg( 'namespace' )->text(), 'namespace' ) .
 			"</td>
 				<td class='mw-input'>" .
-			Html::namespaceSelector( array(
+			Html::namespaceSelector( [
 				'selected' => $namespace,
-			), array(
+			], [
 				'name' => 'namespace',
 				'id' => 'namespace',
 				'class' => 'namespaceselector',
-			) ) .
+			] ) .
 			Xml::checkLabel(
 				$this->msg( 'allpages-hide-redirects' )->text(),
 				'hideredirects',
@@ -184,28 +184,28 @@ class WatchSubpages extends SpecialPage {
 
 		list( $namespace, $prefixKey, $prefix ) = $prefixList;
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
-		$conds = array(
+		$conds = [
 			'page_namespace' => $namespace,
-			'page_title' . $dbr->buildLike( $prefixKey . '/' , $dbr->anyString() ),
-		);
+			'page_title' . $dbr->buildLike( $prefixKey . '/', $dbr->anyString() ),
+		];
 
 		if ( $this->hideRedirects ) {
 			$conds['page_is_redirect'] = 0;
 		}
 
 		$res = $dbr->select( 'page',
-			array( 'page_namespace', 'page_title', 'page_is_redirect' ),
+			[ 'page_namespace', 'page_title', 'page_is_redirect' ],
 			$conds,
 			__METHOD__,
-			array(
+			[
 				'ORDER BY' => 'page_title',
 				'USE INDEX' => 'name_title',
-			)
+			]
 		);
 
-		$pages = array();
+		$pages = [];
 
 		if ( $res->numRows() > 0 ) {
 			$lb = new LinkBatch();
@@ -220,25 +220,25 @@ class WatchSubpages extends SpecialPage {
 
 		$dispNamespace = MWNamespace::getSubject( $namespace );
 
-		$fields = array();
+		$fields = [];
 
-		$fields['prefix'] = array(
+		$fields['prefix'] = [
 				'type' => 'hidden',
 				'name' => 'prefix',
 				'default' => $prefix
-		);
+		];
 
-		$fields['namespace'] = array(
+		$fields['namespace'] = [
 				'type' => 'hidden',
 				'name' => 'namespace',
 				'default' => $namespace
-		);
+		];
 
-		$fields['Titles'] = array(
+		$fields['Titles'] = [
 			'class' => 'EditWatchlistCheckboxSeriesField',
-			'options' => array(),
+			'options' => [],
 			'section' => "ns$dispNamespace",
-		);
+		];
 
 		foreach ( array_keys( $pages ) as $dbkey ) {
 			$title = Title::makeTitleSafe( $dispNamespace, $dbkey );
@@ -256,7 +256,7 @@ class WatchSubpages extends SpecialPage {
 		$form->setSubmitTooltip( 'watchsubpages-submit' );
 		$form->setWrapperLegendMsg( 'watchsubpages-legend' );
 		$form->addHeaderText( $this->msg( 'watchsubpages-explain' )->parse() );
-		$form->setSubmitCallback( array( $this, 'submitRaw' ) );
+		$form->setSubmitCallback( [ $this, 'submitRaw' ] );
 
 		return $form;
 	}
@@ -266,17 +266,17 @@ class WatchSubpages extends SpecialPage {
 	 *
 	 * @param $ns Integer: the namespace of the article
 	 * @param string $text the name of the article
-	 * @return array( int namespace, string dbkey, string pagename ) or NULL on error
+	 * @return array int namespace, string dbkey, string pagename ) or NULL on error
 	 */
 	protected function getNamespaceKeyAndText( $ns, $text ) {
 		if ( $text == '' ) {
 			# shortcut for common case
-			return array( $ns, '', '' );
+			return [ $ns, '', '' ];
 		}
 
 		$t = Title::makeTitleSafe( $ns, $text );
 		if ( $t && $t->isLocal() ) {
-			return array( $t->getNamespace(), $t->getDBkey(), $t->getText() );
+			return [ $t->getNamespace(), $t->getDBkey(), $t->getText() ];
 		} elseif ( $t ) {
 			return null;
 		}
@@ -285,7 +285,7 @@ class WatchSubpages extends SpecialPage {
 		$text = preg_replace( '/(#|$)/', 'X$1', $text );
 		$t = Title::makeTitleSafe( $ns, $text );
 		if ( $t && $t->isLocal() ) {
-			return array( $t->getNamespace(), '', '' );
+			return [ $t->getNamespace(), '', '' ];
 		} else {
 			return null;
 		}
@@ -313,8 +313,8 @@ class WatchSubpages extends SpecialPage {
 			$tools[] = Linker::linkKnown(
 				$title,
 				$this->msg( 'history_short' )->escaped(),
-				array(),
-				array( 'action' => 'history' )
+				[],
+				[ 'action' => 'history' ]
 			);
 		}
 
@@ -325,7 +325,7 @@ class WatchSubpages extends SpecialPage {
 			);
 		}
 
-		Hooks::run( 'WatchlistEditorBuildRemoveLine', array( &$tools, $title, $title->isRedirect(), $this->getSkin() ) );
+		Hooks::run( 'WatchlistEditorBuildRemoveLine', [ &$tools, $title, $title->isRedirect(), $this->getSkin() ] );
 
 		return $link . " (" . $this->getLanguage()->pipeList( $tools ) . ")";
 	}
@@ -364,21 +364,21 @@ class WatchSubpages extends SpecialPage {
 	 * @return array
 	 */
 	private function getWatchlist() {
-		$list = array();
+		$list = [];
 		$dbr = wfGetDB( DB_MASTER );
 
 		$res = $dbr->select(
 			'watchlist',
-			array(
+			[
 				'wl_namespace', 'wl_title'
-			), array(
+			], [
 				'wl_user' => $this->getUser()->getId(),
-			),
+			],
 			__METHOD__
 		);
 
 		if ( $res->numRows() > 0 ) {
-			$titles = array();
+			$titles = [];
 			foreach ( $res as $row ) {
 				$title = Title::makeTitleSafe( $row->wl_namespace, $row->wl_title );
 
@@ -410,7 +410,7 @@ class WatchSubpages extends SpecialPage {
 	 */
 	private function watchTitles( $titles ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$rows = array();
+		$rows = [];
 
 		foreach ( $titles as $title ) {
 			if ( !$title instanceof Title ) {
@@ -418,18 +418,18 @@ class WatchSubpages extends SpecialPage {
 			}
 
 			if ( $title instanceof Title ) {
-				$rows[] = array(
+				$rows[] = [
 					'wl_user' => $this->getUser()->getId(),
 					'wl_namespace' => MWNamespace::getSubject( $title->getNamespace() ),
 					'wl_title' => $title->getDBkey(),
 					'wl_notificationtimestamp' => null,
-				);
-				$rows[] = array(
+				];
+				$rows[] = [
 					'wl_user' => $this->getUser()->getId(),
 					'wl_namespace' => MWNamespace::getTalk( $title->getNamespace() ),
 					'wl_title' => $title->getDBkey(),
 					'wl_notificationtimestamp' => null,
-				);
+				];
 			}
 		}
 
