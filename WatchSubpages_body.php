@@ -106,7 +106,7 @@ class WatchSubpages extends SpecialPage {
 	 *
 	 * Initially from SpecialPrefixindex.php
 	 *
-	 * @param $namespace Integer: a namespace constant (default NS_MAIN).
+	 * @param int $namespace a namespace constant (default NS_MAIN).
 	 * @param string $from dbKey we are starting listing at.
 	 * @return string
 	 */
@@ -164,7 +164,7 @@ class WatchSubpages extends SpecialPage {
 	 * Modified with SpecialPrefixindex.php showPrefixChunk
 	 * Modified with SpecialPrefixindex.php execute
 	 *
-	 * @param $namespace Integer: a namespace constant (default NS_MAIN).
+	 * @param int $namespace a namespace constant (default NS_MAIN).
 	 * @param string $prefix dbKey we are starting listing at.
 	 * @return HTMLForm
 	 */
@@ -264,7 +264,7 @@ class WatchSubpages extends SpecialPage {
 	/**
 	 * Unmodified from SpecialAllpages.php
 	 *
-	 * @param $ns Integer: the namespace of the article
+	 * @param int $ns the namespace of the article
 	 * @param string $text the name of the article
 	 * @return array int namespace, string dbkey, string pagename ) or NULL on error
 	 */
@@ -296,7 +296,7 @@ class WatchSubpages extends SpecialPage {
 	 *
 	 * Unmodified from SpecialEditWatchlist.php
 	 *
-	 * @param $title Title
+	 * @param Title $title
 	 * @return string
 	 */
 	private function buildRemoveLine( $title ) {
@@ -332,6 +332,8 @@ class WatchSubpages extends SpecialPage {
 
 	/**
 	 * Initially from SpecialEditWatchlist.php
+	 * @param array $data
+	 * @return true
 	 */
 	public function submitRaw( $data ) {
 		$current = $this->getWatchlist();
@@ -444,8 +446,8 @@ class WatchSubpages extends SpecialPage {
 	 *
 	 * Unmodified from SpecialEditWatchlist.php
 	 *
-	 * @param array $titles of strings, or Title objects
-	 * @param $output String
+	 * @param array $titles Array of strings, or Title objects
+	 * @param string &$output
 	 */
 	private function showTitles( $titles, &$output ) {
 		$talk = $this->msg( 'talkpagelinktext' )->escaped();
