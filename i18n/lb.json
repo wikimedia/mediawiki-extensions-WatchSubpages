@@ -7,9 +7,9 @@
 	},
 	"watchsubpages": "Ënner-Säiten iwwerwaachen",
 	"watchsubpagesprefix": "Weist d'Ënnersäite vun:",
-	"watchsubpages-submit": "Säiten dobäisetzen",
+	"watchsubpages-submit": "Säiten derbäisetzen",
 	"tooltip-watchsubpages-submit": "Säiten dobäisetzen",
-	"watchsubpages-legend": "Säiten op d'Iwwerwaachungslëscht dobäisetzen",
+	"watchsubpages-legend": "Säiten op d'Iwwerwaachungslëscht derbäisetzen",
 	"watchsubpages-desc": "Séier [[Special:WatchSubpages|all Ënner-Säiten]] vun enger Säit op d'Iwwerwwachungslëscht dobäisetzen",
 	"watchsubpages-explain": "Wielt hei ënnendrënner déi Säiten eraus déi Dir op Är Iwwerwaachungslëscht dobäisetze wëllt.\nFir eng Säit dobäizesetzen, klickt d'Këscht niewendrun un, a klickt\"{{int:watchsubpages-submit}}\".\n\nFir méi Säite mateneen unzewielen oder ze desaktivéieren, kënnt Dir d'Shift-Tast drécke fir méi Këschten hannereneen ze markéieren oder einfach déi éischt an déi lescht Këscht uklicke fir och all déi dertëschent matunzewielen."
 }
