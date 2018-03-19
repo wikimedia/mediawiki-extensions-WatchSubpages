@@ -3,11 +3,16 @@
 		"authors": [
 			"Liangent",
 			"Wrightbus",
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
 	"watchsubpages": "監視子頁面",
+	"watchsubpagesprefix": "顯示子頁面有關於：",
+	"watchsubpages-nochanges": "您的監視清單中沒有做出更改。",
 	"watchsubpages-submit": "增加頁面",
+	"tooltip-watchsubpages-submit": "增加頁面",
 	"watchsubpages-legend": "增加頁面至監視清單",
-	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子頁]]到監視清單"
+	"watchsubpages-desc": "快速[[Special:WatchSubpages|添加所有的子頁]]到監視清單",
+	"watchsubpages-explain": "選擇頁面來增加至您的監視清單。\n要增加頁面清在方框旁勾選，然後點擊「{{int:watchsubpages-submit}}」。\n\n對於勾選或取消勾選多個頁面方面，壓住 shift 鍵不放能允許您透過點擊一段要勾選的範圍，來選出連續的方框。"
 }
