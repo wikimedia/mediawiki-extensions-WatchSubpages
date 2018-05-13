@@ -3,11 +3,15 @@
 		"authors": [
 			"DRIHEM",
 			"Meno25",
-			"OsamaK"
+			"OsamaK",
+			"ديفيد"
 		]
 	},
 	"watchsubpages": "مراقبة الصفحات الفرعية",
+	"watchsubpagesprefix": "عرض الصفحات الفرعية لـ:",
+	"watchsubpages-nochanges": "لم يتم إجراء أية تغييرات على قائمة مراقبتك.",
 	"watchsubpages-submit": "إضافة صفحات",
+	"tooltip-watchsubpages-submit": "إضافة صفحات",
 	"watchsubpages-legend": "إضافة صفحات إلى قائمة المراقبة",
 	"watchsubpages-desc": "بسرعة [[Special:WatchSubpages|أضف كل الصفحات الفرعية]] لصفحة إلى قائمة المراقبة",
 	"watchsubpages-explain": "اختر الصفحات للإضافة لقائمة مراقبتك بالأسفل.\nلإضافة صفحة، علم على الصندوق بجوارها، واضغط \"{{int:watchsubpages-submit}}\".\n\nعند تعليم أو إزالة تعليم صفحات متعددة، الإمساك بمفتاح شيفت يسمح لك باختيار صناديق متتالية بواسطة الضغط على كل نهاية للنطاق المراد تعليمه."
