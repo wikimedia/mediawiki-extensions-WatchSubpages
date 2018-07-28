@@ -12,5 +12,6 @@
 	"tooltip-watchsubpages-submit": "Add pages",
 	"watchsubpages-legend": "Add pages to watchlist",
 	"watchsubpages-desc": "Quickly [[Special:WatchSubpages|add all subpages]] of a page to the watchlist",
-	"watchsubpages-explain": "Select the pages to add to your watchlist below.\nTo add a page, check the box next to it, and click \"{{int:watchsubpages-submit}}\".\n\nWhen checking or unchecking multiple pages, holding the shift key allows you to select consecutive checkboxes by clicking each end of the range to be checked."
+	"watchsubpages-explain": "Select the pages to add to your watchlist below.\nTo add a page, check the box next to it, and click \"{{int:watchsubpages-submit}}\".\n\nWhen checking or unchecking multiple pages, holding the shift key allows you to select consecutive checkboxes by clicking each end of the range to be checked.",
+	"right-watchsubpages": "Quickly add all subpages of a page to the personal watchlist"
 }

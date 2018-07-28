@@ -17,5 +17,6 @@
 	"tooltip-watchsubpages-submit": "Used as tooltip.\n\nSee also:\n* {{msg-mw|Watchsubpages-submit}}\n* {{msg-mw|Accesskey-watchsubpages-submit}}\n* {{msg-mw|Tooltip-watchsubpages-submit}}\n{{Identical|Add page}}",
 	"watchsubpages-legend": "Heading of dialogue box on [[Special:WatchSubpages]] that contains listing of subpages.",
 	"watchsubpages-desc": "{{desc|name=WatchSubpages|url=https://www.mediawiki.org/wiki/Extension:WatchSubpages}}",
-	"watchsubpages-explain": "An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].\n\nRefers to {{msg-mw|Watchsubpages-submit}}."
+	"watchsubpages-explain": "An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].\n\nRefers to {{msg-mw|Watchsubpages-submit}}.",
+	"right-watchsubpages": "{{doc-right|watchsubpages}}"
 }
