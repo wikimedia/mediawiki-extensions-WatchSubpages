@@ -12,5 +12,6 @@
 	"tooltip-watchsubpages-submit": "Amestar páxines",
 	"watchsubpages-legend": "Añader páxines a la llista de vixilancia",
 	"watchsubpages-desc": "[[Special:WatchSubpages|Amestar toles subpáxines]] d'una páxina rápidamente a la llista de siguimientu",
-	"watchsubpages-explain": "Escueyi embaxo les páxines p'añader a la to llista de vixilancia.\nP'añader una páxina, activa'l caxellu d'al llau, y calca n'\"{{int:watchsubpages-submit}}\".\n\nPa marcar o desmarcar múltiples páxines, si caltienes calcada la tecla de mayúscules podrás esbillar elementos consecutivos calcando nel postreru del rangu a marcar."
+	"watchsubpages-explain": "Escueyi embaxo les páxines p'añader a la to llista de vixilancia.\nP'añader una páxina, activa'l caxellu d'al llau, y calca n'\"{{int:watchsubpages-submit}}\".\n\nPa marcar o desmarcar múltiples páxines, si caltienes calcada la tecla de mayúscules podrás esbillar elementos consecutivos calcando nel postreru del rangu a marcar.",
+	"right-watchsubpages": "Añadir de manera rápida toles subpáxines d'una páxina a la llista de siguimientu personal"
 }
