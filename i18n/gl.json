@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño"
+			"Toliño",
+			"Elisardojm"
 		]
 	},
 	"watchsubpages": "Vixiar subpáxinas",
-	"watchsubpagesprefix": "Mostrar as subpáxinas de:",
+	"watchsubpagesprefix": "Amosar as subpáxinas de:",
 	"watchsubpages-nochanges": "Non se fixeron cambios nas páxinas que vixía.",
 	"watchsubpages-submit": "Engadir as páxinas",
 	"tooltip-watchsubpages-submit": "Engadir as páxinas",
