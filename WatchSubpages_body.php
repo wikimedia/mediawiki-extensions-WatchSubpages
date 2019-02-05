@@ -82,15 +82,7 @@ class WatchSubpages extends SpecialPage {
 			$showme = $prefix;
 		}
 
-		$nsForm = $this->namespacePrefixForm( $namespace, $showme );
-		$this->toc = Xml::openElement( 'table', [ 'id' => 'mw-prefixindex-nav-table' ] ) .
-			'<tr>
-				<td>' .
-			$nsForm .
-			'</td>
-			<td id="mw-prefixindex-nav-form" class="mw-prefixindex-nav">';
-		$this->toc .= "</td></tr>" .
-			Xml::closeElement( 'table' );
+		$this->namespacePrefixForm( $namespace, $showme );
 
 		$form = $this->getNormalForm( $namespace, $showme );
 		if ( $showme != '' && $form->show() ) {
@@ -111,49 +103,46 @@ class WatchSubpages extends SpecialPage {
 	 * @return string
 	 */
 	protected function namespacePrefixForm( $namespace = NS_MAIN, $from = '' ) {
-		global $wgScript;
-
-		$out = Xml::openElement( 'div', [ 'class' => 'namespaceoptions' ] );
-		$out .= Xml::openElement( 'form', [ 'method' => 'get', 'action' => $wgScript ] );
-		$out .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() );
-		$out .= Xml::openElement( 'fieldset' );
-		$out .= Xml::element( 'legend', null, $this->msg( 'watchsubpages' )->text() );
-		$out .= Xml::openElement( 'table', [ 'id' => 'nsselect', 'class' => 'allpages' ] );
-		$out .= "<tr>
-				<td class='mw-label'>" .
-			Xml::label( $this->msg( 'watchsubpagesprefix' )->text(), 'nsfrom' ) .
-			"</td>
-				<td class='mw-input'>" .
-			Xml::input( 'prefix', 30, str_replace( '_', ' ', $from ), [ 'id' => 'nsfrom' ] ) .
-			"</td>
-			</tr>
-			<tr>
-			<td class='mw-label'>" .
-			Xml::label( $this->msg( 'namespace' )->text(), 'namespace' ) .
-			"</td>
-				<td class='mw-input'>" .
-			Html::namespaceSelector( [
-				'selected' => $namespace,
-			], [
-				'name' => 'namespace',
+		$formDescriptor = [
+			'textbox' => [
+				'type' => 'text',
+				'id' => 'nsfrom',
+				'label' => $this->msg( 'watchsubpagesprefix' )->text(),
+				'name' => 'prefix',
+				'size' => 30,
+				'value' => str_replace( '_', ' ', $from ),
+			],
+			'namespace' => [
+				'type' => 'namespaceselect',
+				'all' => null,
+				'default' => 0,
 				'id' => 'namespace',
-				'class' => 'namespaceselector',
-			] ) .
-			Xml::checkLabel(
-				$this->msg( 'allpages-hide-redirects' )->text(),
-				'hideredirects',
-				'hideredirects',
-				$this->hideRedirects
-			) . ' ' .
-			Xml::submitButton( $this->msg( 'allpagessubmit' )->text() ) .
-			"</td>
-			</tr>";
-		$out .= Xml::closeElement( 'table' );
-		$out .= Xml::closeElement( 'fieldset' );
-		$out .= Xml::closeElement( 'form' );
-		$out .= Xml::closeElement( 'div' );
+				'label' => $this->msg( 'namespace' )->text(),
+				'name' => 'namespace',
+				'value' => $namespace,
+			],
+			'mycheck' => [
+				'type' => 'check',
+				'id' => 'hideredirects',
+				'label' => $this->msg( 'allpages-hide-redirects' )->text(),
+				'name' => 'hideredirects',
+				'selected' => $this->hideRedirects,
+			],
+			'button' => [
+				'type' => 'submit',
+				'default' => $this->msg( 'allpagessubmit' )->text(),
+				'flags' => [ 'primary' ],
+				'name' => 'submit',
+			]
+		];
 
-		return $out;
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$htmlForm
+			->setMethod( 'get' )
+			->setWrapperLegendMsg( 'watchsubpages' )
+			->suppressDefaultSubmit()
+			->prepareForm()
+			->displayForm( false );
 	}
 
 	/**
@@ -383,7 +372,6 @@ class WatchSubpages extends SpecialPage {
 			$titles = [];
 			foreach ( $res as $row ) {
 				$title = Title::makeTitleSafe( $row->wl_namespace, $row->wl_title );
-
 				if ( !$title->isTalkPage() ) {
 					$titles[] = $title;
 				}
