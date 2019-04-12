@@ -5,6 +5,12 @@
 		]
 	},
 	"watchsubpages": "Segue le sottopàggene",
+	"watchsubpagesprefix": "Fà 'ndrucà le sottoèàggene de:",
+	"watchsubpages-nochanges": "Nisciune cangiamende ha state fatte jndr'à l'elenghe de le èàggene condrollate tune.",
 	"watchsubpages-submit": "Aggiunge pàggene",
-	"tooltip-watchsubpages-submit": "Aggiunge pàggene"
+	"tooltip-watchsubpages-submit": "Aggiunge pàggene",
+	"watchsubpages-legend": "Aggiunge le pàggene a l'elenghe de le pàggene condrollate",
+	"watchsubpages-desc": "Valoce veloce [[Special:WatchSubpages|aggiunge tutte le sottopàggene]] de 'na pàgene a l'elenghe de le pàggene condrollate",
+	"watchsubpages-explain": "Scacchià le pàggene ca avènene, da aggiungere a 'u probbie elenghe de le pàggene condrollate.\nPe aggiungere 'na pàgene, scacchie 'a caselle affianghe a jedde e cazze sus a \"{{int:watchsubpages-submit}}\".\n\nQuanne se scacchiane o se lassane cchiù pàggene, a tenè cazzate 'u buttone shift ca te permette de scacchià caselle una apprisse a l'otre cazzanne le estreme d'u 'ndervalle da scacchià.",
+	"right-watchsubpages": "Valoce veloce aggiunge tutte le sottopàggene de 'na pàgene a l'elenghe de le pàggene condrollate tune"
 }
