@@ -18,5 +18,6 @@
 	"watchsubpages-legend": "Heading of dialogue box on [[Special:WatchSubpages]] that contains listing of subpages.",
 	"watchsubpages-desc": "{{desc|name=WatchSubpages|url=https://www.mediawiki.org/wiki/Extension:WatchSubpages}}",
 	"watchsubpages-explain": "An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].\n\nRefers to {{msg-mw|Watchsubpages-submit}}.",
+	"action-watchsubpages": "{{doc-action|watchsubpages}}",
 	"right-watchsubpages": "{{doc-right|watchsubpages}}"
 }
