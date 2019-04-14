@@ -15,5 +15,6 @@
 	"watchsubpages-legend": "Seiten zur Beobachtungsliste hinzufügen",
 	"watchsubpages-desc": "Schnelles [[Special:WatchSubpages|Hinzufügen aller Unterseiten]] einer Seite zur Beobachtungsliste",
 	"watchsubpages-explain": "Wähle die Seiten aus, die deiner Beobachtungsliste hinzugefügt werden sollen.\nUm eine Seite hinzuzufügen, markiere die Kästchen neben den Einträgen und klicke auf „{{int:watchsubpages-submit}}“.\n\nBeim Markieren von mehreren Seiten, erlaubt es die gedrücktgehaltene Shift-Taste aufeinanderfolgende Kästchen zu markieren oder die Markierung zu entfernen.",
+	"action-watchsubpages": "alle Unterseiten einer Seite zur persönlichen Beobachtungsliste schnell hinzuzufügen",
 	"right-watchsubpages": "Alle Unterseiten einer Seite zur persönlichen Beobachtungsliste schnell hinzufügen"
 }
