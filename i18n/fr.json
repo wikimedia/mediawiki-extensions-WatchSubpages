@@ -20,5 +20,6 @@
 	"watchsubpages-legend": "Ajouter des pages à la liste de suivi",
 	"watchsubpages-desc": "Ajoute rapidement [[Special:WatchSubpages|toutes les sous-pages]] d’une page à la liste de suivi",
 	"watchsubpages-explain": "Sélectionnez les pages à ajouter à votre liste de suivi ci-dessous.\nPour ajouter une page, cocher la case correspondante, et cliquez sur « {{int:watchsubpages-submit}} ».\n\nPour cocher ou décocher plusieurs pages, maintenir enfoncée la touche « Majuscule » vous permet de sélectionner des cases à cocher adjacentes en cliquant à chaque extrémité du groupe à cocher.",
+	"action-watchsubpages": "ajouter rapidement toutes les sous-pages d’une page à la liste de suivi personnelle",
 	"right-watchsubpages": "Ajouter rapidement dans la liste de suivi personnelle,  toutes les sous-pages d'une page donnée"
 }
