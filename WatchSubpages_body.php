@@ -21,6 +21,8 @@
  * @ingroup SpecialPage
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Provides the UI through which users can perform editing
  * operations on their watchlist
@@ -378,7 +380,7 @@ class WatchSubpages extends SpecialPage {
 			}
 			$res->free();
 
-			GenderCache::singleton()->doTitlesArray( $titles );
+			MediaWikiServices::getInstance()->getGenderCache()->doTitlesArray( $titles );
 
 			foreach ( $titles as $title ) {
 				$list[] = $title->getPrefixedText();

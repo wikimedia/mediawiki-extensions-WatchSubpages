@@ -6,6 +6,9 @@
 	"descriptionmsg": "watchsubpages-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.28.0"
+	},
 	"AvailableRights": [
 		"watchsubpages"
 	],
