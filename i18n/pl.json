@@ -3,10 +3,12 @@
 		"authors": [
 			"Sp5uhe",
 			"Wpedzich",
-			"Chrumps"
+			"Chrumps",
+			"Rail"
 		]
 	},
 	"watchsubpages": "Obserwuj podstrony",
+	"watchsubpagesprefix": "Wyświetl podstrony:",
 	"watchsubpages-submit": "Dodaj strony",
 	"tooltip-watchsubpages-submit": "Dodaj strony",
 	"watchsubpages-legend": "Dodaj strony do listy obserwowanych",
