@@ -29,7 +29,7 @@
 		"WatchSubpagesAlias": "WatchSubpages.alias.php"
 	},
 	"AutoloadClasses": {
-		"WatchSubpages": "WatchSubpages_body.php"
+		"WatchSubpages": "WatchSubpages.php"
 	},
 	"manifest_version": 1
 }
