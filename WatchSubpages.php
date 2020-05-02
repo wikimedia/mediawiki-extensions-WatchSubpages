@@ -20,7 +20,7 @@
  * @file
  * @ingroup SpecialPage
  */
-
+use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -34,12 +34,29 @@ use MediaWiki\MediaWikiServices;
 class WatchSubpages extends SpecialPage {
 	protected $successMessage;
 
-	protected $toc;
-
 	protected $hideRedirects = false;
+
+	private $badItems = [];
+
+	/**
+	 * @var TitleParser
+	 */
+	private $titleParser;
 
 	public function __construct() {
 		parent::__construct( 'WatchSubpages', 'watchsubpages' );
+	}
+
+	/**
+	 * Unmodified from SpecialEditWatchlist.php
+	 *
+	 * Initialize any services we'll need (unless it has already been provided via a setter).
+	 * This allows for dependency injection even though we don't control object creation.
+	 */
+	private function initServices() {
+		if ( !$this->titleParser ) {
+			$this->titleParser = MediaWikiServices::getInstance()->getTitleParser();
+		}
 	}
 
 	public function doesWrites() {
@@ -47,14 +64,14 @@ class WatchSubpages extends SpecialPage {
 	}
 
 	/**
-	 * Main execution point
+	 * Initially from SpecialPrefixindex.php
+	 * Modified with SpecialEditWatchlist.php
 	 *
-	 * Initially from SpecialEditWatchlist.php
-	 * Modified with SpecialPrefixindex.php
-	 *
-	 * @param string $par becomes "FOO" when called like Special:WatchSubpages/FOO (default null)
+	 * Entry point : initialise variables and call subfunctions.
+	 * @param string $par Becomes "FOO" when called like Special:WatchSubpages/FOO (default null)
 	 */
 	public function execute( $par ) {
+		$this->initServices();
 		$this->setHeaders();
 
 		# Anons don't get a watchlist
@@ -75,23 +92,20 @@ class WatchSubpages extends SpecialPage {
 		$namespace = (int)$ns; // if no namespace given, use 0 (NS_MAIN).
 		$this->hideRedirects = $request->getBool( 'hideredirects', $this->hideRedirects );
 
+		$namespaces = MediaWikiServices::getInstance()->getContentLanguage()->getNamespaces();
 		$out->setPageTitle( $this->msg( 'watchsubpages' ) );
 
 		$showme = '';
-		if ( isset( $par ) ) {
+		if ( $par !== null ) {
 			$showme = $par;
 		} elseif ( $prefix != '' ) {
 			$showme = $prefix;
 		}
 
-		$this->namespacePrefixForm( $namespace, $showme );
-
-		$form = $this->getNormalForm( $namespace, $showme );
-		if ( $showme != '' && $form->show() ) {
-			$out->addHTML( $this->successMessage );
-			$out->addReturnTo( SpecialPage::getTitleFor( 'WatchSubpages', $showme ) );
-		} elseif ( $this->toc !== false ) {
-			$out->prependHTML( $this->toc );
+		if ( $showme != '' ) {
+			$this->showPrefixChunk( $namespace, $showme );
+		} else {
+			$out->addHTML( $this->namespacePrefixForm( $namespace, null ) );
 		}
 	}
 
@@ -100,118 +114,127 @@ class WatchSubpages extends SpecialPage {
 	 *
 	 * Initially from SpecialPrefixindex.php
 	 *
-	 * @param int $namespace a namespace constant (default NS_MAIN).
-	 * @param string $from dbKey we are starting listing at.
+	 * @param int $namespace A namespace constant (default NS_MAIN).
+	 * @param string $from DbKey we are starting listing at.
 	 * @return string
 	 */
 	protected function namespacePrefixForm( $namespace = NS_MAIN, $from = '' ) {
 		$formDescriptor = [
-			'textbox' => [
-				'type' => 'text',
-				'id' => 'nsfrom',
-				'label' => $this->msg( 'watchsubpagesprefix' )->text(),
+			'prefix' => [
+				'label-message' => 'watchsubpagesprefix',
 				'name' => 'prefix',
+				'id' => 'nsfrom',
+				'type' => 'text',
 				'size' => 30,
-				'value' => str_replace( '_', ' ', $from ),
+				'default' => str_replace( '_', ' ', $from ),
 			],
 			'namespace' => [
 				'type' => 'namespaceselect',
-				'all' => null,
-				'default' => 0,
-				'id' => 'namespace',
-				'label' => $this->msg( 'namespace' )->text(),
 				'name' => 'namespace',
-				'value' => $namespace,
+				'id' => 'namespace',
+				'label-message' => 'namespace',
+				'all' => null,
+				'default' => $namespace,
 			],
-			'mycheck' => [
-				'type' => 'check',
-				'id' => 'hideredirects',
-				'label' => $this->msg( 'allpages-hide-redirects' )->text(),
+			'hidedirects' => [
+				'class' => 'HTMLCheckField',
 				'name' => 'hideredirects',
+				'label-message' => 'allpages-hide-redirects',
 				'selected' => $this->hideRedirects,
 			],
-			'button' => [
-				'type' => 'submit',
-				'default' => $this->msg( 'allpagessubmit' )->text(),
-				'flags' => [ 'primary' ],
-				'name' => 'submit',
-			]
 		];
 
-		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$context = new DerivativeContext( $this->getContext() );
+		$context->setTitle( $this->getPageTitle() ); // Remove subpage
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $context );
 		$htmlForm
 			->setMethod( 'get' )
 			->setWrapperLegendMsg( 'watchsubpages' )
-			->suppressDefaultSubmit()
-			->prepareForm()
-			->displayForm( false );
+			->setSubmitTextMsg( 'prefixindex-submit' );
+
+		return $htmlForm->prepareForm()->getHTML( false );
 	}
 
 	/**
-	 * Get the watchlist editing form
+	 * Initially from SpecialPrefixindex.php showPrefixChunk
+	 * Modified with SpecialEditWatchlist.php executeViewEditWatchlist
 	 *
-	 * Initially from SpecialEditWatchlist.php
-	 * Modified with SpecialEditWatchlist.php getWatchlistInfo
-	 * Modified with SpecialPrefixindex.php showPrefixChunk
-	 * Modified with SpecialPrefixindex.php execute
-	 *
-	 * @param int $namespace a namespace constant (default NS_MAIN).
-	 * @param string $prefix dbKey we are starting listing at.
-	 * @return HTMLForm
+	 * @param int $namespace
+	 * @param string $prefix
 	 */
-	protected function getNormalForm( $namespace = NS_MAIN, $prefix ) {
-		global $wgContLang;
-
+	protected function showPrefixChunk( $namespace, $prefix ) {
 		$prefixList = $this->getNamespaceKeyAndText( $namespace, $prefix );
-		$namespaces = $wgContLang->getNamespaces();
+		$namespaces = MediaWikiServices::getInstance()->getContentLanguage()->getNamespaces();
+		$res = null;
+		$out = $this->getOutput();
+		$showPrefixForm = true;
 
 		if ( !$prefixList ) {
-			$this->toc .= $this->msg( 'allpagesbadtitle' )->parseAsBlock();
+			$out->prependHTML( $this->msg( 'allpagesbadtitle' )->parseAsBlock() );
 		} elseif ( !array_key_exists( $namespace, $namespaces ) ) {
 			// Show errormessage and reset to NS_MAIN
-			$this->toc .= $this->msg( 'allpages-bad-ns', $namespace )->parse();
+			$out->prependHTML( $this->msg( 'allpages-bad-ns', $namespace )->parse() );
 			$namespace = NS_MAIN;
-		}
+		} else {
+			list( $namespace, $prefixKey, $prefix ) = $prefixList;
 
-		list( $namespace, $prefixKey, $prefix ) = $prefixList;
+			$dbr = wfGetDB( DB_REPLICA );
 
-		$dbr = wfGetDB( DB_REPLICA );
+			$conds = [
+				'page_namespace' => $namespace,
+				'page_title' . $dbr->buildLike( $prefixKey . '/', $dbr->anyString() ),
+			];
 
-		$conds = [
-			'page_namespace' => $namespace,
-			'page_title' . $dbr->buildLike( $prefixKey . '/', $dbr->anyString() ),
-		];
-
-		if ( $this->hideRedirects ) {
-			$conds['page_is_redirect'] = 0;
-		}
-
-		$res = $dbr->select( 'page',
-			[ 'page_namespace', 'page_title', 'page_is_redirect' ],
-			$conds,
-			__METHOD__,
-			[
-				'ORDER BY' => 'page_title',
-				'USE INDEX' => 'name_title',
-			]
-		);
-
-		$pages = [];
-
-		if ( $res->numRows() > 0 ) {
-			$lb = new LinkBatch();
-
-			foreach ( $res as $row ) {
-				$lb->add( $row->page_namespace, $row->page_title );
-				$pages[$row->page_title] = 1;
+			if ( $this->hideRedirects ) {
+				$conds['page_is_redirect'] = 0;
 			}
 
-			$lb->execute();
+			$res = $dbr->select( 'page',
+				array_merge(
+					[ 'page_namespace', 'page_title' ],
+					LinkCache::getSelectFields()
+				),
+				$conds,
+				__METHOD__,
+				[
+					'ORDER BY' => 'page_title',
+					'USE INDEX' => 'name_title',
+				]
+			);
+
+			if ( $res->numRows() > 0 ) {
+				foreach ( $res as $row ) {
+					$pages[] = $row->page_title;
+				}
+
+				$form = $this->getNormalForm( $namespace, $prefix, $pages );
+				if ( $form->show() ) {
+					$showPrefixForm = false;
+					$out->addHTML( $this->successMessage );
+					$out->addReturnTo( SpecialPage::getTitleFor( 'WatchSubpages', $prefix ) );
+				}
+			}
 		}
 
-		$dispNamespace = MWNamespace::getSubject( $namespace );
+		if ( $showPrefixForm ) {
+			$out->prependHTML( $this->namespacePrefixForm( $namespace, $prefix ) );
+		}
+	}
 
+	/**
+	 * Get the standard watchlist editing form
+	 *
+	 * Initially from SpecialEditWatchlist.php
+	 *
+	 * @param int $namespace
+	 * @param string $prefix
+	 * @param array $pages Array of strings
+	 * @return HTMLForm
+	 */
+	protected function getNormalForm( $namespace, $prefix, $pages ) {
 		$fields = [];
+		$options = [];
+		$defaults = [];
 
 		$fields['prefix'] = [
 				'type' => 'hidden',
@@ -225,25 +248,31 @@ class WatchSubpages extends SpecialPage {
 				'default' => $namespace
 		];
 
-		$fields['Titles'] = [
-			'class' => 'EditWatchlistCheckboxSeriesField',
-			'options' => [],
-			'section' => "ns$dispNamespace",
-		];
-
-		foreach ( array_keys( $pages ) as $dbkey ) {
-			$title = Title::makeTitleSafe( $dispNamespace, $dbkey );
+		foreach ( $pages as $dbkey ) {
+			$title = Title::makeTitleSafe( $namespace, $dbkey );
 
 			$text = $this->buildRemoveLine( $title );
-			$fields['Titles']['options'][$text] = $title->getPrefixedText();
-			$fields['Titles']['default'][] = $title->getPrefixedText();
+			$options[$text] = $title->getPrefixedText();
+			$defaults[] = $title->getPrefixedText();
+		}
+
+		// checkTitle can filter some options out, avoid empty sections
+		if ( count( $options ) > 0 ) {
+			$fields['Titles'] = [
+				'class' => EditWatchlistCheckboxSeriesField::class,
+				'options' => $options,
+				'default' => $defaults,
+				'section' => "ns$namespace",
+			];
 		}
 
 		$context = new DerivativeContext( $this->getContext() );
 		$context->setTitle( $this->getPageTitle() ); // Remove subpage
 		$form = new EditWatchlistNormalHTMLForm( $fields, $context );
 		$form->setSubmitTextMsg( 'watchsubpages-submit' );
-		# Used message keys: 'accesskey-watchsubpages-submit', 'tooltip-watchsubpages-submit'
+		$form->setSubmitDestructive();
+		# Used message keys:
+		# 'accesskey-watchsubpages-submit', 'tooltip-watchsubpages-submit'
 		$form->setSubmitTooltip( 'watchsubpages-submit' );
 		$form->setWrapperLegendMsg( 'watchsubpages-legend' );
 		$form->addHeaderText( $this->msg( 'watchsubpages-explain' )->parse() );
@@ -255,9 +284,9 @@ class WatchSubpages extends SpecialPage {
 	/**
 	 * Unmodified from SpecialAllpages.php
 	 *
-	 * @param int $ns the namespace of the article
-	 * @param string $text the name of the article
-	 * @return array int namespace, string dbkey, string pagename ) or NULL on error
+	 * @param int $ns The namespace of the article
+	 * @param string $text The name of the article
+	 * @return array|null [ int namespace, string dbkey, string pagename ] or null on error
 	 */
 	protected function getNamespaceKeyAndText( $ns, $text ) {
 		if ( $text == '' ) {
@@ -291,38 +320,48 @@ class WatchSubpages extends SpecialPage {
 	 * @return string
 	 */
 	private function buildRemoveLine( $title ) {
-		$link = Linker::link( $title );
+		$linkRenderer = $this->getLinkRenderer();
+		$link = $linkRenderer->makeLink( $title );
 
-		if ( $title->isRedirect() ) {
-			// Linker already makes class mw-redirect, so this is redundant
-			$link = '<span class="watchlistredir">' . $link . '</span>';
-		}
-
-		$tools[] = Linker::link( $title->getTalkPage(), $this->msg( 'talkpagelinktext' )->escaped() );
+		$tools = [];
+		$tools['talk'] = $linkRenderer->makeLink(
+			$title->getTalkPage(),
+			$this->msg( 'talkpagelinktext' )->text()
+		);
 
 		if ( $title->exists() ) {
-			$tools[] = Linker::linkKnown(
+			$tools['history'] = $linkRenderer->makeKnownLink(
 				$title,
-				$this->msg( 'history_short' )->escaped(),
+				$this->msg( 'history_small' )->text(),
 				[],
 				[ 'action' => 'history' ]
 			);
 		}
 
 		if ( $title->getNamespace() == NS_USER && !$title->isSubpage() ) {
-			$tools[] = Linker::linkKnown(
+			$tools['contributions'] = $linkRenderer->makeKnownLink(
 				SpecialPage::getTitleFor( 'Contributions', $title->getText() ),
-				$this->msg( 'contributions' )->escaped()
+				$this->msg( 'contribslink' )->text()
 			);
 		}
 
-		Hooks::run( 'WatchlistEditorBuildRemoveLine', [ &$tools, $title, $title->isRedirect(), $this->getSkin() ] );
+		Hooks::run(
+			'WatchlistEditorBuildRemoveLine',
+			[ &$tools, $title, $title->isRedirect(), $this->getSkin(), &$link ]
+		);
 
-		return $link . " (" . $this->getLanguage()->pipeList( $tools ) . ")";
+		if ( $title->isRedirect() ) {
+			// Linker already makes class mw-redirect, so this is redundant
+			$link = '<span class="watchlistredir">' . $link . '</span>';
+		}
+
+		return $link . ' ' .
+			$this->msg( 'parentheses' )->rawParams( $this->getLanguage()->pipeList( $tools ) )->escaped();
 	}
 
 	/**
 	 * Initially from SpecialEditWatchlist.php
+	 *
 	 * @param array $data
 	 * @return true
 	 */
@@ -352,33 +391,33 @@ class WatchSubpages extends SpecialPage {
 	 * Prepare a list of titles on a user's watchlist (excluding talk pages)
 	 * and return an array of (prefixed) strings
 	 *
-	 * Unmodified from SpecialEditWatchlist.php
+	 * Initially from SpecialEditWatchlist.php
+	 * Remove cleanupWatchlist
 	 *
 	 * @return array
 	 */
 	private function getWatchlist() {
 		$list = [];
-		$dbr = wfGetDB( DB_MASTER );
 
-		$res = $dbr->select(
-			'watchlist',
-			[
-				'wl_namespace', 'wl_title'
-			], [
-				'wl_user' => $this->getUser()->getId(),
-			],
-			__METHOD__
+		$watchedItems = MediaWikiServices::getInstance()->getWatchedItemStore()->getWatchedItemsForUser(
+			$this->getUser(),
+			[ 'forWrite' => $this->getRequest()->wasPosted() ]
 		);
 
-		if ( $res->numRows() > 0 ) {
+		if ( $watchedItems ) {
+			/** @var Title[] $titles */
 			$titles = [];
-			foreach ( $res as $row ) {
-				$title = Title::makeTitleSafe( $row->wl_namespace, $row->wl_title );
-				if ( !$title->isTalkPage() ) {
+			foreach ( $watchedItems as $watchedItem ) {
+				$namespace = $watchedItem->getLinkTarget()->getNamespace();
+				$dbKey = $watchedItem->getLinkTarget()->getDBkey();
+				$title = Title::makeTitleSafe( $namespace, $dbKey );
+
+				if ( $this->checkTitle( $title, $namespace, $dbKey )
+					&& !$title->isTalkPage()
+				) {
 					$titles[] = $title;
 				}
 			}
-			$res->free();
 
 			MediaWikiServices::getInstance()->getGenderCache()->doTitlesArray( $titles );
 
@@ -391,41 +430,98 @@ class WatchSubpages extends SpecialPage {
 	}
 
 	/**
-	 * Add a list of titles to a user's watchlist
-	 *
-	 * $titles can be an array of strings or Title objects; the former
-	 * is preferred, since Titles are very memory-heavy
+	 * Validates watchlist entry
 	 *
 	 * Unmodified from SpecialEditWatchlist.php
 	 *
-	 * @param array $titles of strings, or Title objects
+	 * @param Title $title
+	 * @param int $namespace
+	 * @param string $dbKey
+	 * @return bool Whether this item is valid
 	 */
-	private function watchTitles( $titles ) {
-		$dbw = wfGetDB( DB_MASTER );
-		$rows = [];
-
-		foreach ( $titles as $title ) {
-			if ( !$title instanceof Title ) {
-				$title = Title::newFromText( $title );
-			}
-
-			if ( $title instanceof Title ) {
-				$rows[] = [
-					'wl_user' => $this->getUser()->getId(),
-					'wl_namespace' => MWNamespace::getSubject( $title->getNamespace() ),
-					'wl_title' => $title->getDBkey(),
-					'wl_notificationtimestamp' => null,
-				];
-				$rows[] = [
-					'wl_user' => $this->getUser()->getId(),
-					'wl_namespace' => MWNamespace::getTalk( $title->getNamespace() ),
-					'wl_title' => $title->getDBkey(),
-					'wl_notificationtimestamp' => null,
-				];
-			}
+	private function checkTitle( $title, $namespace, $dbKey ) {
+		if ( $title
+			&& ( $title->isExternal()
+				|| $title->getNamespace() < 0
+			)
+		) {
+			$title = false; // unrecoverable
 		}
 
-		$dbw->insert( 'watchlist', $rows, __METHOD__, 'IGNORE' );
+		if ( !$title
+			|| $title->getNamespace() != $namespace
+			|| $title->getDBkey() != $dbKey
+		) {
+			$this->badItems[] = [ $title, $namespace, $dbKey ];
+		}
+
+		return (bool)$title;
+	}
+
+	/**
+	 * Add a list of targets to a user's watchlist
+	 *
+	 * Unmodified from SpecialEditWatchlist.php
+	 *
+	 * @param string[]|LinkTarget[] $targets
+	 * @return bool
+	 * @throws FatalError
+	 * @throws MWException
+	 */
+	private function watchTitles( array $targets ) {
+		return MediaWikiServices::getInstance()->getWatchedItemStore()
+			->addWatchBatchForUser( $this->getUser(), $this->getExpandedTargets( $targets ) )
+			&& $this->runWatchUnwatchCompleteHook( 'Watch', $targets );
+	}
+
+	/**
+	 * Unmodified from SpecialEditWatchlist.php
+	 *
+	 * @param string $action
+	 *   Can be "Watch" or "Unwatch"
+	 * @param string[]|LinkTarget[] $targets
+	 * @return bool
+	 * @throws FatalError
+	 * @throws MWException
+	 */
+	private function runWatchUnwatchCompleteHook( $action, $targets ) {
+		foreach ( $targets as $target ) {
+			$title = $target instanceof TitleValue ?
+				Title::newFromTitleValue( $target ) :
+				Title::newFromText( $target );
+			$page = WikiPage::factory( $title );
+			Hooks::run( $action . 'ArticleComplete', [ $this->getUser(), &$page ] );
+		}
+		return true;
+	}
+
+	/**
+	 * Unmodified from SpecialEditWatchlist.php
+	 *
+	 * @param string[]|LinkTarget[] $targets
+	 * @return TitleValue[]
+	 */
+	private function getExpandedTargets( array $targets ) {
+		$expandedTargets = [];
+		$services = MediaWikiServices::getInstance();
+		foreach ( $targets as $target ) {
+			if ( !$target instanceof LinkTarget ) {
+				try {
+					$target = $this->titleParser->parseTitle( $target, NS_MAIN );
+				}
+				catch ( MalformedTitleException $e ) {
+					continue;
+				}
+			}
+
+			$ns = $target->getNamespace();
+			$dbKey = $target->getDBkey();
+			$expandedTargets[] =
+				new TitleValue( $services->getNamespaceInfo()->getSubject( $ns ), $dbKey );
+			$expandedTargets[] =
+				new TitleValue( $services->getNamespaceInfo()->getTalk( $ns ), $dbKey );
+		}
+		return $expandedTargets;
 	}
 
 	/**
@@ -434,13 +530,14 @@ class WatchSubpages extends SpecialPage {
 	 * $titles can be an array of strings or Title objects; the former
 	 * is preferred, since Titles are very memory-heavy
 	 *
-	 * Unmodified from SpecialEditWatchlist.php
+	 * Initially from SpecialEditWatchlist.php
+	 * Remove 100 page limit
 	 *
 	 * @param array $titles Array of strings, or Title objects
 	 * @param string &$output
 	 */
 	private function showTitles( $titles, &$output ) {
-		$talk = $this->msg( 'talkpagelinktext' )->escaped();
+		$talk = $this->msg( 'talkpagelinktext' )->text();
 		// Do a batch existence check
 		$batch = new LinkBatch();
 		foreach ( $titles as $title ) {
@@ -459,20 +556,37 @@ class WatchSubpages extends SpecialPage {
 		// Print out the list
 		$output .= "<ul>\n";
 
+		$linkRenderer = $this->getLinkRenderer();
 		foreach ( $titles as $title ) {
 			if ( !$title instanceof Title ) {
 				$title = Title::newFromText( $title );
 			}
 
 			if ( $title instanceof Title ) {
-				$output .= "<li>"
-					. Linker::link( $title )
-					. ' (' . Linker::link( $title->getTalkPage(), $talk )
-					. ")</li>\n";
+				$output .= '<li>' .
+					$linkRenderer->makeLink( $title ) . ' ' .
+					$this->msg( 'parentheses' )->rawParams(
+						$linkRenderer->makeLink( $title->getTalkPage(), $talk )
+					)->escaped() .
+					"</li>\n";
 			}
 		}
 
 		$output .= "</ul>\n";
+	}
+
+	/**
+	 * Return an array of subpages beginning with $search that this special page will accept.
+	 *
+	 * Unmodified from SpecialPrefixIndex.php
+	 *
+	 * @param string $search Prefix to search for
+	 * @param int $limit Maximum number of results to return (usually 10)
+	 * @param int $offset Number of results to skip (usually 0)
+	 * @return string[] Matching subpages
+	 */
+	public function prefixSearchSubpages( $search, $limit, $offset ) {
+		return $this->prefixSearchString( $search, $limit, $offset );
 	}
 
 	protected function getGroupName() {
