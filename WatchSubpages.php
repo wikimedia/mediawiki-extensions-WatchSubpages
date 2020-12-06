@@ -589,6 +589,9 @@ class WatchSubpages extends SpecialPage {
 		return $this->prefixSearchString( $search, $limit, $offset );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'pages';
 	}
