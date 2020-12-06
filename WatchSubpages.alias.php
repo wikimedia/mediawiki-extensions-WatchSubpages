@@ -198,6 +198,16 @@ $specialPageAliases['sk'] = [
 	'WatchSubpages' => [ 'SledovaniePodstránok' ],
 ];
 
+/** Serbian Cyrillic (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = [
+	'WatchSubpages' => [ 'Надгледај_подстранице' ],
+];
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'WatchSubpages' => [ 'Nadgledaj_podstranice' ],
+];
+
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = [
 	'WatchSubpages' => [ 'Bevaka_undersidor' ],
