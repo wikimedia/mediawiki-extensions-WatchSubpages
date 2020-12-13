@@ -1,13 +1,13 @@
 {
 	"name": "WatchSubpages",
-	"version": "2.4.0",
+	"version": "2.4.1",
 	"author": "[https://strategywiki.org/w/index.php/User:Prod Prod]",
 	"url": "https://www.mediawiki.org/wiki/Extension:WatchSubpages",
 	"descriptionmsg": "watchsubpages-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.28.0"
+		"MediaWiki": ">= 1.32.0"
 	},
 	"AvailableRights": [
 		"watchsubpages"
@@ -29,7 +29,7 @@
 		"WatchSubpagesAlias": "WatchSubpages.alias.php"
 	},
 	"AutoloadClasses": {
-		"WatchSubpages": "WatchSubpages.php"
+		"WatchSubpages": "includes/WatchSubpages.php"
 	},
 	"manifest_version": 1
 }

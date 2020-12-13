@@ -92,7 +92,6 @@ class WatchSubpages extends SpecialPage {
 		$namespace = (int)$ns; // if no namespace given, use 0 (NS_MAIN).
 		$this->hideRedirects = $request->getBool( 'hideredirects', $this->hideRedirects );
 
-		$namespaces = MediaWikiServices::getInstance()->getContentLanguage()->getNamespaces();
 		$out->setPageTitle( $this->msg( 'watchsubpages' ) );
 
 		$showme = '';
@@ -105,7 +104,7 @@ class WatchSubpages extends SpecialPage {
 		if ( $showme != '' ) {
 			$this->showPrefixChunk( $namespace, $showme );
 		} else {
-			$out->addHTML( $this->namespacePrefixForm( $namespace, null ) );
+			$out->addHTML( $this->namespacePrefixForm( $namespace ) );
 		}
 	}
 
@@ -201,6 +200,8 @@ class WatchSubpages extends SpecialPage {
 					'USE INDEX' => 'name_title',
 				]
 			);
+
+			$pages = [];
 
 			if ( $res->numRows() > 0 ) {
 				foreach ( $res as $row ) {
