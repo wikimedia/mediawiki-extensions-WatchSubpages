@@ -43,8 +43,27 @@ class WatchSubpages extends SpecialPage {
 	 */
 	private $titleParser;
 
-	public function __construct() {
+	/**
+	 * @var WatchedItemStoreInterface
+	 */
+	private $watchedItemStore;
+
+	/** @var bool Watchlist Expiry flag */
+	private $isWatchlistExpiryEnabled;
+
+	/** @var string */
+	protected $expiryFormFieldName = 'expiry';
+
+	/**
+	 * @inheritDoc
+	 * Initially from SpecialEditWatchlist.php
+	 *
+	 * @param WatchedItemStoreInterface $watchedItemStore
+	 */
+	public function __construct( WatchedItemStoreInterface $watchedItemStore ) {
 		parent::__construct( 'WatchSubpages', 'watchsubpages' );
+		$this->watchedItemStore = $watchedItemStore;
+		$this->isWatchlistExpiryEnabled = $this->getConfig()->get( 'WatchlistExpiry' );
 	}
 
 	/**
@@ -223,9 +242,86 @@ class WatchSubpages extends SpecialPage {
 	}
 
 	/**
+	 * Initially from includes/actions/WatchAction.php getFormFields
+	 *
+	 * @return array
+	 */
+	protected function getFormFields() {
+		// Otherwise, use a select-list of expiries.
+		$expiryOptions = static::getExpiryOptions( $this->getContext() );
+		return [
+			'type' => 'select',
+			'label-message' => 'confirm-watch-label',
+			'options' => $expiryOptions['options'],
+			'default' => $expiryOptions['default'],
+		];
+	}
+
+	/**
+	 * Get options and default for a watchlist expiry select list. If an expiry time is provided, it
+	 * will be added to the top of the list as 'x days left'.
+	 *
+	 * Initially from includes/actions/WatchAction.php
+	 * Remove $watchedItem
+	 *
+	 * @since 1.35
+	 * @todo Move this somewhere better when it's being used in more than just this action.
+	 *
+	 * @param MessageLocalizer $msgLocalizer
+	 *
+	 * @return mixed[] With keys `options` (string[]) and `default` (string).
+	 */
+	public static function getExpiryOptions( MessageLocalizer $msgLocalizer ) {
+		$expiryOptions = self::getExpiryOptionsFromMessage( $msgLocalizer );
+		$default = in_array( 'infinite', $expiryOptions )
+			? 'infinite'
+			: current( $expiryOptions );
+		return [
+			'options' => $expiryOptions,
+			'default' => $default,
+		];
+	}
+
+	/**
+	 * Parse expiry options message. Fallback to english options
+	 * if translated options are invalid or broken
+	 *
+	 * Unmodified from includes/actions/WatchAction.php
+	 *
+	 * @param MessageLocalizer $msgLocalizer
+	 * @param string|null $lang
+	 * @return string[]
+	 */
+	private static function getExpiryOptionsFromMessage(
+		MessageLocalizer $msgLocalizer, ?string $lang = null
+	) : array {
+		$expiryOptionsMsg = $msgLocalizer->msg( 'watchlist-expiry-options' );
+		$optionsText = !$lang ? $expiryOptionsMsg->text() : $expiryOptionsMsg->inLanguage( $lang )->text();
+		$options = XmlSelect::parseOptionsMessage(
+			$optionsText
+		);
+
+		$expiryOptions = [];
+		foreach ( $options as $label => $value ) {
+			if ( strtotime( $value ) || wfIsInfinity( $value ) ) {
+				$expiryOptions[$label] = $value;
+			}
+		}
+
+		// If message options is invalid try to recover by returning
+		// english options (T267611)
+		if ( !$expiryOptions && $expiryOptionsMsg->getLanguage()->getCode() !== 'en' ) {
+			return self::getExpiryOptionsFromMessage( $msgLocalizer, 'en' );
+		}
+
+		return $expiryOptions;
+	}
+
+	/**
 	 * Get the standard watchlist editing form
 	 *
 	 * Initially from SpecialEditWatchlist.php
+	 * Add expiry fields
 	 *
 	 * @param int $namespace
 	 * @param string $prefix
@@ -265,6 +361,10 @@ class WatchSubpages extends SpecialPage {
 				'default' => $defaults,
 				'section' => "ns$namespace",
 			];
+		}
+
+		if ( $this->isWatchlistExpiryEnabled ) {
+			$fields[$this->expiryFormFieldName] = $this->getFormFields();
 		}
 
 		$context = new DerivativeContext( $this->getContext() );
@@ -315,12 +415,13 @@ class WatchSubpages extends SpecialPage {
 	/**
 	 * Build the label for a checkbox, with a link to the title, and various additional bits
 	 *
-	 * Unmodified from SpecialEditWatchlist.php
+	 * Initially from SpecialEditWatchlist.php
+	 * Remove $expiryDaysText
 	 *
 	 * @param Title $title
 	 * @return string
 	 */
-	private function buildRemoveLine( $title ) {
+	private function buildRemoveLine( $title ): string {
 		$linkRenderer = $this->getLinkRenderer();
 		$link = $linkRenderer->makeLink( $title );
 
@@ -346,10 +447,8 @@ class WatchSubpages extends SpecialPage {
 			);
 		}
 
-		Hooks::run(
-			'WatchlistEditorBuildRemoveLine',
-			[ &$tools, $title, $title->isRedirect(), $this->getSkin(), &$link ]
-		);
+		$this->getHookRunner()->onWatchlistEditorBuildRemoveLine(
+			$tools, $title, $title->isRedirect(), $this->getSkin(), $link );
 
 		if ( $title->isRedirect() ) {
 			// Linker already makes class mw-redirect, so this is redundant
@@ -362,6 +461,7 @@ class WatchSubpages extends SpecialPage {
 
 	/**
 	 * Initially from SpecialEditWatchlist.php
+	 * Expiry from includes/actions/WatchAction.php onSuccess
 	 *
 	 * @param array $data
 	 * @return true
@@ -380,8 +480,19 @@ class WatchSubpages extends SpecialPage {
 		}
 
 		if ( count( $toWatch ) > 0 ) {
-			$this->successMessage .= ' ' . $this->msg( 'watchlistedit-raw-added' )
-				->numParams( count( $toWatch ) )->parse();
+			$msgKey = 'watchlistedit-raw-added';
+			$expiry = null;
+			if ( $this->isWatchlistExpiryEnabled ) {
+				$expiry = $this->getRequest()->getVal( 'wp' . $this->expiryFormFieldName );
+				if ( wfIsInfinity( $expiry ) ) {
+					$msgKey = 'watchsubpages-added-indefinitely';
+				} else {
+					$msgKey = 'watchsubpages-added-expiry';
+				}
+			}
+
+			$this->successMessage .= ' ' . $this->msg( $msgKey )
+				->numParams( count( $toWatch ), $expiry )->parse();
 			$this->showTitles( $toWatch, $this->successMessage );
 		}
 
@@ -400,7 +511,7 @@ class WatchSubpages extends SpecialPage {
 	private function getWatchlist() {
 		$list = [];
 
-		$watchedItems = MediaWikiServices::getInstance()->getWatchedItemStore()->getWatchedItemsForUser(
+		$watchedItems = $this->watchedItemStore->getWatchedItemsForUser(
 			$this->getUser(),
 			[ 'forWrite' => $this->getRequest()->wasPosted() ]
 		);
@@ -462,7 +573,8 @@ class WatchSubpages extends SpecialPage {
 	/**
 	 * Add a list of targets to a user's watchlist
 	 *
-	 * Unmodified from SpecialEditWatchlist.php
+	 * Initially from SpecialEditWatchlist.php
+	 * Add expiry
 	 *
 	 * @param string[]|LinkTarget[] $targets
 	 * @return bool
@@ -470,9 +582,10 @@ class WatchSubpages extends SpecialPage {
 	 * @throws MWException
 	 */
 	private function watchTitles( array $targets ) {
-		return MediaWikiServices::getInstance()->getWatchedItemStore()
-			->addWatchBatchForUser( $this->getUser(), $this->getExpandedTargets( $targets ) )
-			&& $this->runWatchUnwatchCompleteHook( 'Watch', $targets );
+		return $this->watchedItemStore->addWatchBatchForUser(
+				$this->getUser(), $this->getExpandedTargets( $targets ),
+				$this->getRequest()->getVal( 'wp' . $this->expiryFormFieldName )
+			) && $this->runWatchUnwatchCompleteHook( 'Watch', $targets );
 	}
 
 	/**
@@ -491,7 +604,12 @@ class WatchSubpages extends SpecialPage {
 				Title::newFromTitleValue( $target ) :
 				Title::newFromText( $target );
 			$page = WikiPage::factory( $title );
-			Hooks::run( $action . 'ArticleComplete', [ $this->getUser(), &$page ] );
+			$user = $this->getUser();
+			if ( $action === 'Watch' ) {
+				$this->getHookRunner()->onWatchArticleComplete( $user, $page );
+			} else {
+				$this->getHookRunner()->onUnwatchArticleComplete( $user, $page );
+			}
 		}
 		return true;
 	}

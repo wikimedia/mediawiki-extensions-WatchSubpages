@@ -18,6 +18,8 @@
 	"watchsubpages-legend": "Heading of dialogue box on [[Special:WatchSubpages]] that contains listing of subpages.",
 	"watchsubpages-desc": "{{desc|name=WatchSubpages|url=https://www.mediawiki.org/wiki/Extension:WatchSubpages}}",
 	"watchsubpages-explain": "An introduction/explanation about the [[Special:WatchSubpages|subpage watching function]].\n\nRefers to {{msg-mw|Watchsubpages-submit}}.",
+	"watchsubpages-added-expiry": "Message appears after at least 1 page is added to the watchlist. Message shown after selecting to watch a page temporarily. The selection is made from the watchlist expiry dropdown options in the pop up.\n\nFollowed by list of page titles which are added.\n\nParameters:\n* $1 - page title\n* $2 - the expiry selected",
+	"watchsubpages-added-indefinitely": "Message appears after at least 1 page is added to the watchlist indefinitely. The selection is made from the watchlist expiry dropdown options in the pop up.\n\nFollowed by list of page titles which are added.\n\nParameters:\n* $1 - number of page titles which are added",
 	"action-watchsubpages": "{{doc-action|watchsubpages}}",
 	"right-watchsubpages": "{{doc-right|watchsubpages}}"
 }
