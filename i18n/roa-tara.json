@@ -12,6 +12,8 @@
 	"watchsubpages-legend": "Aggiunge le pàggene a l'elenghe de le pàggene condrollate",
 	"watchsubpages-desc": "Valoce veloce [[Special:WatchSubpages|aggiunge tutte le sottopàggene]] de 'na pàgene a l'elenghe de le pàggene condrollate",
 	"watchsubpages-explain": "Scacchià le pàggene ca avènene, da aggiungere a 'u probbie elenghe de le pàggene condrollate.\nPe aggiungere 'na pàgene, scacchie 'a caselle affianghe a jedde e cazze sus a \"{{int:watchsubpages-submit}}\".\n\nQuanne se scacchiane o se lassane cchiù pàggene, a tenè cazzate 'u buttone shift ca te permette de scacchià caselle una apprisse a l'otre cazzanne le estreme d'u 'ndervalle da scacchià.",
+	"watchsubpages-added-expiry": "{{PLURAL:$1|1 titole ha |$1 titole onne}} state aggiunde pe $2:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|1 titole ha |$1 titole onne}} state aggiunde pe sembre:",
 	"action-watchsubpages": "veloce veloce aggiunge tutte le sottepàggene de 'na pàgene a l'elenghe de le pàggene condrollate tune",
 	"right-watchsubpages": "Valoce veloce aggiunge tutte le sottopàggene de 'na pàgene a l'elenghe de le pàggene condrollate tune"
 }
