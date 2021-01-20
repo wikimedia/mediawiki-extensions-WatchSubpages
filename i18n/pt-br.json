@@ -14,6 +14,8 @@
 	"watchsubpages-legend": "Adicionar páginas à lista de páginas vigiadas",
 	"watchsubpages-desc": "Rapidamente [[Special:WatchSubpages|adicione todas as subpáginas]] de uma página à sua lista de páginas vigiadas",
 	"watchsubpages-explain": "Selecione as páginas para adicionar à sua lista de páginas vigiadas abaixo.\nPara adicionar uma página, marque a caixa junto a esta, e clique \"{{int:watchsubpages-submit}}\".\n\nQuando marca ou desmarca várias páginas, se premir a tecla \"Shift\" pode selecionar caixas de marcação consecutivas, clicando em cada extremo do intervalo a selecionar.",
+	"watchsubpages-added-expiry": "{{PLURAL:$1|1 título foi adicionado|$1 títulos foram adicionados}} para $2:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|1 título foi adicionado|$1 títulos foram adicionados}} permanentemente:",
 	"action-watchsubpages": "adicione rapidamente todas as subpáginas de uma página vigiada pessoal",
 	"right-watchsubpages": "Adicionar rapidamente todas as subpáginas de uma página à lista pessoal de páginas vigiadas"
 }

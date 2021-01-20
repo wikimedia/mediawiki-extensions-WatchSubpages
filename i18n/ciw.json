@@ -4,5 +4,6 @@
 			"Aandeginini"
 		]
 	},
-	"watchsubpages-added-expiry": "{{PLURAL:$1|1 gii-gakakaa|$1 gii-gakakaa}} asigagindaaso $2:"
+	"watchsubpages-added-expiry": "{{PLURAL:$1|1 gii-gakakaa|$1 gii-gakakaa}} asigagindaaso $2:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|1 gakakaa gii-|$1 gakakaa gii-}} gaagige-asigagindaaso:"
 }
