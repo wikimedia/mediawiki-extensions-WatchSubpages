@@ -108,7 +108,8 @@ class WatchSubpages extends SpecialPage {
 		$request = $this->getRequest();
 		$prefix = $request->getVal( 'prefix', '' );
 		$ns = $request->getIntOrNull( 'namespace' );
-		$namespace = (int)$ns; // if no namespace given, use 0 (NS_MAIN).
+		// if no namespace given, use 0 (NS_MAIN).
+		$namespace = (int)$ns;
 		$this->hideRedirects = $request->getBool( 'hideredirects', $this->hideRedirects );
 
 		$out->setPageTitle( $this->msg( 'watchsubpages' ) );
@@ -163,7 +164,8 @@ class WatchSubpages extends SpecialPage {
 		];
 
 		$context = new DerivativeContext( $this->getContext() );
-		$context->setTitle( $this->getPageTitle() ); // Remove subpage
+		// Remove subpage
+		$context->setTitle( $this->getPageTitle() );
 		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $context );
 		$htmlForm
 			->setMethod( 'get' )
@@ -334,15 +336,15 @@ class WatchSubpages extends SpecialPage {
 		$defaults = [];
 
 		$fields['prefix'] = [
-				'type' => 'hidden',
-				'name' => 'prefix',
-				'default' => $prefix
+			'type' => 'hidden',
+			'name' => 'prefix',
+			'default' => $prefix
 		];
 
 		$fields['namespace'] = [
-				'type' => 'hidden',
-				'name' => 'namespace',
-				'default' => $namespace
+			'type' => 'hidden',
+			'name' => 'namespace',
+			'default' => $namespace
 		];
 
 		foreach ( $pages as $dbkey ) {
@@ -368,7 +370,8 @@ class WatchSubpages extends SpecialPage {
 		}
 
 		$context = new DerivativeContext( $this->getContext() );
-		$context->setTitle( $this->getPageTitle() ); // Remove subpage
+		// Remove subpage
+		$context->setTitle( $this->getPageTitle() );
 		$form = new EditWatchlistNormalHTMLForm( $fields, $context );
 		$form->setSubmitTextMsg( 'watchsubpages-submit' );
 		$form->setSubmitDestructive();
@@ -390,7 +393,7 @@ class WatchSubpages extends SpecialPage {
 	 * @return array|null [ int namespace, string dbkey, string pagename ] or null on error
 	 */
 	protected function getNamespaceKeyAndText( $ns, $text ) {
-		if ( $text == '' ) {
+		if ( $text === '' ) {
 			# shortcut for common case
 			return [ $ns, '', '' ];
 		}
@@ -557,7 +560,7 @@ class WatchSubpages extends SpecialPage {
 				|| $title->getNamespace() < 0
 			)
 		) {
-			$title = false; // unrecoverable
+			$title = false;
 		}
 
 		if ( !$title
