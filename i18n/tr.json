@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Joseph",
 			"Vito Genovese"
 		]
 	},
@@ -13,6 +14,8 @@
 	"watchsubpages-legend": "Sayfaları izleme listesine ekle",
 	"watchsubpages-desc": "Bir sayfanın tüm altsayfalarını hızlı bir şekilde izleme listesine [[Special:WatchSubpages|ekler]]",
 	"watchsubpages-explain": "Aşağıdan izleme listenize eklenecek sayfaları seçin.\nBir sayfa eklemek için, yanında kutuyu işaretleyin ve \"Sayfa ekle\" seçeneğine tıklayın.\n\nBirden fazla sayfayı işaretlerken ya da işaretlerini kaldırırken, shift tuşuna basmak seçilecek aralığın iki ucuna tıklamak suretiyle size kutuları hızlıca seçme imkanı vermektedir.",
+	"watchsubpages-added-expiry": "$2 için $1 başlık eklendi:",
+	"watchsubpages-added-indefinitely": "$1 başlık kalıcı olarak eklendi:",
 	"action-watchsubpages": "bir sayfanın tüm alt sayfalarını kişisel izleme listesine hızlıca ekleyin",
 	"right-watchsubpages": "Sayfanın tüm alt sayfalarını kişisel izleme listesine hızla ekleyin"
 }
