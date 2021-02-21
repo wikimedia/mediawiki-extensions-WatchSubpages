@@ -20,7 +20,7 @@
 	"SpecialPages": {
 		"WatchSubpages": {
 			"class": "WatchSubpages",
-			"services": ["WatchedItemStore"]
+			"services": [ "WatchedItemStore" ]
 		}
 	},
 	"MessagesDirs": {
