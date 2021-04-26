@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Kareyac"
+			"Kareyac",
+			"StanProg"
 		]
 	},
 	"watchsubpages": "Наблюдаване на подстраниците",
 	"watchsubpages-submit": "Добавяне на страниците",
-	"tooltip-watchsubpages-submit": "Добавяне на страниците",
+	"tooltip-watchsubpages-submit": "Добавяне на страници",
 	"watchsubpages-legend": "Добавяне на страници в списъка за наблюдение",
 	"watchsubpages-desc": "Бързо [[Special:WatchSubpages|добавяне на всички подстраници]] на страница в списъка за наблюдение"
 }
