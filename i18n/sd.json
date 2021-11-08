@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehtab ahmed"
+		]
+	},
+	"watchsubpages": "ماتحت-صفحا نظر۾رکو",
+	"watchsubpagesprefix": "جا ماتحت-صفحا ظاھر ڪريو:",
+	"watchsubpages-nochanges": "توھان جي نظر۾فھرست ۾ ڪي بہ بدلاءَ ناھن ڪيا ويا.",
+	"watchsubpages-submit": "صفحا شامل ڪريو",
+	"tooltip-watchsubpages-submit": "صفحا شامل ڪريو",
+	"watchsubpages-legend": "صفحا نظر۾فھرست ۾ رکو",
+	"watchsubpages-desc": "ترت ئي ڪنھن صفحي جا [[Special:WatchSubpages|سڀ ماتحت-صفحا]] نظر۾فھرست ۾ رکو",
+	"watchsubpages-added-expiry": "$2 لاءِ عنوان {{PLURAL:$1|1 وڌو ويو|$1 وڌا ويا}}:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|1عنوان|$1 عنوان}} مستقل طور وڌا ويا:",
+	"action-watchsubpages": "ترت ئي ڪنھن صفحي جا سڀ ماتحت-صفحا ذاتي نظر۾فھرست ۾ رکو",
+	"right-watchsubpages": "ترت ئي ڪنھن صفحي جا سڀ ماتحت-صفحا ذاتي نظر۾فھرست ۾ رکو"
+}
