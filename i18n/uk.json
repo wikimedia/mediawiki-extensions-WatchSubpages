@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"Base",
 			"DDPAT",
 			"Ice bulldog",
 			"Piramidion",
 			"Vlad5250"
 		]
 	},
-	"watchsubpages": "Дивитися підсторінки",
+	"watchsubpages": "Спостерігати за підсторінками",
 	"watchsubpagesprefix": "Відображення вкладених сторінок з:",
 	"watchsubpages-nochanges": "Зміни не внесено до списку спостереження.",
 	"watchsubpages-submit": "Додати сторінки",
