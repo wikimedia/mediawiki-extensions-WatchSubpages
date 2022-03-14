@@ -3,10 +3,13 @@
 		"authors": [
 			"Andriykopanytsia",
 			"Piramidion",
-			"Vlad5250"
+			"Vlad5250",
+			"Base",
+			"DDPAT",
+			"Ice bulldog"
 		]
 	},
-	"watchsubpages": "Дивитися підсторінки",
+	"watchsubpages": "Спостерігати за підсторінками",
 	"watchsubpagesprefix": "Відображення вкладених сторінок з:",
 	"watchsubpages-nochanges": "Зміни не внесено до списку спостереження.",
 	"watchsubpages-submit": "Додати сторінки",
