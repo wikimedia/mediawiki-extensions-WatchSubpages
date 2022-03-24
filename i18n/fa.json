@@ -1,17 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beginneruser",
 			"FarsiNevis",
 			"Huji"
 		]
 	},
 	"watchsubpages": "پی‌گیری زیرصفحه‌ها",
 	"watchsubpagesprefix": "نمایش زیرصفحه‌های:",
-	"watchsubpages-nochanges": "تغییری در فهرست پی‌گیری‌های شما ایجاد نشده است.",
+	"watchsubpages-nochanges": "تغییری در فهرست پیگیری‌‌تان ایجاد نشده است.",
 	"watchsubpages-submit": "افزودن صفحه",
 	"tooltip-watchsubpages-submit": "افزودن صفحه",
-	"watchsubpages-legend": "افزودن صفحه‌هایی به فهرست پی‌گیری‌ها",
-	"watchsubpages-desc": "افزودن سریع [[Special:WatchSubpages|همهٔ زیرصفحه‌های]] یک صفحه به فهرست پی‌گیری‌ها",
-	"action-watchsubpages": "افزودن سریع همهٔ زیرصفحه‌های یک صفحه به فهرست پی‌گیری‌های شخصی",
-	"right-watchsubpages": "افزودن سریع همهٔ زیرصفحه‌های یک صفحه به فهرست پی‌گیری‌های شخصی"
+	"watchsubpages-legend": "افزودن صفحه‌هایی به فهرست پیگیری‌",
+	"watchsubpages-desc": "افزودن سریع [[Special:WatchSubpages|همهٔ زیرصفحه‌های]] یک صفحه به فهرست پی‌گیری",
+	"action-watchsubpages": "افزودن سریع همهٔ زیرصفحه‌های یک صفحه به فهرست پیگیری شخصی",
+	"right-watchsubpages": "افزودن سریع همهٔ زیرصفحه‌های یک صفحه به فهرست پیگیری شخصی"
 }
