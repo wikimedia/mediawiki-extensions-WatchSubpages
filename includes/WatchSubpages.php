@@ -604,7 +604,7 @@ class WatchSubpages extends SpecialPage {
 	private function runWatchUnwatchCompleteHook( $action, $targets ) {
 		foreach ( $targets as $target ) {
 			$title = $target instanceof TitleValue ?
-				Title::newFromTitleValue( $target ) :
+				Title::newFromLinkTarget( $target ) :
 				Title::newFromText( $target );
 			$page = WikiPage::factory( $title );
 			$user = $this->getUser();
