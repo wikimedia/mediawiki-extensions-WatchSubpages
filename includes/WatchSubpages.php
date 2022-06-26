@@ -602,11 +602,22 @@ class WatchSubpages extends SpecialPage {
 	 * @throws MWException
 	 */
 	private function runWatchUnwatchCompleteHook( $action, $targets ) {
+		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+			// MW 1.36+
+			$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
+		} else {
+			$wikiPageFactory = null;
+		}
 		foreach ( $targets as $target ) {
 			$title = $target instanceof TitleValue ?
 				Title::newFromLinkTarget( $target ) :
 				Title::newFromText( $target );
-			$page = WikiPage::factory( $title );
+			if ( $wikiPageFactory !== null ) {
+				// MW 1.36+
+				$page = $wikiPageFactory->newFromTitle( $title );
+			} else {
+				$page = WikiPage::factory( $title );
+			}
 			$user = $this->getUser();
 			if ( $action === 'Watch' ) {
 				$this->getHookRunner()->onWatchArticleComplete( $user, $page );
