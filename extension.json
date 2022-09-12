@@ -1,13 +1,13 @@
 {
 	"name": "WatchSubpages",
-	"version": "2.4.1",
+	"version": "2.5.0",
 	"author": "[https://strategywiki.org/w/index.php/User:Prod Prod]",
 	"url": "https://www.mediawiki.org/wiki/Extension:WatchSubpages",
 	"descriptionmsg": "watchsubpages-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.37.0"
 	},
 	"AvailableRights": [
 		"watchsubpages"
@@ -20,7 +20,16 @@
 	"SpecialPages": {
 		"WatchSubpages": {
 			"class": "WatchSubpages",
-			"services": [ "WatchedItemStore" ]
+			"services": [
+				"DBLoadBalancer",
+				"WatchedItemStore",
+				"TitleParser",
+				"GenderCache",
+				"LinkBatchFactory",
+				"NamespaceInfo",
+				"WikiPageFactory",
+				"SearchEngineFactory"
+			]
 		}
 	},
 	"MessagesDirs": {

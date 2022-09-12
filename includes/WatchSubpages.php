@@ -19,15 +19,21 @@
  *
  * @file
  * @ingroup SpecialPage
+ * @ingroup Watchlist
  */
+
+use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\WikiPageFactory;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 /**
  * Provides the UI through which users can perform editing
  * operations on their watchlist
  *
  * @ingroup SpecialPage
+ * @ingroup Watchlist
  * @author Prod
  * @author Rob Church <robchur@gmail.com>
  */
@@ -38,44 +44,67 @@ class WatchSubpages extends SpecialPage {
 
 	private $badItems = [];
 
-	/**
-	 * @var TitleParser
-	 */
-	private $titleParser;
+	/** @var ILoadBalancer */
+	private $loadBalancer;
 
-	/**
-	 * @var WatchedItemStoreInterface
-	 */
+	/** @var WatchedItemStoreInterface */
 	private $watchedItemStore;
 
-	/** @var bool Watchlist Expiry flag */
-	private $isWatchlistExpiryEnabled;
+	/** @var TitleParser */
+	private $titleParser;
+
+	/** @var GenderCache */
+	private $genderCache;
+
+	/** @var LinkBatchFactory */
+	private $linkBatchFactory;
+
+	/** @var NamespaceInfo */
+	private $nsInfo;
+
+	/** @var WikiPageFactory */
+	private $wikiPageFactory;
+
+	/** @var SearchEngineFactory */
+	private $searchEngineFactory;
 
 	/** @var string */
 	protected $expiryFormFieldName = 'expiry';
 
 	/**
-	 * @inheritDoc
 	 * Initially from SpecialEditWatchlist.php
+	 * Modified from SpecialAllPages.php
 	 *
-	 * @param WatchedItemStoreInterface $watchedItemStore
+	 * @param ILoadBalancer|null $loadBalancer
+	 * @param WatchedItemStoreInterface|null $watchedItemStore
+	 * @param TitleParser|null $titleParser
+	 * @param GenderCache|null $genderCache
+	 * @param LinkBatchFactory|null $linkBatchFactory
+	 * @param NamespaceInfo|null $nsInfo
+	 * @param WikiPageFactory|null $wikiPageFactory
+	 * @param SearchEngineFactory|null $searchEngineFactory
 	 */
-	public function __construct( WatchedItemStoreInterface $watchedItemStore ) {
+	public function __construct(
+		ILoadBalancer $loadBalancer = null,
+		WatchedItemStoreInterface $watchedItemStore = null,
+		TitleParser $titleParser = null,
+		GenderCache $genderCache = null,
+		LinkBatchFactory $linkBatchFactory = null,
+		NamespaceInfo $nsInfo = null,
+		WikiPageFactory $wikiPageFactory = null,
+		SearchEngineFactory $searchEngineFactory = null
+	) {
 		parent::__construct( 'WatchSubpages', 'watchsubpages' );
-		$this->watchedItemStore = $watchedItemStore;
-		$this->isWatchlistExpiryEnabled = $this->getConfig()->get( 'WatchlistExpiry' );
-	}
-
-	/**
-	 * Unmodified from SpecialEditWatchlist.php
-	 *
-	 * Initialize any services we'll need (unless it has already been provided via a setter).
-	 * This allows for dependency injection even though we don't control object creation.
-	 */
-	private function initServices() {
-		if ( !$this->titleParser ) {
-			$this->titleParser = MediaWikiServices::getInstance()->getTitleParser();
-		}
+		// This class is extended and therefor fallback to global state - T266065
+		$services = MediaWikiServices::getInstance();
+		$this->loadBalancer = $loadBalancer;
+		$this->watchedItemStore = $watchedItemStore ?? $services->getWatchedItemStore();
+		$this->titleParser = $titleParser ?? $services->getTitleParser();
+		$this->genderCache = $genderCache ?? $services->getGenderCache();
+		$this->linkBatchFactory = $linkBatchFactory ?? $services->getLinkBatchFactory();
+		$this->nsInfo = $nsInfo ?? $services->getNamespaceInfo();
+		$this->wikiPageFactory = $wikiPageFactory ?? $services->getWikiPageFactory();
+		$this->searchEngineFactory = $searchEngineFactory ?? $services->getSearchEngineFactory();
 	}
 
 	public function doesWrites() {
@@ -87,10 +116,9 @@ class WatchSubpages extends SpecialPage {
 	 * Modified with SpecialEditWatchlist.php
 	 *
 	 * Entry point : initialise variables and call subfunctions.
-	 * @param string $par Becomes "FOO" when called like Special:WatchSubpages/FOO (default null)
+	 * @param string|null $par Becomes "FOO" when called like Special:Watchsubpages/FOO
 	 */
 	public function execute( $par ) {
-		$this->initServices();
 		$this->setHeaders();
 
 		# Anons don't get a watchlist
@@ -124,7 +152,7 @@ class WatchSubpages extends SpecialPage {
 		if ( $showme != '' ) {
 			$this->showPrefixChunk( $namespace, $showme );
 		} else {
-			$out->addHTML( $this->namespacePrefixForm( $namespace ) );
+			$out->addHTML( $this->namespacePrefixForm( $namespace, '' ) );
 		}
 	}
 
@@ -144,7 +172,7 @@ class WatchSubpages extends SpecialPage {
 				'name' => 'prefix',
 				'id' => 'nsfrom',
 				'type' => 'text',
-				'size' => 30,
+				'size' => '30',
 				'default' => str_replace( '_', ' ', $from ),
 			],
 			'namespace' => [
@@ -156,18 +184,16 @@ class WatchSubpages extends SpecialPage {
 				'default' => $namespace,
 			],
 			'hidedirects' => [
-				'class' => 'HTMLCheckField',
+				'class' => HTMLCheckField::class,
 				'name' => 'hideredirects',
 				'label-message' => 'allpages-hide-redirects',
 				'selected' => $this->hideRedirects,
 			],
 		];
-
 		$context = new DerivativeContext( $this->getContext() );
 		// Remove subpage
 		$context->setTitle( $this->getPageTitle() );
-		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $context );
-		$htmlForm
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $context )
 			->setMethod( 'get' )
 			->setWrapperLegendMsg( 'watchsubpages' )
 			->setSubmitTextMsg( 'prefixindex-submit' );
@@ -184,7 +210,7 @@ class WatchSubpages extends SpecialPage {
 	 */
 	protected function showPrefixChunk( $namespace, $prefix ) {
 		$prefixList = $this->getNamespaceKeyAndText( $namespace, $prefix );
-		$namespaces = MediaWikiServices::getInstance()->getContentLanguage()->getNamespaces();
+		$namespaces = $this->getContentLanguage()->getNamespaces();
 		$res = null;
 		$out = $this->getOutput();
 		$showPrefixForm = true;
@@ -198,7 +224,7 @@ class WatchSubpages extends SpecialPage {
 		} else {
 			list( $namespace, $prefixKey, $prefix ) = $prefixList;
 
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = $this->loadBalancer->getConnectionRef( ILoadBalancer::DB_REPLICA );
 
 			$conds = [
 				'page_namespace' => $namespace,
@@ -218,7 +244,7 @@ class WatchSubpages extends SpecialPage {
 				__METHOD__,
 				[
 					'ORDER BY' => 'page_title',
-					'USE INDEX' => 'name_title',
+					'USE INDEX' => 'page_name_title',
 				]
 			);
 
@@ -365,7 +391,7 @@ class WatchSubpages extends SpecialPage {
 			];
 		}
 
-		if ( $this->isWatchlistExpiryEnabled ) {
+		if ( $this->getConfig()->get( 'WatchlistExpiry' ) ) {
 			$fields[$this->expiryFormFieldName] = $this->getFormFields();
 		}
 
@@ -443,7 +469,7 @@ class WatchSubpages extends SpecialPage {
 			);
 		}
 
-		if ( $title->getNamespace() == NS_USER && !$title->isSubpage() ) {
+		if ( $title->getNamespace() === NS_USER && !$title->isSubpage() ) {
 			$tools['contributions'] = $linkRenderer->makeKnownLink(
 				SpecialPage::getTitleFor( 'Contributions', $title->getText() ),
 				$this->msg( 'contribslink' )->text()
@@ -458,8 +484,14 @@ class WatchSubpages extends SpecialPage {
 			$link = '<span class="watchlistredir">' . $link . '</span>';
 		}
 
-		return $link . ' ' .
-			$this->msg( 'parentheses' )->rawParams( $this->getLanguage()->pipeList( $tools ) )->escaped();
+		return $link . ' ' . Html::openElement( 'span', [ 'class' => 'mw-changeslist-links' ] ) .
+			implode(
+				'',
+				array_map( static function ( $tool ) {
+					return Html::rawElement( 'span', [], $tool );
+				}, $tools )
+			) .
+			Html::closeElement( 'span' );
 	}
 
 	/**
@@ -485,7 +517,7 @@ class WatchSubpages extends SpecialPage {
 		if ( count( $toWatch ) > 0 ) {
 			$msgKey = 'watchlistedit-raw-added';
 			$expiry = null;
-			if ( $this->isWatchlistExpiryEnabled ) {
+			if ( $this->getConfig()->get( 'WatchlistExpiry' ) ) {
 				$expiry = $this->getRequest()->getVal( 'wp' . $this->expiryFormFieldName );
 				if ( wfIsInfinity( $expiry ) ) {
 					$msgKey = 'watchsubpages-added-indefinitely';
@@ -523,8 +555,8 @@ class WatchSubpages extends SpecialPage {
 			/** @var Title[] $titles */
 			$titles = [];
 			foreach ( $watchedItems as $watchedItem ) {
-				$namespace = $watchedItem->getLinkTarget()->getNamespace();
-				$dbKey = $watchedItem->getLinkTarget()->getDBkey();
+				$namespace = $watchedItem->getTarget()->getNamespace();
+				$dbKey = $watchedItem->getTarget()->getDBkey();
 				$title = Title::makeTitleSafe( $namespace, $dbKey );
 
 				if ( $this->checkTitle( $title, $namespace, $dbKey )
@@ -534,7 +566,7 @@ class WatchSubpages extends SpecialPage {
 				}
 			}
 
-			MediaWikiServices::getInstance()->getGenderCache()->doTitlesArray( $titles );
+			$this->genderCache->doTitlesArray( $titles );
 
 			foreach ( $titles as $title ) {
 				$list[] = $title->getPrefixedText();
@@ -602,22 +634,11 @@ class WatchSubpages extends SpecialPage {
 	 * @throws MWException
 	 */
 	private function runWatchUnwatchCompleteHook( $action, $targets ) {
-		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-			// MW 1.36+
-			$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
-		} else {
-			$wikiPageFactory = null;
-		}
 		foreach ( $targets as $target ) {
-			$title = $target instanceof TitleValue ?
+			$title = $target instanceof LinkTarget ?
 				Title::newFromLinkTarget( $target ) :
 				Title::newFromText( $target );
-			if ( $wikiPageFactory !== null ) {
-				// MW 1.36+
-				$page = $wikiPageFactory->newFromTitle( $title );
-			} else {
-				$page = WikiPage::factory( $title );
-			}
+			$page = $this->wikiPageFactory->newFromTitle( $title );
 			$user = $this->getUser();
 			if ( $action === 'Watch' ) {
 				$this->getHookRunner()->onWatchArticleComplete( $user, $page );
@@ -636,7 +657,6 @@ class WatchSubpages extends SpecialPage {
 	 */
 	private function getExpandedTargets( array $targets ) {
 		$expandedTargets = [];
-		$services = MediaWikiServices::getInstance();
 		foreach ( $targets as $target ) {
 			if ( !$target instanceof LinkTarget ) {
 				try {
@@ -650,9 +670,9 @@ class WatchSubpages extends SpecialPage {
 			$ns = $target->getNamespace();
 			$dbKey = $target->getDBkey();
 			$expandedTargets[] =
-				new TitleValue( $services->getNamespaceInfo()->getSubject( $ns ), $dbKey );
+				new TitleValue( $this->nsInfo->getSubject( $ns ), $dbKey );
 			$expandedTargets[] =
-				new TitleValue( $services->getNamespaceInfo()->getTalk( $ns ), $dbKey );
+				new TitleValue( $this->nsInfo->getTalk( $ns ), $dbKey );
 		}
 		return $expandedTargets;
 	}
@@ -672,7 +692,7 @@ class WatchSubpages extends SpecialPage {
 	private function showTitles( $titles, &$output ) {
 		$talk = $this->msg( 'talkpagelinktext' )->text();
 		// Do a batch existence check
-		$batch = new LinkBatch();
+		$batch = $this->linkBatchFactory->newLinkBatch();
 		foreach ( $titles as $title ) {
 			if ( !$title instanceof Title ) {
 				$title = Title::newFromText( $title );
@@ -711,7 +731,7 @@ class WatchSubpages extends SpecialPage {
 	/**
 	 * Return an array of subpages beginning with $search that this special page will accept.
 	 *
-	 * Unmodified from SpecialPrefixIndex.php
+	 * Unmodified from SpecialAllPages.php
 	 *
 	 * @param string $search Prefix to search for
 	 * @param int $limit Maximum number of results to return (usually 10)
@@ -719,7 +739,7 @@ class WatchSubpages extends SpecialPage {
 	 * @return string[] Matching subpages
 	 */
 	public function prefixSearchSubpages( $search, $limit, $offset ) {
-		return $this->prefixSearchString( $search, $limit, $offset );
+		return $this->prefixSearchString( $search, $limit, $offset, $this->searchEngineFactory );
 	}
 
 	/**
