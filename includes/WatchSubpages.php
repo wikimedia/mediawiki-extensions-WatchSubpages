@@ -661,8 +661,7 @@ class WatchSubpages extends SpecialPage {
 			if ( !$target instanceof LinkTarget ) {
 				try {
 					$target = $this->titleParser->parseTitle( $target, NS_MAIN );
-				}
-				catch ( MalformedTitleException $e ) {
+				} catch ( MalformedTitleException $e ) {
 					continue;
 				}
 			}
