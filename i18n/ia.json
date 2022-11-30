@@ -5,7 +5,15 @@
 		]
 	},
 	"watchsubpages": "Observar subpaginas",
+	"watchsubpagesprefix": "Monstrar subpaginas de:",
+	"watchsubpages-nochanges": "Nulle cambiamentos ha essite facite sur tu observatorio.",
 	"watchsubpages-submit": "Adder paginas",
+	"tooltip-watchsubpages-submit": "Adder paginas",
+	"watchsubpages-legend": "Adder paginas al observatorio",
 	"watchsubpages-desc": "[[Special:WatchSubpages|Adder rapidemente tote le subpaginas]] de un pagina al observatorio",
-	"watchsubpages-explain": "Selige hic infra le paginas a adder a tu observatorio.\nPro adder un pagina, marca le quadrato juxta illo, e clicca sur \"{{int:watchsubpages-submit}}\".\n\nSi tu vole marcar o dismarcar plure paginas, tu pote tener premite le clave Shift pro seliger quadratos consecutive, cliccante sur cata extremitate del intervallo a marcar."
+	"watchsubpages-explain": "Selige hic infra le paginas a adder a tu observatorio.\nPro adder un pagina, marca le quadrato juxta illo, e clicca sur \"{{int:watchsubpages-submit}}\".\n\nSi tu vole marcar o dismarcar plure paginas, tu pote tener premite le clave Shift pro seliger quadratos consecutive, cliccante sur cata extremitate del intervallo a marcar.",
+	"watchsubpages-added-expiry": "$1 titulo{{PLURAL:$1||s}} ha essite addite pro $2:",
+	"watchsubpages-added-indefinitely": "$1 titulo{{PLURAL:$1||s}} ha essite addite permanentemente:",
+	"action-watchsubpages": "adder rapidemente tote le subpaginas de un pagina al observatorio personal",
+	"right-watchsubpages": "Adder rapidemente tote le subpaginas de un pagina al observatorio personal"
 }
