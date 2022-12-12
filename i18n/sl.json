@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
 	"watchsubpages": "Opazuj podstrani",
@@ -11,5 +12,7 @@
 	"tooltip-watchsubpages-submit": "Dodaj strani",
 	"watchsubpages-legend": "Dodaj strani na spisek nadzorov",
 	"watchsubpages-desc": "Hitro [[Special:WatchSubpages|doda vse podstrani]] izbrane strani na spisek nadzorov",
-	"watchsubpages-explain": "Spodaj izberite strani, ki jih želite dodati na vaš spisek nadzorov.\nZa dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-submit}}«.\n\nKo označujete ali odznačujete več strani, vam držanje tipke shift omogoča izbrati zaporedje polj tako, da kliknete na vsak konec območja, ki ga želite označiti."
+	"watchsubpages-explain": "Spodaj izberite strani, ki jih želite dodati na svoj spisek nadzorov.\nZa dodajanje strani označite polje poleg nje in kliknite »{{int:watchsubpages-submit}}«.\n\nKo označujete ali odznačujete več strani, vam držanje dvigalke (shift) omogoča izbrati zaporedje potrditvenih polj tako, da kliknete vsak konec razpona, ki ga želite označiti.",
+	"action-watchsubpages": "hitro dodajanje vseh podstrani strani na osebni spisek nadzorov",
+	"right-watchsubpages": "Hitro dodajanje vseh podstrani strani na osebni spisek nadzorov"
 }
