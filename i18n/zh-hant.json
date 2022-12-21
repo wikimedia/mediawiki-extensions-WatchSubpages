@@ -4,11 +4,12 @@
 			"Kly",
 			"LNDDYL",
 			"Liangent",
-			"Wrightbus"
+			"Wrightbus",
+			"捍粵者"
 		]
 	},
 	"watchsubpages": "監視子頁面",
-	"watchsubpagesprefix": "顯示子頁面有關於：",
+	"watchsubpagesprefix": "顯示此頁的子頁面",
 	"watchsubpages-nochanges": "您的監視清單中沒有做出更改。",
 	"watchsubpages-submit": "增加頁面",
 	"tooltip-watchsubpages-submit": "增加頁面",
