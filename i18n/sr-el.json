@@ -6,6 +6,11 @@
 		]
 	},
 	"watchsubpages": "Nadgledaj podstranice",
+	"watchsubpagesprefix": "Prikaz podstranica za:",
+	"watchsubpages-nochanges": "Nije napravljena nikakva izmena u Vašem spisku nadgledanja.",
 	"watchsubpages-submit": "Dodaj stranice",
-	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na spisak nadgledanja"
+	"tooltip-watchsubpages-submit": "Dodaj stranice",
+	"watchsubpages-legend": "Dodaj stranice na spisak nadgledanja",
+	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodaj sve podstranice]] stranice na spisak nadgledanja",
+	"watchsubpages-explain": "Odaberite stranice koje želite dodati u svoj spisak nadgledanja ispod.\nDa biste dodali stranicu, čekirajte kućicu pored nje, te kliknite na „{{int:watchsubpages-submit}}”.\n\nPri označavanju ili odznačavanju više stranica, držanje tipke shift omogućava odabir uzastopnih kućica klikanjem na kraj opsega za čekiranje."
 }
