@@ -8,12 +8,14 @@
 			"Amire80"
 		]
 	},
-	"watchsubpages": "מעקב אחרי דפי המשנה",
-	"watchsubpagesprefix": "הצגת דפי המשנה של:",
+	"watchsubpages": "מעקב אחרי דפי־המשנה",
+	"watchsubpagesprefix": "הצגת דפי־המשנה של:",
+	"watchsubpages-nochanges": "לא נעשו שינויים ברשימת המעקב שלך.",
 	"watchsubpages-submit": "הוספת דפים",
 	"tooltip-watchsubpages-submit": "הוספת דפים",
 	"watchsubpages-legend": "הוספת דפים לרשימת המעקב",
 	"watchsubpages-desc": "[[Special:WatchSubpages|הוספה מהירה של כל דפי המשנה]] של דף מסוים לרשימת המעקב",
 	"watchsubpages-explain": "נא לבחור את הדפים להוספה לרשימת המעקב שלך להלן.\nכדי להוסיף דף, יש לסמן את התיבה שלידו וללחוץ על \"{{int:watchsubpages-submit}}\".\n\nבעת סימון או ביטול סימון של דפים מרובים, החזקת מקש ה־Shift מאפשרת לך לבחור כמה תיבות סימון עוקבות באמצעות לחיצה על כל התיבות האחרונות של הטווחים לסימון.",
-	"action-watchsubpages": "הוספה מהירה של כל דפי המשנה של דף לרשימת המעקב האישית"
+	"action-watchsubpages": "להוסיף מהר את כל דפי־המשנה של דף לרשימת המעקב האישית",
+	"right-watchsubpages": "הוספה מהירה של כל דפי־המשנה של דף לרשימת המעקב האישית"
 }
