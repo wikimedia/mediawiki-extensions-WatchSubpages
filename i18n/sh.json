@@ -4,6 +4,8 @@
 			"Vlad5250"
 		]
 	},
+	"watchsubpages": "Praćenje podstranica",
+	"watchsubpagesprefix": "Prikaz podstranica za:",
 	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodavanje svih podstranica]] neke stranice na praćene",
 	"action-watchsubpages": "brzo dodavanje svih podstranica određene stranice u osobna praćenja",
 	"right-watchsubpages": "Brzo dodavanje svih podstranica stranice u osobne praćene"
