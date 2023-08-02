@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"watchsubpages": "Praćenje podstranica",
+	"watchsubpagesprefix": "Prikaz podstranica za:",
+	"watchsubpages-desc": "Brzo [[Special:WatchSubpages|dodavanje svih podstranica]] neke stranice na praćene",
+	"watchsubpages-added-expiry": "{{PLURAL:$1|$1 naslov je dodan|$1 naslova su dodana|$1 naslova je dodano}} za $2:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|$1 naslov je dodan|$1 naslova su dodana|$1 naslova je dodano}} trajno:",
+	"action-watchsubpages": "brzo dodavanje svih podstranica određene stranice u osobna praćenja",
+	"right-watchsubpages": "Brzo dodavanje svih podstranica stranice u osobne praćene"
+}
