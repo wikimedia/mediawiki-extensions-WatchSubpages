@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"SPQRobin",
 			"Siebrand"
 		]
@@ -14,6 +15,8 @@
 	"watchsubpages-legend": "Pagina's aan volglijst toevoegen",
 	"watchsubpages-desc": "Snel [[Special:WatchSubpages|alle subpagina's]] voor een pagina's aan de volglijst toevoegen",
 	"watchsubpages-explain": "Selecteer hieronder de pagina's die u aan uw volglijst wilt toevoegen.\nSelecteer de vakjes naast de paginanaam en klik op \"{{int:watchsubpages-submit}}\".\n\nOm meerdere pagina's tegelijk te selecteren of te deselecteren, kunt u na het selecteren van de eerste pagina uit de lijst de laatste pagina selecteren terwijl u de shifttoets ingedrukt houdt.",
+	"watchsubpages-added-expiry": "Er {{PLURAL:$1|is één titel|zijn $1 titels}} toegevoegd voor $2:",
+	"watchsubpages-added-indefinitely": "Er {{PLURAL:$1|is één titel|zijn $1 titels}} permanent toegevoegd:",
 	"action-watchsubpages": "eenvoudig alle deelpagina's van een pagina aan de persoonlijke volglijst toe te mogen voegen",
 	"right-watchsubpages": "Eenvoudig alle deelpagina's van een pagina aan de persoonlijke volglijst toe kunnen voegen"
 }
