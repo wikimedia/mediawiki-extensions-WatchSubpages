@@ -222,7 +222,7 @@ class WatchSubpages extends SpecialPage {
 			$out->prependHTML( $this->msg( 'allpages-bad-ns', $namespace )->parse() );
 			$namespace = NS_MAIN;
 		} else {
-			list( $namespace, $prefixKey, $prefix ) = $prefixList;
+			[ $namespace, $prefixKey, $prefix ] = $prefixList;
 
 			$dbr = $this->loadBalancer->getConnectionRef( ILoadBalancer::DB_REPLICA );
 
