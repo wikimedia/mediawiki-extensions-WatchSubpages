@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"AnakngAraw"
 		]
 	},
@@ -8,5 +9,5 @@
 	"watchsubpages-submit": "Magdagdag ng mga pahina",
 	"watchsubpages-legend": "Magdagdag ng mga pahina sa talaan ng mga binabantayan",
 	"watchsubpages-desc": "Mabilisang [[Special:WatchSubpages|idagdag ang lahat ng kabahaging mga pahina]] ng isang pahina sa talaan ng mga binabantayan",
-	"watchsubpages-explain": "Piliin ang mga pahinang idaragdag sa iyong talaan ng binabantayang mga pahinang  nasa ibaba.\nPara magdagdag ng isang pahina, lagyan ng tsek ang kahong katabi nito, at pindutin ang \"{{int:watchsubpages-submit}}\".\n\nKapag naglalagay o nagtatanggal ng mga tsek sa maraming mga pahina, ang matagalang pagpindot sa \"susing pampalit\" (''shift key'') ay magpapahintulot sa iyong makapili ng magkakasunod na mga kahong tsetsekan sa pamamagitan ng pagpindot sa bawat katapusan ng saklaw na paglalagyan ng tsek."
+	"watchsubpages-explain": "Piliin ang mga pahinang idaragdag sa iyong talaan ng binabantayang mga pahinang nasa ibaba.\nPara magdagdag ng isang pahina, lagyan ng tsek ang kahong katabi nito, at pindutin ang \"{{int:watchsubpages-submit}}\".\n\nKapag naglalagay o nagtatanggal ng mga tsek sa maraming mga pahina, ang matagalang pagpindot sa \"susing pampalit\" (''shift key'') ay magpapahintulot sa iyong makapili ng magkakasunod na mga kahong tsetsekan sa pamamagitan ng pagpindot sa bawat katapusan ng saklaw na paglalagyan ng tsek."
 }
