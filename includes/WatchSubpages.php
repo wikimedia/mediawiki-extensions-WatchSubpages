@@ -405,7 +405,7 @@ class WatchSubpages extends SpecialPage {
 		# 'accesskey-watchsubpages-submit', 'tooltip-watchsubpages-submit'
 		$form->setSubmitTooltip( 'watchsubpages-submit' );
 		$form->setWrapperLegendMsg( 'watchsubpages-legend' );
-		$form->addHeaderText( $this->msg( 'watchsubpages-explain' )->parse() );
+		$form->addHeaderHtml( $this->msg( 'watchsubpages-explain' )->parse() );
 		$form->setSubmitCallback( [ $this, 'submitRaw' ] );
 
 		return $form;
