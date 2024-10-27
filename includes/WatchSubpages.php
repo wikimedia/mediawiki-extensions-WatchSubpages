@@ -527,7 +527,7 @@ class WatchSubpages extends SpecialPage {
 			}
 
 			$this->successMessage .= ' ' . $this->msg( $msgKey )
-				->numParams( count( $toWatch ), $expiry )->parse();
+				->numParams( count( $toWatch ), $expiry ?? 0 )->parse();
 			$this->showTitles( $toWatch, $this->successMessage );
 		}
 
