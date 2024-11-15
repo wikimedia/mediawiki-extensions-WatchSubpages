@@ -85,14 +85,14 @@ class WatchSubpages extends SpecialPage {
 	 * @param SearchEngineFactory|null $searchEngineFactory
 	 */
 	public function __construct(
-		ILoadBalancer $loadBalancer = null,
-		WatchedItemStoreInterface $watchedItemStore = null,
-		TitleParser $titleParser = null,
-		GenderCache $genderCache = null,
-		LinkBatchFactory $linkBatchFactory = null,
-		NamespaceInfo $nsInfo = null,
-		WikiPageFactory $wikiPageFactory = null,
-		SearchEngineFactory $searchEngineFactory = null
+		?ILoadBalancer $loadBalancer = null,
+		?WatchedItemStoreInterface $watchedItemStore = null,
+		?TitleParser $titleParser = null,
+		?GenderCache $genderCache = null,
+		?LinkBatchFactory $linkBatchFactory = null,
+		?NamespaceInfo $nsInfo = null,
+		?WikiPageFactory $wikiPageFactory = null,
+		?SearchEngineFactory $searchEngineFactory = null
 	) {
 		parent::__construct( 'WatchSubpages', 'watchsubpages' );
 		// This class is extended and therefor fallback to global state - T266065
