@@ -7,10 +7,14 @@
 	},
 	"watchsubpages": "Vixiar subpáxinas",
 	"watchsubpagesprefix": "Amosar as subpáxinas de:",
-	"watchsubpages-nochanges": "Non se fixeron cambios nas páxinas que vixía.",
+	"watchsubpages-nochanges": "Non se fixeron cambios na túa lista de vixilancia.",
 	"watchsubpages-submit": "Engadir as páxinas",
 	"tooltip-watchsubpages-submit": "Engadir as páxinas",
 	"watchsubpages-legend": "Engadir páxinas á lista de vixilancia",
 	"watchsubpages-desc": "[[Special:WatchSubpages|Engadir rapidamente todas as subpáxinas]] dunha páxina á lista de vixilancia",
-	"watchsubpages-explain": "Seleccione a continuación as páxinas que queira engadir á súa lista de vixilancia.\nPara engadir unha páxina, marque a caixa que está ao seu carón e prema en \"{{int:watchsubpages-submit}}\".\n\nPara marcar ou desmarcar un feixe de páxinas, prema a tecla Maiús. para seleccionar caixas consecutivas con só facer clic ao final do grupo."
+	"watchsubpages-explain": "Selecciona a continuación as páxinas que queiras engadir á túa lista de vixilancia.\nPara engadires unha páxina, marca a caixa que está ao seu carón e preme en «{{int:watchsubpages-submit}}».\n\nPara marcar ou desmarcar un feixe de páxinas, mantén a tecla Maiús. para seleccionar caixas consecutivas con só facer clic ao final do grupo.",
+	"watchsubpages-added-expiry": "{{PLURAL:$1|Engadiuse un título|Engadíronse $1 títulos}} durante $2:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|Engadiuse un título|Engadíronse $1 títulos}} permanentemente:",
+	"action-watchsubpages": "engadir rapidamente todas as subpáxinas dunha páxina á lista de vixilancia persoal",
+	"right-watchsubpages": "Engadir rapidamente todas as subpáxinas dunha páxina á lista de vixilancia persoal"
 }
