@@ -140,7 +140,7 @@ class WatchSubpages extends SpecialPage {
 		$namespace = (int)$ns;
 		$this->hideRedirects = $request->getBool( 'hideredirects', $this->hideRedirects );
 
-		$out->setPageTitle( $this->msg( 'watchsubpages' ) );
+		$out->setPageTitle( $this->msg( 'watchsubpages' )->escaped() );
 
 		$showme = '';
 		if ( $par !== null ) {
