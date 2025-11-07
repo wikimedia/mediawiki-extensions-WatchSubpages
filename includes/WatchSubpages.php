@@ -224,7 +224,7 @@ class WatchSubpages extends SpecialPage {
 		} else {
 			[ $namespace, $prefixKey, $prefix ] = $prefixList;
 
-			$dbr = $this->loadBalancer->getConnectionRef( ILoadBalancer::DB_REPLICA );
+			$dbr = $this->loadBalancer->getConnection( ILoadBalancer::DB_REPLICA );
 
 			$conds = [
 				'page_namespace' => $namespace,
