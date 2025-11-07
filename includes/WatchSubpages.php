@@ -26,6 +26,8 @@ use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\PageReference;
+use MediaWiki\Page\PageReferenceValue;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\ILoadBalancer;
@@ -655,7 +657,7 @@ class WatchSubpages extends SpecialPage {
 	 * Unmodified from SpecialEditWatchlist.php
 	 *
 	 * @param string[]|LinkTarget[] $targets
-	 * @return TitleValue[]
+	 * @return PageReference[]
 	 */
 	private function getExpandedTargets( array $targets ) {
 		$expandedTargets = [];
@@ -663,7 +665,7 @@ class WatchSubpages extends SpecialPage {
 			if ( !$target instanceof LinkTarget ) {
 				try {
 					$target = $this->titleParser->parseTitle( $target, NS_MAIN );
-				} catch ( MalformedTitleException $e ) {
+				} catch ( MalformedTitleException ) {
 					continue;
 				}
 			}
@@ -671,9 +673,9 @@ class WatchSubpages extends SpecialPage {
 			$ns = $target->getNamespace();
 			$dbKey = $target->getDBkey();
 			$expandedTargets[] =
-				new TitleValue( $this->nsInfo->getSubject( $ns ), $dbKey );
+				PageReferenceValue::localReference( $this->nsInfo->getSubject( $ns ), $dbKey );
 			$expandedTargets[] =
-				new TitleValue( $this->nsInfo->getTalk( $ns ), $dbKey );
+				PageReferenceValue::localReference( $this->nsInfo->getTalk( $ns ), $dbKey );
 		}
 		return $expandedTargets;
 	}
