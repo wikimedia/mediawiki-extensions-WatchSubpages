@@ -25,7 +25,6 @@
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkTarget;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\PageReference;
 use MediaWiki\Page\PageReferenceValue;
 use MediaWiki\Page\WikiPageFactory;
@@ -48,67 +47,24 @@ class WatchSubpages extends SpecialPage {
 
 	private $badItems = [];
 
-	/** @var ILoadBalancer */
-	private $loadBalancer;
-
-	/** @var WatchedItemStoreInterface */
-	private $watchedItemStore;
-
-	/** @var TitleParser */
-	private $titleParser;
-
-	/** @var GenderCache */
-	private $genderCache;
-
-	/** @var LinkBatchFactory */
-	private $linkBatchFactory;
-
-	/** @var NamespaceInfo */
-	private $nsInfo;
-
-	/** @var WikiPageFactory */
-	private $wikiPageFactory;
-
-	/** @var SearchEngineFactory */
-	private $searchEngineFactory;
-
 	/** @var string */
 	protected $expiryFormFieldName = 'expiry';
 
 	/**
 	 * Initially from SpecialEditWatchlist.php
 	 * Modified from SpecialAllPages.php
-	 *
-	 * @param ILoadBalancer|null $loadBalancer
-	 * @param WatchedItemStoreInterface|null $watchedItemStore
-	 * @param TitleParser|null $titleParser
-	 * @param GenderCache|null $genderCache
-	 * @param LinkBatchFactory|null $linkBatchFactory
-	 * @param NamespaceInfo|null $nsInfo
-	 * @param WikiPageFactory|null $wikiPageFactory
-	 * @param SearchEngineFactory|null $searchEngineFactory
 	 */
 	public function __construct(
-		?ILoadBalancer $loadBalancer = null,
-		?WatchedItemStoreInterface $watchedItemStore = null,
-		?TitleParser $titleParser = null,
-		?GenderCache $genderCache = null,
-		?LinkBatchFactory $linkBatchFactory = null,
-		?NamespaceInfo $nsInfo = null,
-		?WikiPageFactory $wikiPageFactory = null,
-		?SearchEngineFactory $searchEngineFactory = null
+		private readonly ILoadBalancer $loadBalancer,
+		private readonly WatchedItemStoreInterface $watchedItemStore,
+		private readonly TitleParser $titleParser,
+		private readonly GenderCache $genderCache,
+		private readonly LinkBatchFactory $linkBatchFactory,
+		private readonly NamespaceInfo $nsInfo,
+		private readonly WikiPageFactory $wikiPageFactory,
+		private readonly SearchEngineFactory $searchEngineFactory,
 	) {
 		parent::__construct( 'WatchSubpages' );
-		// This class is extended and therefor fallback to global state - T266065
-		$services = MediaWikiServices::getInstance();
-		$this->loadBalancer = $loadBalancer;
-		$this->watchedItemStore = $watchedItemStore ?? $services->getWatchedItemStore();
-		$this->titleParser = $titleParser ?? $services->getTitleParser();
-		$this->genderCache = $genderCache ?? $services->getGenderCache();
-		$this->linkBatchFactory = $linkBatchFactory ?? $services->getLinkBatchFactory();
-		$this->nsInfo = $nsInfo ?? $services->getNamespaceInfo();
-		$this->wikiPageFactory = $wikiPageFactory ?? $services->getWikiPageFactory();
-		$this->searchEngineFactory = $searchEngineFactory ?? $services->getSearchEngineFactory();
 	}
 
 	/** @inheritDoc */
