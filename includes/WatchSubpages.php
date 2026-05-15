@@ -98,7 +98,7 @@ class WatchSubpages extends SpecialPage {
 		?WikiPageFactory $wikiPageFactory = null,
 		?SearchEngineFactory $searchEngineFactory = null
 	) {
-		parent::__construct( 'WatchSubpages', 'watchsubpages' );
+		parent::__construct( 'WatchSubpages' );
 		// This class is extended and therefor fallback to global state - T266065
 		$services = MediaWikiServices::getInstance();
 		$this->loadBalancer = $loadBalancer;
@@ -109,6 +109,11 @@ class WatchSubpages extends SpecialPage {
 		$this->nsInfo = $nsInfo ?? $services->getNamespaceInfo();
 		$this->wikiPageFactory = $wikiPageFactory ?? $services->getWikiPageFactory();
 		$this->searchEngineFactory = $searchEngineFactory ?? $services->getSearchEngineFactory();
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'watchsubpages';
 	}
 
 	public function doesWrites() {
