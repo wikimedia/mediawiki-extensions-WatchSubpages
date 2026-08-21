@@ -1,12 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Wizzard"
 		]
 	},
 	"watchsubpages": "Sledovať podstránky",
+	"watchsubpagesprefix": "Zobraziť podstránky stránky:",
+	"watchsubpages-nochanges": "Vo vašom zozname sledovaných stránok neboli vykonané žiadne zmeny.",
 	"watchsubpages-submit": "Pridať stránky",
+	"tooltip-watchsubpages-submit": "Pridať stránky",
 	"watchsubpages-legend": "Pridať stránky do zoznamu sledovaných",
 	"watchsubpages-desc": "Rýchlo [[Special:WatchSubpages|pridať všetky podstránky]] stránky do zoznamu sledovaných",
-	"watchsubpages-explain": "Vyberte stránky, ktoré chcete pridať do svojho zoznamu sledovaných.\nStránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať stránky”.\n\nPri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne."
+	"watchsubpages-explain": "Vyberte stránky, ktoré chcete pridať do svojho zoznamu sledovaných.\nStránku pridáte tak, že označíte pole vedľa nej a kliknete na „Pridať stránky”.\n\nPri označovaní alebo odznačovaní viacerých stránok môžete držaním klávesu Shift a kliknutím na začiatok a koniec rozsahu vybrať viacero po sebe idúcich polí súčasne.",
+	"watchsubpages-added-expiry": "{{PLURAL:$1|Bol pridaný 1 názov|Boli pridané $1 názvy|Bolo pridaných $1 názvov}} na $2:",
+	"watchsubpages-added-indefinitely": "{{PLURAL:$1|Bol natrvalo pridaný 1 názov|Boli natrvalo pridané $1 názvy|Bolo natrvalo pridaných $1 názvov}}:",
+	"action-watchsubpages": "rýchlo pridať všetky podstránky stránky do osobného zoznamu sledovaných stránok",
+	"right-watchsubpages": "Rýchlo pridať všetky podstránky stránky do osobného zoznamu sledovaných stránok"
 }
